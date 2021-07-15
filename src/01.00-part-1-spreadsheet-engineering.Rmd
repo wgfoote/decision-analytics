@@ -1,0 +1,18 @@
+
+# Part 1 -- Spreadsheet Engineering {-}
+
+Getting our arms around
+
+- Design models with influence diagrams
+
+- Deploy principles of good spreadsheet practice
+
+- Use named ranges with INDIRECT, search with INDEX, MATCH, aggregate with SUMPRODUCT
+
+- Basic, non-probabilistic, sensitivity analysis with Data Table
+
+- Basic, non-probabilistic, sensitivity analysis with VBA
+
+- One variable optimization by grid approximation with Data Table
+
+- Plotting to communicate with a simple dashboard
