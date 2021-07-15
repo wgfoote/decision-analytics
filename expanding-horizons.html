@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 5 Expanding horizons | Decision Modeling with Spreadsheets</title>
+  <meta name="description" content="This is a spreadsheet version of every management science book out there, less all of the detail." />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 5 Expanding horizons | Decision Modeling with Spreadsheets" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a spreadsheet version of every management science book out there, less all of the detail." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 5 Expanding horizons | Decision Modeling with Spreadsheets" />
+  
+  <meta name="twitter:description" content="This is a spreadsheet version of every management science book out there, less all of the detail." />
+  
+
+<meta name="author" content="William G. Foote" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="bringing-pie-to-earth.html"/>
+<link rel="next" href="case-pricing-production-at-make-a-pie.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Decision Modeling with Spreadsheets</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prerequisites</a></li>
+<li class="chapter" data-level="" data-path="part-1-spreadsheet-engineering.html"><a href="part-1-spreadsheet-engineering.html"><i class="fa fa-check"></i>Part 1 – Spreadsheet Engineering</a></li>
+<li class="chapter" data-level="1" data-path="spreadsheet1.html"><a href="spreadsheet1.html"><i class="fa fa-check"></i><b>1</b> Tortuous Pie-making in the Sky</a><ul>
+<li class="chapter" data-level="1.1" data-path="spreadsheet1.html"><a href="spreadsheet1.html#spreadsheets-really"><i class="fa fa-check"></i><b>1.1</b> Spreadsheets? Really?</a></li>
+<li class="chapter" data-level="1.2" data-path="spreadsheet1.html"><a href="spreadsheet1.html#questions-questions"><i class="fa fa-check"></i><b>1.2</b> Questions, questions</a></li>
+<li class="chapter" data-level="1.3" data-path="spreadsheet1.html"><a href="spreadsheet1.html#count-the-errors-of-our-ways"><i class="fa fa-check"></i><b>1.3</b> Count the errors of our ways</a></li>
+<li class="chapter" data-level="1.4" data-path="spreadsheet1.html"><a href="spreadsheet1.html#prevailing-recommended-practices"><i class="fa fa-check"></i><b>1.4</b> Prevailing recommended practices</a><ul>
+<li class="chapter" data-level="1.4.1" data-path="spreadsheet1.html"><a href="spreadsheet1.html#do-not-ever-do-this"><i class="fa fa-check"></i><b>1.4.1</b> Do not ever do this</a></li>
+<li class="chapter" data-level="1.4.2" data-path="spreadsheet1.html"><a href="spreadsheet1.html#instead-practice-these"><i class="fa fa-check"></i><b>1.4.2</b> Instead practice these</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="spreadsheet1.html"><a href="spreadsheet1.html#pie-in-the-sky"><i class="fa fa-check"></i><b>1.5</b> Pie-in-the-Sky</a></li>
+<li class="chapter" data-level="1.6" data-path="spreadsheet1.html"><a href="spreadsheet1.html#wheres-the-paper-and-pencils"><i class="fa fa-check"></i><b>1.6</b> Where’s the paper and pencils?</a></li>
+<li class="chapter" data-level="1.7" data-path="spreadsheet1.html"><a href="spreadsheet1.html#cost-and-volume"><i class="fa fa-check"></i><b>1.7</b> Cost and volume</a></li>
+<li class="chapter" data-level="1.8" data-path="spreadsheet1.html"><a href="spreadsheet1.html#demand-analysis"><i class="fa fa-check"></i><b>1.8</b> Demand analysis</a></li>
+<li class="chapter" data-level="1.9" data-path="spreadsheet1.html"><a href="spreadsheet1.html#weekly-profit"><i class="fa fa-check"></i><b>1.9</b> Weekly profit</a></li>
+<li class="chapter" data-level="1.10" data-path="spreadsheet1.html"><a href="spreadsheet1.html#profit-sensitivity-to-price"><i class="fa fa-check"></i><b>1.10</b> Profit sensitivity to price</a></li>
+<li class="chapter" data-level="1.11" data-path="spreadsheet1.html"><a href="spreadsheet1.html#lo-and-behold"><i class="fa fa-check"></i><b>1.11</b> Lo and behold</a></li>
+<li class="chapter" data-level="1.12" data-path="spreadsheet1.html"><a href="spreadsheet1.html#references-and-endnotes"><i class="fa fa-check"></i><b>1.12</b> References and endnotes</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html"><i class="fa fa-check"></i><b>2</b> Chaotic Pie-making in the Sky"</a><ul>
+<li class="chapter" data-level="2.1" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#how-many"><i class="fa fa-check"></i><b>2.1</b> How many?</a></li>
+<li class="chapter" data-level="2.2" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#whats-new"><i class="fa fa-check"></i><b>2.2</b> What’s new?</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#the-costs-they-are-a-changing"><i class="fa fa-check"></i><b>2.2.1</b> The costs they are a-changing</a></li>
+<li class="chapter" data-level="2.2.2" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#demand-takes-a-step-back"><i class="fa fa-check"></i><b>2.2.2</b> Demand takes a step back</a></li>
+<li class="chapter" data-level="2.2.3" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#a-new-profit-dawning"><i class="fa fa-check"></i><b>2.2.3</b> A new profit dawning</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#an-algebra-of-pie"><i class="fa fa-check"></i><b>2.3</b> An algebra of pie</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#a-little-lite-algebra"><i class="fa fa-check"></i><b>2.3.1</b> A little lite algebra</a></li>
+<li class="chapter" data-level="2.3.2" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#pvs-last-stand"><i class="fa fa-check"></i><b>2.3.2</b> PV’s last stand</a></li>
+<li class="chapter" data-level="2.3.3" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#the-model-in-the-mist"><i class="fa fa-check"></i><b>2.3.3</b> The model in the mist</a></li>
+<li class="chapter" data-level="2.3.4" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#how-sensitive"><i class="fa fa-check"></i><b>2.3.4</b> How sensitive?</a></li>
+<li class="chapter" data-level="2.3.5" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#one-way-or-the-other"><i class="fa fa-check"></i><b>2.3.5</b> One way or the other</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#lo-and-behold-yet-again"><i class="fa fa-check"></i><b>2.4</b> Lo and behold yet again</a></li>
+<li class="chapter" data-level="2.5" data-path="spreadsheet1.html"><a href="spreadsheet1.html#references-and-endnotes"><i class="fa fa-check"></i><b>2.5</b> References and endnotes</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="case-salmerón-solar-systems-llc.html"><a href="case-salmerón-solar-systems-llc.html"><i class="fa fa-check"></i><b>3</b> Case: Salmerón Solar Systems LLC</a><ul>
+<li class="chapter" data-level="3.1" data-path="case-salmerón-solar-systems-llc.html"><a href="case-salmerón-solar-systems-llc.html#photovoltaic-systems"><i class="fa fa-check"></i><b>3.1</b> Photovoltaic systems</a></li>
+<li class="chapter" data-level="3.2" data-path="case-salmerón-solar-systems-llc.html"><a href="case-salmerón-solar-systems-llc.html#the-particulars"><i class="fa fa-check"></i><b>3.2</b> The particulars</a></li>
+<li class="chapter" data-level="3.3" data-path="case-salmerón-solar-systems-llc.html"><a href="case-salmerón-solar-systems-llc.html#some-definitions-are-in-order"><i class="fa fa-check"></i><b>3.3</b> Some definitions are in order</a></li>
+<li class="chapter" data-level="3.4" data-path="case-salmerón-solar-systems-llc.html"><a href="case-salmerón-solar-systems-llc.html#requirements"><i class="fa fa-check"></i><b>3.4</b> Requirements</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="part-2-optimization.html"><a href="part-2-optimization.html"><i class="fa fa-check"></i>Part 2 – Optimization</a></li>
+<li class="chapter" data-level="4" data-path="bringing-pie-to-earth.html"><a href="bringing-pie-to-earth.html"><i class="fa fa-check"></i><b>4</b> Bringing Pie to Earth</a><ul>
+<li class="chapter" data-level="4.1" data-path="bringing-pie-to-earth.html"><a href="bringing-pie-to-earth.html#it-all-started-here"><i class="fa fa-check"></i><b>4.1</b> It all started here</a></li>
+<li class="chapter" data-level="4.2" data-path="bringing-pie-to-earth.html"><a href="bringing-pie-to-earth.html#from-humble-beginnings"><i class="fa fa-check"></i><b>4.2</b> From humble beginnings</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="bringing-pie-to-earth.html"><a href="bringing-pie-to-earth.html#decisions-decisions"><i class="fa fa-check"></i><b>4.2.1</b> 1. Decisions, decisions</a></li>
+<li class="chapter" data-level="4.2.2" data-path="bringing-pie-to-earth.html"><a href="bringing-pie-to-earth.html#resources-they-are-aconstraining"><i class="fa fa-check"></i><b>4.2.2</b> 2. Resources they are a’constraining</a></li>
+<li class="chapter" data-level="4.2.3" data-path="bringing-pie-to-earth.html"><a href="bringing-pie-to-earth.html#not-without-constraint"><i class="fa fa-check"></i><b>4.2.3</b> 3. Not without constraint</a></li>
+<li class="chapter" data-level="4.2.4" data-path="bringing-pie-to-earth.html"><a href="bringing-pie-to-earth.html#let-us-eat-pie"><i class="fa fa-check"></i><b>4.2.4</b> Let us eat pie</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="bringing-pie-to-earth.html"><a href="bringing-pie-to-earth.html#an-easier-way"><i class="fa fa-check"></i><b>4.3</b> An easier way?</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="expanding-horizons.html"><a href="expanding-horizons.html"><i class="fa fa-check"></i><b>5</b> Expanding horizons</a><ul>
+<li class="chapter" data-level="5.1" data-path="expanding-horizons.html"><a href="expanding-horizons.html#didos-bullhide"><i class="fa fa-check"></i><b>5.1</b> Dido’s bullhide</a></li>
+<li class="chapter" data-level="5.2" data-path="expanding-horizons.html"><a href="expanding-horizons.html#making-dough"><i class="fa fa-check"></i><b>5.2</b> Making dough</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="expanding-horizons.html"><a href="expanding-horizons.html#model-me-an-eoq"><i class="fa fa-check"></i><b>5.2.1</b> Model me an EOQ</a></li>
+<li class="chapter" data-level="5.2.2" data-path="expanding-horizons.html"><a href="expanding-horizons.html#implementing-the-simple-eoq"><i class="fa fa-check"></i><b>5.2.2</b> Implementing the simple EOQ</a></li>
+<li class="chapter" data-level="5.2.3" data-path="expanding-horizons.html"><a href="expanding-horizons.html#life-constrains-our-simple-model"><i class="fa fa-check"></i><b>5.2.3</b> Life constrains our simple model</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="expanding-horizons.html"><a href="expanding-horizons.html#back-to-the-future"><i class="fa fa-check"></i><b>5.3</b> Back to the future</a><ul>
+<li class="chapter" data-level="5.3.1" data-path="expanding-horizons.html"><a href="expanding-horizons.html#bottom-line-up-front"><i class="fa fa-check"></i><b>5.3.1</b> Bottom line up front</a></li>
+<li class="chapter" data-level="5.3.2" data-path="expanding-horizons.html"><a href="expanding-horizons.html#tighter-and-tighter"><i class="fa fa-check"></i><b>5.3.2</b> Tighter, and tighter</a></li>
+<li class="chapter" data-level="5.3.3" data-path="expanding-horizons.html"><a href="expanding-horizons.html#implementing-the-model"><i class="fa fa-check"></i><b>5.3.3</b> Implementing the model</a></li>
+<li class="chapter" data-level="5.3.4" data-path="expanding-horizons.html"><a href="expanding-horizons.html#a-revised-rendering"><i class="fa fa-check"></i><b>5.3.4</b> A revised rendering</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="expanding-horizons.html"><a href="expanding-horizons.html#next-steps"><i class="fa fa-check"></i><b>5.4</b> Next steps?</a></li>
+<li class="chapter" data-level="5.5" data-path="spreadsheet1.html"><a href="spreadsheet1.html#references-and-endnotes"><i class="fa fa-check"></i><b>5.5</b> References and endnotes</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="case-pricing-production-at-make-a-pie.html"><a href="case-pricing-production-at-make-a-pie.html"><i class="fa fa-check"></i><b>6</b> Case: Pricing Production at Make-A-Pie</a><ul>
+<li class="chapter" data-level="6.1" data-path="case-pricing-production-at-make-a-pie.html"><a href="case-pricing-production-at-make-a-pie.html#front-matter"><i class="fa fa-check"></i><b>6.1</b> Front matter</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="part-3-simulation.html"><a href="part-3-simulation.html"><i class="fa fa-check"></i>Part 3 – Simulation</a></li>
+<li class="chapter" data-level="7" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html"><i class="fa fa-check"></i><b>7</b> Waiting for the Simulation</a><ul>
+<li class="chapter" data-level="7.1" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#a-story-of-chance"><i class="fa fa-check"></i><b>7.1</b> A story of chance</a></li>
+<li class="chapter" data-level="7.2" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#a-piece-of-pie-please"><i class="fa fa-check"></i><b>7.2</b> A piece of pie, please</a></li>
+<li class="chapter" data-level="7.3" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#a-brief-interlude-with-cholesky"><i class="fa fa-check"></i><b>7.3</b> A brief interlude with Cholesky</a></li>
+<li class="chapter" data-level="7.4" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#solution"><i class="fa fa-check"></i><b>7.4</b> Solution</a></li>
+<li class="chapter" data-level="7.5" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#now-we-can-simulate"><i class="fa fa-check"></i><b>7.5</b> Now we can simulate</a><ul>
+<li class="chapter" data-level="7.5.1" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#excel-or-bust"><i class="fa fa-check"></i><b>7.5.1</b> Excel or bust!</a></li>
+</ul></li>
+<li class="chapter" data-level="7.6" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#back-to-the-eatery-robot"><i class="fa fa-check"></i><b>7.6</b> Back to the eatery robot</a><ul>
+<li class="chapter" data-level="7.6.1" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#the-main-course"><i class="fa fa-check"></i><b>7.6.1</b> The main course</a></li>
+<li class="chapter" data-level="7.6.2" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#exploring-wait-times"><i class="fa fa-check"></i><b>7.6.2</b> Exploring wait times</a></li>
+</ul></li>
+<li class="chapter" data-level="7.7" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#any-next-steps"><i class="fa fa-check"></i><b>7.7</b> Any next steps?</a></li>
+<li class="chapter" data-level="7.8" data-path="spreadsheet1.html"><a href="spreadsheet1.html#references-and-endnotes"><i class="fa fa-check"></i><b>7.8</b> References and endnotes</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="the-outer-limits.html"><a href="the-outer-limits.html"><i class="fa fa-check"></i><b>8</b> The Outer Limits</a><ul>
+<li class="chapter" data-level="8.1" data-path="the-outer-limits.html"><a href="the-outer-limits.html#tales-of-tails"><i class="fa fa-check"></i><b>8.1</b> Tales of tails</a></li>
+<li class="chapter" data-level="8.2" data-path="the-outer-limits.html"><a href="the-outer-limits.html#it-always-starts-with-data"><i class="fa fa-check"></i><b>8.2</b> It always starts with data</a></li>
+<li class="chapter" data-level="8.3" data-path="the-outer-limits.html"><a href="the-outer-limits.html#a-distribution-to-remember"><i class="fa fa-check"></i><b>8.3</b> A distribution to remember</a></li>
+<li class="chapter" data-level="8.4" data-path="the-outer-limits.html"><a href="the-outer-limits.html#what-does-it-all-mean-so-far"><i class="fa fa-check"></i><b>8.4</b> What does it all mean, so far?</a></li>
+<li class="chapter" data-level="8.5" data-path="the-outer-limits.html"><a href="the-outer-limits.html#the-joints-ajumpin"><i class="fa fa-check"></i><b>8.5</b> The joint’s ajumpin’</a></li>
+<li class="chapter" data-level="8.6" data-path="the-outer-limits.html"><a href="the-outer-limits.html#a-sinking-feeling"><i class="fa fa-check"></i><b>8.6</b> A sinking feeling?</a></li>
+<li class="chapter" data-level="8.7" data-path="the-outer-limits.html"><a href="the-outer-limits.html#simuluate-and-stimulate"><i class="fa fa-check"></i><b>8.7</b> Simuluate and stimulate</a></li>
+<li class="chapter" data-level="8.8" data-path="the-outer-limits.html"><a href="the-outer-limits.html#finally-exhaustively-where-are-the-results"><i class="fa fa-check"></i><b>8.8</b> Finally, exhaustively, where are the results?</a></li>
+<li class="chapter" data-level="8.9" data-path="spreadsheet1.html"><a href="spreadsheet1.html#references-and-endnotes"><i class="fa fa-check"></i><b>8.9</b> References and endnotes</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="case-forecasting-workers-compensation-claims.html"><a href="case-forecasting-workers-compensation-claims.html"><i class="fa fa-check"></i><b>9</b> Case: Forecasting Workers Compensation Claims</a><ul>
+<li class="chapter" data-level="9.1" data-path="case-forecasting-workers-compensation-claims.html"><a href="case-forecasting-workers-compensation-claims.html#some-background"><i class="fa fa-check"></i><b>9.1</b> Some background</a></li>
+<li class="chapter" data-level="9.2" data-path="case-forecasting-workers-compensation-claims.html"><a href="case-forecasting-workers-compensation-claims.html#the-ask"><i class="fa fa-check"></i><b>9.2</b> The ask</a></li>
+<li class="chapter" data-level="9.3" data-path="case-forecasting-workers-compensation-claims.html"><a href="case-forecasting-workers-compensation-claims.html#some-requirements"><i class="fa fa-check"></i><b>9.3</b> Some requirements</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/wgfoote/book-decision-modeling" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Decision Modeling with Spreadsheets</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="expanding-horizons" class="section level1">
+<h1><span class="header-section-number">Chapter 5</span> Expanding horizons</h1>
+<script>
+function showText(y) {
+    var x = document.getElementById(y);
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+<div id="didos-bullhide" class="section level2">
+<h2><span class="header-section-number">5.1</span> Dido’s bullhide</h2>
+<p><img src="images/04/04/dido-bullhide.jpg" /></p>
+<p>Queen Dido fled the tyrannical ruler of Tyre to found the city of Carthage. Rome later razed it to the ground, salted the earth, and to this day, the site in Tunisia is inarable. Virgil at about 21-19 BCE regaled the ruling class of Rome with its origin story, that of Aeneas, Greek veteran of the Trojan War. Aeneas landed at Carthage and into Dido’s arms. Star-crossed lovers were not blessed by gods or humans, all ending in tragedy for Dido and Carthage, eventually, and the establishment of Rome by myth.</p>
+<p>Wonderful story, but here is a formal optimization problem solved by Dido which resulted in her, and her retinue, founding of Carthage. They solved the problem of finding the figure bounded by a line which has the maximum area for a given perimeter. The solution is a semicircle. Here is a statement of the problem in Virgil’s Aeneid, of course, with an engaging back story up front to keep up at the end of our seats.</p>
+<p>“The Kingdom you see is Carthage, the Tyrians, the town of Agenor;
+But the country around is Libya, no folk to meet in war.
+Dido, who left the city of Tyre to escape her brother,
+Rules here–a long and labyrinthine tale of wrong
+Is hers, but I will touch on its salient points in order….Dido, in great disquiet, organised her friends for escape.
+They met together, all those who harshly hated the tyrant
+Or keenly feared him: they seized some ships which chanced to be ready…
+They came to this spot, where to-day you can behold the mighty
+Battlements and the rising citadel of New Carthage,
+And purchased a site, which was named ‘Bull’s Hide’ after the bargain
+By which they should get as much land as they could enclose with a bull’s hide.”</p>
+<p>Well, we suppose they took the largest bull they could find and produced the longest length of leather thong they could and enclosed land area within the semicircle of leather lacing. Well, that’s an optimization problem, solved!</p>
+<p>Around 300 BCE Euclid wonders about the minimal distance between a point a line, and proves that a square has the greatest area among the rectangles with given total length of edges. About 100 BCE Heron proves that light travels between two points through the path with shortest length when reflecting from a mirror. This last optimization had psychological and metaphysical implications since the reigning theory from Plato was that light emanates from our souls outward into the world and what we see is what is reflected back to us.</p>
+<p>Here we go this time with part two (ni in Japanese this time). In mathematical
+finance, the idea of maximising a profit is, of course, very important, but it’s modulated by the need to simultaneously manage the risk of loss. This all boils down to a sophisticated version of the very everyday idea of not putting all your eggs in one basket, also known as diversification.</p>
+<p>Cervantes wrote <em>Don Quixote</em> in the 1600s. Here’s a useful quote.</p>
+<p>“It is the part of a wise man to keep himself today for tomorrow and not venture all his eggs in one basket.”</p>
+<p>Not only is diversification involved here, but also the beginnings of the notion of delayed consumption. The idea is that we might need to save for the future. Inventory is a sort of delayed consumption as well. Cervantes almost gets it. Another quote from Shakespeare expands on Cervantes (although backward in time!) the more sophisticated idea. In the Merchant of Venice, Shakespeare cleverly diversifies the asset structure of a whole estate, the portfolio, across time, when Antonio, in a conversation with his friends, told his friends he wasn’t spending sleepless nights worrying over his commodity investments, and he says:</p>
+<p>“My ventures are not in one bottom trusted, nor to one place, nor is my whole estate upon the fortune of this present year, therefore my merchandise makes me not sad.”</p>
+<p>Hidden in there is this idea of thinking about having a balance between the near future and the rather more distant future in terms of the return on a portfolio of investments. Very nice, but how often should we diversify? Here is a heuristic from Rabbi Isaac bar Aha, in Aramaic. It’s the simple equal allocation strategy, and what you should do with your wealth, you should hold a third in land, a third in merchandise, and a third, as he put it, “at hand”, which means in cash. That is the so-called <em>one over <span class="math inline">\(n\)</span></em> strategy. If you have <span class="math inline">\(n\)</span> assets, you put an equal amount into each one. If you keep doing that, you’re not necessarily turning over your portfolio very frequently when you move from one allocation to the other over time. Is there a Confucian version? Not necessarily, but Confucius did say that we who will not economise will have to agonise. We might think of that when we refinance, especially in tail events like the current pandemic - recession - whatever.</p>
+<p>It is interesting that profit in prices in the NPV calculation we performed with Make-A-Pie is quadratic. When we go from the quadratic total profit to the marginal profit per unit we move to the linear. That was the big idea in optimization introduced in the 1870’s by Walras. What is new now? Life is truly not quadratic! Normal (Gaussian) distributions are quadratic. Markets are not. They are not symmetric, nor are our profit decisions. They are skewed, they have outliers. We could use this for inspiration here here as we expand our horizons and dialogue with Robert Hamilton in his Introduction to Merchandize (<span class="citation">Hamilton (<a href="#ref-Hamilton1777" role="doc-biblioref">1777</a>)</span>).</p>
+<p><img src="images/04/hamilton-quadratic-problems.jpg" /></p>
+<p>We have to remember when this was published! In this book are complete systems of trade, book keeping (double entry is the Italian approach used by Genovese bankers), probability (for annuities, pensions, forecasting), and, of course, solutions of simultaneous equations. Our task remains to build on this foundation. Our first stop will be Make-A-Pie’s inventory.</p>
+</div>
+<div id="making-dough" class="section level2">
+<h2><span class="header-section-number">5.2</span> Making dough</h2>
+<p>There are two outputs from the production of Make-A-Pie pies, fruit and savory pies. Our clients Toriere and Fazi want to be sure they can meet changes in demand, hold down storage and replenishment costs, save on space, and not invest too much in inventory. Quite an ask! Here is the set up.</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Decisions.</strong> Managers need to know how many fruit and savory pies to hold on hand to buffer changes in demand per week. If demand booms and production did not make enough pies, then inventory smooths the spike. If demand flags and there is too much inventory on hand, scarce short-term investment, and its financing, erodes costs and threatens profitability. With profitability threatened, plow back of earnings into the business for improvements and corrective maintenance is impaired. Is it possible to have negative and positive levels of ordering decisions? Why not, if it is possible to accept and not accept pies into inventory.</p></li>
+<li><p><strong>Criteria.</strong> Executives (Tortiere and Fazi) determine that the appropriate incentive for materials managers is the minimization of cost, without sacrificing quality of course, and numerous other constraints we will soon mention. There are several costs here. They usually are part of the <strong>cost of carry</strong>.</p></li>
+</ol>
+<ul>
+<li><p><em><strong>Production cost</strong></em>, is assessed per unit here simply the number of pies, both fruit and savory. Working backward into the production process there would also be dough is in pounds and fillings in gallons. Make-A-Pie learned long ago to separate materials production from pie production. In fact, they own the copyrights and patents to the production of their proprietary dough and pie fillings. They then designate contract manufacturers to produce the required ingredients. Of course, Make-A-Pie audits quality daily sometimes. For our purposes, and to answer Fazi’s question, we will focus on the inventory of pies.</p></li>
+<li><p><em><strong>Storage cost</strong></em>, also called <em>holding cost</em>, is also in fruit and savory pie units both per unit of time, a week in this case. What’s involved in storage? Space in square footage, walk-in refrigerators, shelving, temperature and humidity control, daily maintenance and cleaning, among others, all contribute to this cost. We also should include insurance and factoring costs, both financial. There is labor too, administrative tracking, maintenance of storage facilities, cleaning, inspection.</p></li>
+<li><p><em><strong>Replenishment cost</strong></em> occurs with any order whatever the size and is fixed per order. When inventory gets down to a <strong>safety stock</strong> level a **reorder point* triggers production of more pies. Demand for pies drives this cost. The demand rate is the ratio of demand to the order size, also known as the lot size.</p></li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li><em><strong>Constraints</strong></em> are legion! At first we will not use any explicit constraints to get the classic <strong>economic order quantity (EOQ)</strong> model. But they will exist. One certainly is the inter-holding period constraint where we have beginning inventory, add to the inventory and use the inventory during a holding period, and net out the level of ending of period inventory. Other constraints will arise from receiving (load dock comes to mind) and storage capacities including walk-in refrigerators and freezers, shelf-space, facility availability. Still others might be an exogenously required level of <strong>safety stock</strong> as insurance against forced outages of supplies.</li>
+</ol>
+<p>As we should always, we begin with a simple, but instructive, and even useful model for a decision maker.</p>
+<div id="model-me-an-eoq" class="section level3">
+<h3><span class="header-section-number">5.2.1</span> Model me an EOQ</h3>
+<p>First we draw a picture. Here is an influence diagram to help us model inventory order decisions. We might try this <a href="https://online.visual-paradigm.com/drive/#diagramlist:proj=0&amp;new=InfluenceDiagram">visual art site to make an influence diagram.</a> Barring that here is a hand-drawn diagram on a Microsoft white board.</p>
+<p><img src="images/04/eoq-diagram.jpg" /></p>
+<p>Aside from the scrawl all roads (arrows, that is) lead to the minimize total cost criterion for the manager. The three costs are at the next level, again, all pointing to the criterion hexagon. In this first exercise we will focus only on the pure inventory costs of storage (holding) and replenishment.</p>
+<ul>
+<li><p>The decision is the amount of the order in the green box, <span class="math inline">\(q_i\)</span> for <span class="math inline">\(i=1,2\)</span> where fruit is 1, savory is 2. If <span class="math inline">\(q_1=200\)</span> this means that the correct number of extra fruit pies to be made per week is 200 fruit pies. This is called the <strong>order quantity</strong>.</p></li>
+<li><p>Holding cost per unit <span class="math inline">\(h_i\)</span> times the average order <span class="math inline">\(q_i/2\)</span> across a holding period of a week feeds directly into the total cost criterion. If the total per pie holding cost of fruit pies is $50/pie, then the fruit pie holding cost is $h_i q_i = (0.60)(200) = $ $100,</p></li>
+<li><p>We also have two demands driving the need for inventory, <span class="math inline">\(d_i\)</span> for which when combined will eventually build a product mix of the two pie lines. The number of orders is the demand rate <span class="math inline">\(d_i/q_i\)</span>. If fruit pie demand <span class="math inline">\(d_1=11000\)</span> and fruit pie order level <span class="math inline">\(q_1=200\)</span> then the number of orders is <span class="math inline">\(d_i/q_i=10000/200=50\)</span> replenishments. If replenishment cost is fixed at We multiply the orders by the replenish cost per order <span class="math inline">\(k_i\)</span>. This creates the replenishment cost which feeds the total cost criterion.</p></li>
+<li><p>We leave purchase cost out of this initial analysis and give it over to the production for Make-A-Pie. We will come back to this portion of the analysis since we will eventually need to value this inventory.</p></li>
+</ul>
+<p>The total cost function so far is this expression for each <span class="math inline">\(q_i\)</span>. Since the cost <span class="math inline">\(C_i\)</span> for each pie simply adds together across the two pie products we really only need to look at one of the products at a time.</p>
+<p><span class="math display">\[
+\begin{align}
+C_i = h_i\left(\frac{q_i}{2}\right) + k_i\left(\frac{d_i}{q_i}\right)
+\end{align}
+\]</span></p>
+<p>We do not have any tradeoff between inventories of the two products in this version of the model. What determines the approximate location of a minimum cost is in the replenishment, or reordering of lot sizes, the second term. Total cost is the sum of all of the product inventory costs <span class="math inline">\(C_i\)</span>.</p>
+<p>We can find the marginal holding and replenishment costs of <span class="math inline">\(q_i\)</span> with this optimization. We drop the subscript to ease our notional anxieties, just for a moment. We first find the first derivatives of <span class="math inline">\(C\)</span> with respect to <span class="math inline">\(q\)</span>. This gives us the marginal impact of a change in <span class="math inline">\(q\)</span> on <span class="math inline">\(C\)</span>. We want to find that level of <span class="math inline">\(q\)</span> such that the impact of a small change in <span class="math inline">\(q\)</span> on <span class="math inline">\(C\)</span>. At this level of <span class="math inline">\(q\)</span>, in this case, <span class="math inline">\(C\)</span> will be at its very desireable lowest possible level.</p>
+<p><span class="math display">\[
+\begin{align}
+C &amp;= h\left(\frac{q}{2}\right) + k\left(\frac{d}{q}\right) \\
+\frac{dC}{dq} &amp;= \frac{h}{2} - k\left(\frac{d}{q^{2}}\right) = 0\\
+\frac{h}{2}   &amp;= k\left(\frac{d}{q^{2}}\right) \\
+q^2 &amp;= \frac{2kd}{h} \\
+q   &amp;= \sqrt{\frac{2kd}{h}}
+\end{align}
+\]</span></p>
+<p>This is the <strong>economic order quantity (EOQ)</strong> fabled since Ford W. <span class="citation">Harris (<a href="#ref-Harris1913" role="doc-biblioref">1913</a>)</span> asked how many parts should be made at one time, the economic lot size. Lot size, also known as the order size, increases with replenishment cost and demand and decreases with holding cost.</p>
+<p>Let’s take a look at a plot of holding, replenishment and total cost for <span class="math inline">\(h=0.75\)</span>, <span class="math inline">\(k=2.00\)</span> and <span class="math inline">\(D=7000\)</span>. The economic order quantity is calculated here.</p>
+<p><span class="math display">\[
+\begin{align}
+q^*   &amp;= \sqrt{\frac{2kd}{h}} \\
+      &amp;= \sqrt{\frac{2(2)(7000)}{0.75}} \\
+      &amp;= 193
+\end{align}
+\]</span></p>
+<p>And this is with rounding. When we substitute <span class="math inline">\(q^*=193\)</span> into the total cost expression we have the minimized total cost of a lot size <span class="math inline">\(C^*=145\)</span>.</p>
+<p><img src="images/04/eoq-graph.jpg" /></p>
+<p>Holding cost rises with order quantity in a nice straighline fashion from 0 so that the marginal holding cost is just <span class="math inline">\(h/2=0.375\)</span> per unit. Replenishment cost is a hyperbola whose slope <span class="math inline">\(-2/q^2\)</span> is the marginal replenishment cost per unit, a rapidly decreasing amount as <span class="math inline">\(q\)</span> approaches the holding cost line, thereafter declining at a declining rate. Total cost is not at all linear in <span class="math inline">\(q\)</span>. The non-linearity derives solely from the need to incorporate a demand per order cost to calculate replenishment.</p>
+<p>The optimal economic order quantity is the level of lot size where any further decrease in total cost equals any incremental or further increase in total cost, the bottom of the total cost curve. We should note that this optimal quantity occurs exactly where replenishment cost equals holding cost. EOQ implicitly takes into account the timing of reordering, the cost incurred to place and replenish an order, and the cost to store and hold product. If we constantly place small orders to maintain a specific inventory level, the ordering costs are higher, and there is a need for additional storage space. All of this sense was discovered by Ford and his colleagues.</p>
+<p>The EOQ formula assumes that consumer demand is constant. The calculation also assumes that both replenishment and holding costs remain constant. This fact makes it difficult or impossible for the formula to account for business events such as changing consumer demand, seasonal changes in inventory costs, lost sales revenue due to inventory shortages, or purchase discounts a company like Make-A-Pie might realize for buying or making inventory in larger quantities.</p>
+</div>
+<div id="implementing-the-simple-eoq" class="section level3">
+<h3><span class="header-section-number">5.2.2</span> Implementing the simple EOQ</h3>
+<p>Here is a Solver setup for the raw EOQ formula we just derived. All of the data we need is built into this setup.</p>
+<p><img src="images/04/eoq-simple-solver-setup.jpg" /></p>
+<p>We set total cost to be minimized by choosing the two decision cells. Since this is a non-linear optimization problem, Solver uses a gradient reduction approach. This method effectively uses a smart approximation iteration to get closer and closer to an optimal solution. We need to take care here as there might be other optimal solutons. There are no constraints, yet. We press OK and solve.</p>
+<p><img src="images/04/eoq-simple-solver.jpg" /></p>
+<p>Shown in row 11 is the EOQ formula we derived. Close enough for our purposes. We should, each week, be sure there is this amount of inventory available to manage these weekly demands, given this inventory cost structure.</p>
+<p>The costs of fruit and savory pie inventories can be visualized with this 2-dimensional grid of contours.</p>
+<p><img src="images/04/eoq-cost-graph.jpg" /></p>
+<p>We can locate the optimal lot sizes of fruit and savory pies somewhere in the middle of the yellow ochre blob. A brute force grid like this can be computationally and visually useful for a 2 product inventory. More products than that would be difficult if not impossible to visualize, even with our expansive imaginations.</p>
+</div>
+<div id="life-constrains-our-simple-model" class="section level3">
+<h3><span class="header-section-number">5.2.3</span> Life constrains our simple model</h3>
+<p>What happens when we have only so much cubic footage of storage space. Each pie package is about 3“x12”x12". This translates into 0.25 cubic feet. We might only have so much, so we create a constraint like this.</p>
+<p><span class="math display">\[
+a_1 q_l + a_2 q_2 \leq S
+\]</span></p>
+<p>where the coefficients on the <span class="math inline">\(q\)</span>s are the space occupied per pie and <span class="math inline">\(S\)</span> is the available space.</p>
+<p>Another wrinkle in the time-space continuum is financing of the inventory investment. We might suppose that Tortiere and Fazi set aside $800 per week to cover short-term, recurring inventory investment. How they come up with that amount is the subject of a financial management course. But here is where the purchase cost enters the inventory. To value the inventory, the inventory management effectively takes in inventory from production management at least at the variable cost per pie. This first-in-first-out FIFO valuation can be assailed on many accounts, again best left for a management accounting course. Here is the constraint.</p>
+<p><span class="math display">\[
+b_1 q_l + b_2 q_2 \leq I
+\]</span></p>
+<p>where the coefficients on the <span class="math inline">\(q\)</span>s are the variable production costs per pie and <span class="math inline">\(U\)</span> is the desired limit on inventory investment.</p>
+<p>In all its glory, here is the Solver setup for the revised EOQ model.</p>
+<p><img src="images/04/eoq-space-investment-setup.jpg" /></p>
+<p>Again we press OK, but also this time in the next dialogue request the Sensitivity Report. We get this solution.</p>
+<p><img src="images/04/eoq-space-investment-solution.jpg" /></p>
+<p>The constraints make the lot sizes smaller indeed. We should by now expect this. We notice that we have some space to spare, also known as <strong>slack</strong>. But we do use up our allocated investment funds for inventory.</p>
+<p>Remember that sensitivity report? Here it is.</p>
+<p><img src="images/04/eoq-space-investment-lagrange-multiplier.jpg" /></p>
+<p>THere is this new idea called the <strong>Lagrange Multiplier</strong> also known as the <strong>shadow price.</strong> It is zero for the space constraint since we do not use all of the space, there is some <strong>slack.</strong> On the other hand we use up all of the inventory investment funding. Whenever the right-hand side of a constraint is completely used, we can expect a Lagrange Multiplier to show up.</p>
+<p>Here is a little bit more than we have bargained for. We formulate a one constraint EOQ model by minimizing the cost function with a further cost (possibly benefit) to avoid exceeding the investment constraint only. We ignore the space constraint, since we already know we have enough, and more, space to go around.</p>
+<p>Since we only want to focus on the simplest version of this model for illustration, we train our sights on just one of the <span class="math inline">\(q\)</span>s, again. Even so, we have introduced a new variable into our midst, <span class="math inline">\(\lambda\)</span>. We take partial derivatives of cost first with respect to <span class="math inline">\(q\)</span>, for any level of <span class="math inline">\(\lambda\)</span>, the with respect to <span class="math inline">\(\lambda\)</span>, for any level of <span class="math inline">\(q\)</span>. We end up with two simultaneous equations in two unknowns, <span class="math inline">\(q\)</span> and <span class="math inline">\(\lambda\)</span> when we set the partial derivatives to zero. There will be an important insight waiting for us at the end of this tunnel.</p>
+<p><span class="math display">\[
+\begin{align}
+C &amp;= h\left(\frac{q}{2}\right) + k\left(\frac{d}{q}\right) +\lambda(I - bq) \\
+\frac{\partial C}{\partial q} &amp;= \frac{h}{2} - k\left(\frac{d}{q^{2}}\right) - \lambda b = 0\\
+\frac{\partial C}{\partial \lambda} &amp;= I - bq = 0
+\end{align}
+\]</span></p>
+<p>After some serious, and sometimes tedious, algebraic manipulation courtesy of al-Khwarizmi, we arrive at this solution.</p>
+<p><span class="math display">\[
+\begin{align}
+q^*      &amp;= \sqrt{\frac{2bkdI^2}{(b-h)I^2+2b^2d}} \\
+\lambda^* &amp;= \frac{h}{2b}-\frac{bkd}{I^2}
+\end{align}
+\]</span></p>
+<p>Yes, these are as beastly as any other equations we might have, or hope never to have, seen. We see that investment <span class="math inline">\(I\)</span> features prominently, as does demand. These large amounts are honed down by the marginal holding and replenishment costs. An increase in the spread between variable cost <span class="math inline">\(b\)</span> and holding rate <span class="math inline">\(h\)</span> will decrease the amount of the lot size needed to manage inventory.</p>
+<p>It is hard to say whether an increase in demand <span class="math inline">\(d\)</span> in the presence of this constraint will or will not increase lot sizes. It certainly decreases the marginal impact of an increase in inventory investment <span class="math inline">\(I\)</span> on cost, <span class="math inline">\(\lambda\)</span>. An increase in marginal holding costs also unambiguously increases the impact of investment on total cost. For our joint space and investment constraints, an increase of investment of $1 decreases costs by $0.06. This seems true unambiguously as well.<a href="#fn17" class="footnote-ref" id="fnref17"><sup>17</sup></a> This shadow price of inventory investment also looks like an interest rate (it is!). In fact this number is behind the use of inventory to collateralize short-term borrowing and lending operations.</p>
+</div>
+</div>
+<div id="back-to-the-future" class="section level2">
+<h2><span class="header-section-number">5.3</span> Back to the future</h2>
+<p>Tortiere and Fazi still need to plan for the future. They have figured out with us a way to express product mix, pricing, and inventory as decisions chosen to optimize relevant objective functions subject to various constraints. They still need guidance on longer term planning. They ask now for a multi-period production planning model.</p>
+<div id="bottom-line-up-front" class="section level3">
+<h3><span class="header-section-number">5.3.1</span> Bottom line up front</h3>
+<p>We are in luck! We have done this before. Most of the elements of such a model are present in previous models. Here is a template we can work from.</p>
+<p><img src="images/04/multi-prod-template.jpg" /></p>
+<p>Which layout should we choose?</p>
+<p>Here is a source-sink network representation of the model from a previous engagement.</p>
+<p><img src="images/04/multi-prod-network-old.jpg" /></p>
+<p><span class="math inline">\(P\)</span> is production, <span class="math inline">\(B\)</span> and <span class="math inline">\(I\)</span> are inventory, <span class="math inline">\(D\)</span> is demand, the sink. We will definitely need to clean this up. We will use it to scope out the data we need and the client’s requirements at the same time.</p>
+<p>In a network like this a common, if not also neutral, node is the source. Its links point to the 6 production periods with ranges of potential production at a production cost, or it could be profit. Networks represent flows from and to common and disparate nodes. Each edge is an amount or condition flowing. The arrows indicate the direction of flow and thus by convention the sign of an amount of flow. Graphical representations like these help us understand complex relationships like feed forward and feed back flows. We know these relationships in algebra as simultaneous equations.</p>
+<p>At period 1 initial production along with initial inventory feed demand. What is left over from demand leaves period 1 as ending inventory at a holding cost becoming the beginning inventory into period 2. Potential production enters period 2 with beginning inventory to meet outgoing period 2 demand. Again what is left over is inventory and a holding cost to the next period node and so on to the final inventory leaving the period 6 node. The algebra of the node is arrows into a node will sign positive while arrows from a node will sign negative.</p>
+</div>
+<div id="tighter-and-tighter" class="section level3">
+<h3><span class="header-section-number">5.3.2</span> Tighter, and tighter</h3>
+<p>Here is a tighter formulation that may suit us. We forecast that customers demand <span class="math inline">\(D_1,\ldots, D_T\)</span> be the demands for the next <span class="math inline">\(T\)</span> periods. For our purposes <span class="math inline">\(T=6\)</span> weeks. When we get to simulation we will assume that the <span class="math inline">\(D_t\)</span>’s are independent random variables, and that all stockouts are backordered. We will let <span class="math inline">\(c_t\)</span> denote the unit purchase cost in period <span class="math inline">\(t\)</span>, and let <span class="math inline">\(x_t\)</span> denote the inventory level at the beginning of period <span class="math inline">\(t\)</span>, where a positive <span class="math inline">\(x_t\)</span> means that <span class="math inline">\(x_t\)</span> units of inventory are carried from the previous period, and a negative <span class="math inline">\(x_t\)</span> is a backlog of <span class="math inline">\(−x_t\)</span> units is carried from the previous period.</p>
+<p>We can produce, or contract with a product to procure, <span class="math inline">\(y_t\)</span>. With these conventions then <span class="math inline">\(y_t −x_t ≥ 0\)</span> is the size of the order, the lot size in in period <span class="math inline">\(t\)</span> with procurement cost <span class="math inline">\(c_t(y_t − x_t)\)</span> and an increase of the inventory level to <span class="math inline">\(y_t\)</span>. Since customers demand <span class="math inline">\(D_t\)</span> units during the period, the inventory level at the beginning of period <span class="math inline">\(t + 1\)</span> is then this expression.</p>
+<p><span class="math display">\[
+x_{t+1} = y_t − D_t.
+\]</span>
+If <span class="math inline">\(y_t = y\)</span> the loss function in period t is given by</p>
+<p><span class="math display">\[
+G_t(y) = h_tE(y − D_t)_+ + k_tE(D_t − y)_+
+\]</span></p>
+<p>We use subscripted <span class="math inline">\(+\)</span> strokes to avoid writing this expression repeatedly.</p>
+<p><span class="math display">\[
+(b-a)_+ = max(0, b-a)
+\]</span></p>
+<p>If we take expectations as perfectly fulfilled, then our model has no so-called randomness, becomes nicely deterministic, and perhaps a little rosier, for now.</p>
+<p>Let’s bring money to the table. Economic losses include the costs of holding and setting up, replenishing, back ordering, whatever vocabulary we use, of inventory. This situation is just like the myopic, period by period, static approach we used for the economic order quantity of <span class="citation">Harris (<a href="#ref-Harris1913" role="doc-biblioref">1913</a>)</span>. We have finally introduced here <span class="math inline">\(h_t\)</span> as the holding cost per unit of any positive levels of inventory on hand and and <span class="math inline">\(k_t\)</span> as the replenishment, or some might say, the back order cost. In contracts <span class="math inline">\(k_t\)</span> could be in a penalty or breakage clause as well. We attempt to find the policy, that is, the time path, for managing inventory from time <span class="math inline">\(t=1\)</span> to time <span class="math inline">\(t=T\)</span> in our formulation. If we extinguish inventory, or at least factor it out and sell it at time <span class="math inline">\(t=T+1\)</span>, then we would in that time produce more or reimburse customers for funding any backlogs.</p>
+<p>We now formulate our multi-period production plan.</p>
+<p><strong>Decisions</strong> include the path of production, or contract production known as procurement and even tolling, <span class="math inline">\(y_t\)</span> from time <span class="math inline">\(t=1\)</span> to the finite horizon <span class="math inline">\(t=T\)</span>, which in our problem is 6 weeks.</p>
+<p><strong>Criterion</strong> is just to minimize costs. We must set out our criterion equation. It gets a bit messy, but says it all. For the moment we will inventory management’s life on the job be very rosy indeed by the gift of <span class="math inline">\(k_t=0\)</span>. We will see that this artifice will straighten any quadratic lines.</p>
+<p><span class="math display">\[
+min_{y_t \geq x_t} \Sigma_{t=1}^{t=T} \left(c_t y_t + h_t \left(\frac{x_t + x_{t-1}}{2}\right)\right)
+\]</span></p>
+<p><strong>Constraints</strong> (and oops we already have at least one buried in the criterion) include any upper and lower bounds on production, inventory (for space and funding reasons at the least), as well as the relationship between current and past inventory levels.</p>
+<p><span class="math display">\[
+\begin{align}
+y_{min} &amp;\leq y_t \leq y_{max} &amp; (C1)\\
+x_{min} &amp;\leq x_t \leq x_{max} &amp; (C2)\\
+x_t &amp;= x_{t-1} + y_{t-1} - D_{t-1} &amp; (C3)\\
+x_0 &amp;= x &amp; (C4)
+\end{align}
+\]</span></p>
+<p>The first two constraints, C1 and C2, just set the stage for bounding a decision in practical life. We have only so much production capacity and so much space to store inventory. These are easy ways to express much more difficult to formulate ideas, including space and capacity decisions.</p>
+<p>The third constraint C3 is the kicker. It allows decisions in one week to affect a decision in another week. This moves us into the much more complex realm of far-sighted rather than the myopia of the static EOQ.</p>
+<p>The fourth constraint C4 means we have to seed the process of decision making with a beginning inventory, an initial value. If this sounds like differential equations, it is, except we use the discretization of derivatives known as differences. We will also in our implementation hold the holding cost <span class="math inline">\(h_t\)</span> and the variable cost of production
+<span class="math inline">\(c_t\)</span> constant.</p>
+</div>
+<div id="implementing-the-model" class="section level3">
+<h3><span class="header-section-number">5.3.3</span> Implementing the model</h3>
+<p>We use the template, repurpose it, and input the data from reports which CFO Fazi provide. Here is a summary of her report.</p>
+<p><img src="images/04/multi-prod-data.jpg" /></p>
+<p>We have 6 weeks in the planning cycle. A large beginning inventory seems to consume funding, space, and the attention of management disproportionately to production. Both Tortiere and Fazi realize this and want us to help pare this level down. The problem is how low? They contend that the fragility of their products requires special handling, storage, and then there is shrinkage of product in inventory. So the only way to contend with high storage costs per unit is to constrict the volume, while still meeting demand and within the constraints imposed by production. In week 3 they forecast a partial shut-down of production facilities to refit and upgrade equipment.</p>
+</div>
+<div id="a-revised-rendering" class="section level3">
+<h3><span class="header-section-number">5.3.4</span> A revised rendering</h3>
+<p>In conversations with Tortiere, Fazi and their colleagues we draw this map of the model.</p>
+<p><img src="images/04/mult-prod-network.jpg" /></p>
+<p>Sources are from production and appear in squares. Demands are sinks in triangles. They flow into and out from period nodes in circles. Each period node links to past and future adjacent nodes. They follow the algebraic model. We notice from the discussion to use the average inventory across a period to assess holding period cost. Fazi wants, for the time being, to prescind from replenishment lot sizes.</p>
+<p>We use the report and the flow network to develop this worksheet model. Here is the Excel Solver setup.</p>
+<p><img src="images/04/multi-prod-solver-setup.jpg" /></p>
+<p>We also notice a late request to require a <span class="math inline">\(b = 10\)</span>% of demand per period safety stock. This is the constraint. We use a <span class="math inline">\(\geq\)</span> relationship since a requirement is a matter of have at least a certain level of inventory on hand.</p>
+<p><span class="math display">\[
+x_t \geq bD_t
+\]</span></p>
+<p>The request for this constraint may be result of Fazi’s recent conversations with Make-A-Pie’s insurance broker about the coverage for the high level of inventory investment. If Make-A-Pie internally reserves some production, the insurance policy might be able to reduce, or at least not increase, the deductible for inventory losses. In this way safety stock can act as self-insurance.</p>
+<p>Now for the final model, and this only the beginning of our analysis.</p>
+<p><img src="images/04/multi-prod-model.jpg" /></p>
+<p>We do not violate any constraints. We have reduced inventory and inventory cost. We have a multiperiod production plan whose path depends on past and future demand. We also notice we have almost double the warehouse space needed to fulfill demand, production, and inventory requirements.</p>
+</div>
+</div>
+<div id="next-steps" class="section level2">
+<h2><span class="header-section-number">5.4</span> Next steps?</h2>
+<p>Of course we will find the breaking points of this model. We can render a sensitivity analysis report, attempt to understand the range of values production, and by deduction inventory, policy can evolve. What would happen if Make-A-Pie expands to all five boroughs of NYC and Westchester and Long Island? What would happen if Make-A-Pie grows new lines of business? How would we model these questions?</p>
+</div>
+<div id="references-and-endnotes" class="section level2">
+<h2><span class="header-section-number">5.5</span> References and endnotes</h2>
+
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-Hamilton1777">
+<p>Hamilton, Robert. 1777. <em>Introduction to Merchandize</em>. <a href="https://ia800309.us.archive.org/6/items/anintroductiont00hamigoog/anintroductiont00hamigoog.pdf">https://ia800309.us.archive.org/6/items/anintroductiont00hamigoog/anintroductiont00hamigoog.pdf</a>.</p>
+</div>
+<div id="ref-Harris1913">
+<p>Harris, Ford W. 1913. “How Many Parts to Make at Once.” <em>Factory, the Magazine of Management</em> 10 (2): 135–36, 152.</p>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="17">
+<li id="fn17"><p>If we are bold, we might calculate the rate of change of cost minimizing <span class="math inline">\(\lambda\)</span> with respect to inventory investment <span class="math inline">\(I\)</span>. That operation guves us
+<span class="math display">\[
+\frac{d \lambda^*}{dI} = \frac{bkd}{I^3}
+\]</span>
+So that the rise over run of inventory impact on cost will be always negative in this model as it is inversely related to changes in <span class="math inline">\(\lambda^*\)</span>.
+We should plug some numbers into these formula. That is a great exercise for the less faint of algebraic heart among us. Toy models like this at least give us some insight into what might or might not impact total inventory cost. More constraints, more products in inventory, seemingly add to the complexity of the model, but these general relationships will continue to hold mostly.<a href="expanding-horizons.html#fnref17" class="footnote-back">↩</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="bringing-pie-to-earth.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="case-pricing-production-at-make-a-pie.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["book-decision.pdf", "book-decision.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

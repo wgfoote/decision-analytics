@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 10 Vegan Workers Insurance Fund: case and notes" | Decision Modeling with Spreadsheets</title>
+  <meta name="description" content="This is a spreadsheet version of every management science book out there, less all of the detail." />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 10 Vegan Workers Insurance Fund: case and notes" | Decision Modeling with Spreadsheets" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a spreadsheet version of every management science book out there, less all of the detail." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 10 Vegan Workers Insurance Fund: case and notes" | Decision Modeling with Spreadsheets" />
+  
+  <meta name="twitter:description" content="This is a spreadsheet version of every management science book out there, less all of the detail." />
+  
+
+<meta name="author" content="William G. Foote" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="case-forecasting-workers-compensation-claims.html"/>
+<link rel="next" href="references.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Decision Modeling with Spreadsheets</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prolegomena</a></li>
+<li class="chapter" data-level="" data-path="part-1-spreadsheet-engineering.html"><a href="part-1-spreadsheet-engineering.html"><i class="fa fa-check"></i>Part 1 – Spreadsheet Engineering</a></li>
+<li class="chapter" data-level="1" data-path="spreadsheet1.html"><a href="spreadsheet1.html"><i class="fa fa-check"></i><b>1</b> Tortuous Pie-making in the Sky</a><ul>
+<li class="chapter" data-level="1.1" data-path="spreadsheet1.html"><a href="spreadsheet1.html#spreadsheets-really"><i class="fa fa-check"></i><b>1.1</b> Spreadsheets? Really?</a></li>
+<li class="chapter" data-level="1.2" data-path="spreadsheet1.html"><a href="spreadsheet1.html#questions-questions"><i class="fa fa-check"></i><b>1.2</b> Questions, questions</a></li>
+<li class="chapter" data-level="1.3" data-path="spreadsheet1.html"><a href="spreadsheet1.html#count-the-errors-of-our-ways"><i class="fa fa-check"></i><b>1.3</b> Count the errors of our ways</a></li>
+<li class="chapter" data-level="1.4" data-path="spreadsheet1.html"><a href="spreadsheet1.html#prevailing-recommended-practices"><i class="fa fa-check"></i><b>1.4</b> Prevailing recommended practices</a><ul>
+<li class="chapter" data-level="1.4.1" data-path="spreadsheet1.html"><a href="spreadsheet1.html#do-not-ever-do-this"><i class="fa fa-check"></i><b>1.4.1</b> Do not ever do this</a></li>
+<li class="chapter" data-level="1.4.2" data-path="spreadsheet1.html"><a href="spreadsheet1.html#instead-practice-these"><i class="fa fa-check"></i><b>1.4.2</b> Instead practice these</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="spreadsheet1.html"><a href="spreadsheet1.html#pie-in-the-sky"><i class="fa fa-check"></i><b>1.5</b> Pie-in-the-Sky</a></li>
+<li class="chapter" data-level="1.6" data-path="spreadsheet1.html"><a href="spreadsheet1.html#wheres-the-paper-and-pencils"><i class="fa fa-check"></i><b>1.6</b> Where’s the paper and pencils?</a></li>
+<li class="chapter" data-level="1.7" data-path="spreadsheet1.html"><a href="spreadsheet1.html#cost-and-volume"><i class="fa fa-check"></i><b>1.7</b> Cost and volume</a></li>
+<li class="chapter" data-level="1.8" data-path="spreadsheet1.html"><a href="spreadsheet1.html#demand-analysis"><i class="fa fa-check"></i><b>1.8</b> Demand analysis</a></li>
+<li class="chapter" data-level="1.9" data-path="spreadsheet1.html"><a href="spreadsheet1.html#weekly-profit"><i class="fa fa-check"></i><b>1.9</b> Weekly profit</a></li>
+<li class="chapter" data-level="1.10" data-path="spreadsheet1.html"><a href="spreadsheet1.html#profit-sensitivity-to-price"><i class="fa fa-check"></i><b>1.10</b> Profit sensitivity to price</a></li>
+<li class="chapter" data-level="1.11" data-path="spreadsheet1.html"><a href="spreadsheet1.html#lo-and-behold"><i class="fa fa-check"></i><b>1.11</b> Lo and behold</a></li>
+<li class="chapter" data-level="1.12" data-path="spreadsheet1.html"><a href="spreadsheet1.html#references-and-endnotes"><i class="fa fa-check"></i><b>1.12</b> References and endnotes</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html"><i class="fa fa-check"></i><b>2</b> Chaotic Pie-making in the Sky"</a><ul>
+<li class="chapter" data-level="2.1" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#how-many"><i class="fa fa-check"></i><b>2.1</b> How many?</a></li>
+<li class="chapter" data-level="2.2" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#whats-new"><i class="fa fa-check"></i><b>2.2</b> What’s new?</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#the-costs-they-are-a-changing"><i class="fa fa-check"></i><b>2.2.1</b> The costs they are a-changing</a></li>
+<li class="chapter" data-level="2.2.2" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#demand-takes-a-step-back"><i class="fa fa-check"></i><b>2.2.2</b> Demand takes a step back</a></li>
+<li class="chapter" data-level="2.2.3" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#a-new-profit-dawning"><i class="fa fa-check"></i><b>2.2.3</b> A new profit dawning</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#an-algebra-of-pie"><i class="fa fa-check"></i><b>2.3</b> An algebra of pie</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#a-little-lite-algebra"><i class="fa fa-check"></i><b>2.3.1</b> A little lite algebra</a></li>
+<li class="chapter" data-level="2.3.2" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#pvs-last-stand"><i class="fa fa-check"></i><b>2.3.2</b> PV’s last stand</a></li>
+<li class="chapter" data-level="2.3.3" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#the-model-in-the-mist"><i class="fa fa-check"></i><b>2.3.3</b> The model in the mist</a></li>
+<li class="chapter" data-level="2.3.4" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#how-sensitive"><i class="fa fa-check"></i><b>2.3.4</b> How sensitive?</a></li>
+<li class="chapter" data-level="2.3.5" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#one-way-or-the-other"><i class="fa fa-check"></i><b>2.3.5</b> One way or the other</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#lo-and-behold-yet-again"><i class="fa fa-check"></i><b>2.4</b> Lo and behold yet again</a></li>
+<li class="chapter" data-level="2.5" data-path="spreadsheet1.html"><a href="spreadsheet1.html#references-and-endnotes"><i class="fa fa-check"></i><b>2.5</b> References and endnotes</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="case-salmerón-solar-systems-llc.html"><a href="case-salmerón-solar-systems-llc.html"><i class="fa fa-check"></i><b>3</b> Case: Salmerón Solar Systems LLC</a><ul>
+<li class="chapter" data-level="3.1" data-path="case-salmerón-solar-systems-llc.html"><a href="case-salmerón-solar-systems-llc.html#photovoltaic-systems"><i class="fa fa-check"></i><b>3.1</b> Photovoltaic systems</a></li>
+<li class="chapter" data-level="3.2" data-path="case-salmerón-solar-systems-llc.html"><a href="case-salmerón-solar-systems-llc.html#the-particulars"><i class="fa fa-check"></i><b>3.2</b> The particulars</a></li>
+<li class="chapter" data-level="3.3" data-path="case-salmerón-solar-systems-llc.html"><a href="case-salmerón-solar-systems-llc.html#some-definitions-are-in-order"><i class="fa fa-check"></i><b>3.3</b> Some definitions are in order</a></li>
+<li class="chapter" data-level="3.4" data-path="case-salmerón-solar-systems-llc.html"><a href="case-salmerón-solar-systems-llc.html#requirements"><i class="fa fa-check"></i><b>3.4</b> Requirements</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="part-2-optimization.html"><a href="part-2-optimization.html"><i class="fa fa-check"></i>Part 2 – Optimization</a></li>
+<li class="chapter" data-level="4" data-path="bringing-pie-to-earth.html"><a href="bringing-pie-to-earth.html"><i class="fa fa-check"></i><b>4</b> Bringing Pie to Earth</a><ul>
+<li class="chapter" data-level="4.1" data-path="bringing-pie-to-earth.html"><a href="bringing-pie-to-earth.html#it-all-started-here"><i class="fa fa-check"></i><b>4.1</b> It all started here</a></li>
+<li class="chapter" data-level="4.2" data-path="bringing-pie-to-earth.html"><a href="bringing-pie-to-earth.html#from-humble-beginnings"><i class="fa fa-check"></i><b>4.2</b> From humble beginnings</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="bringing-pie-to-earth.html"><a href="bringing-pie-to-earth.html#decisions-decisions"><i class="fa fa-check"></i><b>4.2.1</b> 1. Decisions, decisions</a></li>
+<li class="chapter" data-level="4.2.2" data-path="bringing-pie-to-earth.html"><a href="bringing-pie-to-earth.html#resources-they-are-aconstraining"><i class="fa fa-check"></i><b>4.2.2</b> 2. Resources they are a’constraining</a></li>
+<li class="chapter" data-level="4.2.3" data-path="bringing-pie-to-earth.html"><a href="bringing-pie-to-earth.html#not-without-constraint"><i class="fa fa-check"></i><b>4.2.3</b> 3. Not without constraint</a></li>
+<li class="chapter" data-level="4.2.4" data-path="bringing-pie-to-earth.html"><a href="bringing-pie-to-earth.html#let-us-eat-pie"><i class="fa fa-check"></i><b>4.2.4</b> Let us eat pie</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="bringing-pie-to-earth.html"><a href="bringing-pie-to-earth.html#an-easier-way"><i class="fa fa-check"></i><b>4.3</b> An easier way?</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="expanding-horizons.html"><a href="expanding-horizons.html"><i class="fa fa-check"></i><b>5</b> Expanding horizons</a><ul>
+<li class="chapter" data-level="5.1" data-path="expanding-horizons.html"><a href="expanding-horizons.html#didos-bullhide"><i class="fa fa-check"></i><b>5.1</b> Dido’s bullhide</a></li>
+<li class="chapter" data-level="5.2" data-path="expanding-horizons.html"><a href="expanding-horizons.html#making-dough"><i class="fa fa-check"></i><b>5.2</b> Making dough</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="expanding-horizons.html"><a href="expanding-horizons.html#model-me-an-eoq"><i class="fa fa-check"></i><b>5.2.1</b> Model me an EOQ</a></li>
+<li class="chapter" data-level="5.2.2" data-path="expanding-horizons.html"><a href="expanding-horizons.html#implementing-the-simple-eoq"><i class="fa fa-check"></i><b>5.2.2</b> Implementing the simple EOQ</a></li>
+<li class="chapter" data-level="5.2.3" data-path="expanding-horizons.html"><a href="expanding-horizons.html#life-constrains-our-simple-model"><i class="fa fa-check"></i><b>5.2.3</b> Life constrains our simple model</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="expanding-horizons.html"><a href="expanding-horizons.html#back-to-the-future"><i class="fa fa-check"></i><b>5.3</b> Back to the future</a><ul>
+<li class="chapter" data-level="5.3.1" data-path="expanding-horizons.html"><a href="expanding-horizons.html#bottom-line-up-front"><i class="fa fa-check"></i><b>5.3.1</b> Bottom line up front</a></li>
+<li class="chapter" data-level="5.3.2" data-path="expanding-horizons.html"><a href="expanding-horizons.html#tighter-and-tighter"><i class="fa fa-check"></i><b>5.3.2</b> Tighter, and tighter</a></li>
+<li class="chapter" data-level="5.3.3" data-path="expanding-horizons.html"><a href="expanding-horizons.html#implementing-the-model"><i class="fa fa-check"></i><b>5.3.3</b> Implementing the model</a></li>
+<li class="chapter" data-level="5.3.4" data-path="expanding-horizons.html"><a href="expanding-horizons.html#a-revised-rendering"><i class="fa fa-check"></i><b>5.3.4</b> A revised rendering</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="expanding-horizons.html"><a href="expanding-horizons.html#next-steps"><i class="fa fa-check"></i><b>5.4</b> Next steps?</a></li>
+<li class="chapter" data-level="5.5" data-path="spreadsheet1.html"><a href="spreadsheet1.html#references-and-endnotes"><i class="fa fa-check"></i><b>5.5</b> References and endnotes</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="case-pricing-production-at-make-a-pie.html"><a href="case-pricing-production-at-make-a-pie.html"><i class="fa fa-check"></i><b>6</b> Case: Pricing Production at Make-A-Pie</a><ul>
+<li class="chapter" data-level="6.1" data-path="case-pricing-production-at-make-a-pie.html"><a href="case-pricing-production-at-make-a-pie.html#front-matter"><i class="fa fa-check"></i><b>6.1</b> Front matter</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="part-3-simulation.html"><a href="part-3-simulation.html"><i class="fa fa-check"></i>Part 3 – Simulation</a></li>
+<li class="chapter" data-level="7" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html"><i class="fa fa-check"></i><b>7</b> Waiting for the Simulation</a><ul>
+<li class="chapter" data-level="7.1" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#a-story-of-chance"><i class="fa fa-check"></i><b>7.1</b> A story of chance</a></li>
+<li class="chapter" data-level="7.2" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#a-piece-of-pie-please"><i class="fa fa-check"></i><b>7.2</b> A piece of pie, please</a></li>
+<li class="chapter" data-level="7.3" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#a-brief-interlude-with-cholesky"><i class="fa fa-check"></i><b>7.3</b> A brief interlude with Cholesky</a></li>
+<li class="chapter" data-level="7.4" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#solution"><i class="fa fa-check"></i><b>7.4</b> Solution</a></li>
+<li class="chapter" data-level="7.5" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#now-we-can-simulate"><i class="fa fa-check"></i><b>7.5</b> Now we can simulate</a><ul>
+<li class="chapter" data-level="7.5.1" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#excel-or-bust"><i class="fa fa-check"></i><b>7.5.1</b> Excel or bust!</a></li>
+</ul></li>
+<li class="chapter" data-level="7.6" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#back-to-the-eatery-robot"><i class="fa fa-check"></i><b>7.6</b> Back to the eatery robot</a><ul>
+<li class="chapter" data-level="7.6.1" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#the-main-course"><i class="fa fa-check"></i><b>7.6.1</b> The main course</a></li>
+<li class="chapter" data-level="7.6.2" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#exploring-wait-times"><i class="fa fa-check"></i><b>7.6.2</b> Exploring wait times</a></li>
+</ul></li>
+<li class="chapter" data-level="7.7" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#any-next-steps"><i class="fa fa-check"></i><b>7.7</b> Any next steps?</a></li>
+<li class="chapter" data-level="7.8" data-path="spreadsheet1.html"><a href="spreadsheet1.html#references-and-endnotes"><i class="fa fa-check"></i><b>7.8</b> References and endnotes</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="the-outer-limits.html"><a href="the-outer-limits.html"><i class="fa fa-check"></i><b>8</b> The Outer Limits</a><ul>
+<li class="chapter" data-level="8.1" data-path="the-outer-limits.html"><a href="the-outer-limits.html#tales-of-tails"><i class="fa fa-check"></i><b>8.1</b> Tales of tails</a></li>
+<li class="chapter" data-level="8.2" data-path="the-outer-limits.html"><a href="the-outer-limits.html#it-always-starts-with-data"><i class="fa fa-check"></i><b>8.2</b> It always starts with data</a></li>
+<li class="chapter" data-level="8.3" data-path="the-outer-limits.html"><a href="the-outer-limits.html#a-distribution-to-remember"><i class="fa fa-check"></i><b>8.3</b> A distribution to remember</a></li>
+<li class="chapter" data-level="8.4" data-path="the-outer-limits.html"><a href="the-outer-limits.html#what-does-it-all-mean-so-far"><i class="fa fa-check"></i><b>8.4</b> What does it all mean, so far?</a></li>
+<li class="chapter" data-level="8.5" data-path="the-outer-limits.html"><a href="the-outer-limits.html#the-joints-ajumpin"><i class="fa fa-check"></i><b>8.5</b> The joint’s ajumpin’</a></li>
+<li class="chapter" data-level="8.6" data-path="the-outer-limits.html"><a href="the-outer-limits.html#a-sinking-feeling"><i class="fa fa-check"></i><b>8.6</b> A sinking feeling?</a></li>
+<li class="chapter" data-level="8.7" data-path="the-outer-limits.html"><a href="the-outer-limits.html#simuluate-and-stimulate"><i class="fa fa-check"></i><b>8.7</b> Simuluate and stimulate</a></li>
+<li class="chapter" data-level="8.8" data-path="the-outer-limits.html"><a href="the-outer-limits.html#finally-exhaustively-where-are-the-results"><i class="fa fa-check"></i><b>8.8</b> Finally, exhaustively, where are the results?</a></li>
+<li class="chapter" data-level="8.9" data-path="spreadsheet1.html"><a href="spreadsheet1.html#references-and-endnotes"><i class="fa fa-check"></i><b>8.9</b> References and endnotes</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="case-forecasting-workers-compensation-claims.html"><a href="case-forecasting-workers-compensation-claims.html"><i class="fa fa-check"></i><b>9</b> Case: Forecasting Workers Compensation Claims</a><ul>
+<li class="chapter" data-level="9.1" data-path="case-forecasting-workers-compensation-claims.html"><a href="case-forecasting-workers-compensation-claims.html#some-background"><i class="fa fa-check"></i><b>9.1</b> Some background</a></li>
+<li class="chapter" data-level="9.2" data-path="case-forecasting-workers-compensation-claims.html"><a href="case-forecasting-workers-compensation-claims.html#the-ask"><i class="fa fa-check"></i><b>9.2</b> The ask</a></li>
+<li class="chapter" data-level="9.3" data-path="case-forecasting-workers-compensation-claims.html"><a href="case-forecasting-workers-compensation-claims.html#some-requirements"><i class="fa fa-check"></i><b>9.3</b> Some requirements</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="vegan-workers-insurance-fund-case-and-notes.html"><a href="vegan-workers-insurance-fund-case-and-notes.html"><i class="fa fa-check"></i><b>10</b> Vegan Workers Insurance Fund: case and notes"</a><ul>
+<li class="chapter" data-level="10.1" data-path="the-outer-limits.html"><a href="the-outer-limits.html#tales-of-tails"><i class="fa fa-check"></i><b>10.1</b> Tales of tails</a></li>
+<li class="chapter" data-level="10.2" data-path="the-outer-limits.html"><a href="the-outer-limits.html#it-always-starts-with-data"><i class="fa fa-check"></i><b>10.2</b> It always starts with data</a></li>
+<li class="chapter" data-level="10.3" data-path="the-outer-limits.html"><a href="the-outer-limits.html#a-distribution-to-remember"><i class="fa fa-check"></i><b>10.3</b> A distribution to remember</a></li>
+<li class="chapter" data-level="10.4" data-path="the-outer-limits.html"><a href="the-outer-limits.html#what-does-it-all-mean-so-far"><i class="fa fa-check"></i><b>10.4</b> What does it all mean, so far?</a></li>
+<li class="chapter" data-level="10.5" data-path="vegan-workers-insurance-fund-case-and-notes.html"><a href="vegan-workers-insurance-fund-case-and-notes.html#the-joint-continues-to-jump"><i class="fa fa-check"></i><b>10.5</b> The joint continues to jump</a></li>
+<li class="chapter" data-level="10.6" data-path="the-outer-limits.html"><a href="the-outer-limits.html#a-sinking-feeling"><i class="fa fa-check"></i><b>10.6</b> A sinking feeling?</a></li>
+<li class="chapter" data-level="10.7" data-path="the-outer-limits.html"><a href="the-outer-limits.html#simuluate-and-stimulate"><i class="fa fa-check"></i><b>10.7</b> Simuluate and stimulate</a></li>
+<li class="chapter" data-level="10.8" data-path="the-outer-limits.html"><a href="the-outer-limits.html#finally-exhaustively-where-are-the-results"><i class="fa fa-check"></i><b>10.8</b> Finally, exhaustively, where are the results?</a></li>
+<li class="chapter" data-level="10.9" data-path="vegan-workers-insurance-fund-case-and-notes.html"><a href="vegan-workers-insurance-fund-case-and-notes.html#another-scenario-emerges"><i class="fa fa-check"></i><b>10.9</b> Another scenario emerges</a></li>
+<li class="chapter" data-level="10.10" data-path="spreadsheet1.html"><a href="spreadsheet1.html#references-and-endnotes"><i class="fa fa-check"></i><b>10.10</b> References and endnotes</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/wgfoote/book-decision-modeling" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Decision Modeling with Spreadsheets</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="vegan-workers-insurance-fund-case-and-notes" class="section level1">
+<h1><span class="header-section-number">Chapter 10</span> Vegan Workers Insurance Fund: case and notes"</h1>
+<script>
+function showText(y) {
+    var x = document.getElementById(y);
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+<div id="tales-of-tails" class="section level2">
+<h2><span class="header-section-number">10.1</span> Tales of tails</h2>
+<p>Let’s set the scene. Make-a-Pie CEO and owner Simone Tortiere meets regularly with other vegan food company owners. This month their agenda covers the rising incidence of and cost of covering workers compensation claims. A claim arises when a worker, on the job, becomes disabled for any reason. The <a href="https://ww3.nysif.com/Home/Employer/LookingForInsurance/NYSIFInsurancePlans">New York State Insurance Fund (NYSIF)</a> offers several plans and products to employer policy-holders. The vegan company owners around the table at host <a href="http://www.candle79.com/">Candle Cafe</a> try to get a handle on claims, rejection of claims, required drug formularies and treatment codes, increasing cost of disability, loss of key personnel, among other things. The COVID-19 pandemic alone has raised costs of production and service by over 30%. Workers comp claims have kept pace with this rise.</p>
+<p>Many of the vegan businesses are NYSIF policy-holders. For example, if a covered worker falls, has extended health issues, the fund will cover expenses for a specific time frame, using specified drug and other therapy treatments, all under the direction of NYSIF medical associates. Premiums will undoubtedly rise with more claims experience. Safety Group plans, while paying dividends to policy-holders with relatively low claims experiences, often groups all food-related workers into one class. This may, or may not, disadvantage the vegan food industry.</p>
+<p>The group decides on this course of action.</p>
+<ul>
+<li><p>Gather workers compensation claims experience across the group</p></li>
+<li><p>Attempt to model future claims to understand the range and shape of the distribution of claims, all based on existing claims experience</p></li>
+<li><p>Use the future claims model to simulate a self-insurance portfolio</p></li>
+<li><p>Suggest and implement two scenarios to sensitize the group to alternative approaches to funding</p></li>
+</ul>
+<p>All of this is a very tall order for experts in vegan food production and service. Tortiere has already talked to her Bronx consultants Rose Mascetti and Marie Ortiz (Mascetti-Ortiz Analytics) about the issues. They have already provided valuable advice and plans for production, pricing, and strategies for expansion of the business. Tortiere recommends to her colleagues that Mascetti-Ortiz Analytics service can at least start to structure the group’s next conversation in a month with some provisional results. The vegan food employers annoint a sub-committee to commission the work. They call themselves the Vegan Workers Group.</p>
+</div>
+<div id="it-always-starts-with-data" class="section level2">
+<h2><span class="header-section-number">10.2</span> It always starts with data</h2>
+<p>We work with Rose and Marie on their analytics team. Does the analysis always start with data? Not really, because we actually begin with Tortiere’s question: can we insure ourselves and be better off? To help answer this question we begin our analysis by gathering 12 years of annual workers claim experience from several of the vegan establishments.</p>
+<p><img src="images/claims-data.jpg" /></p>
+<p>This is only a small sample of owners experience, all in hundreds of thousands of dollars. We visualize the times series.</p>
+<p><img src="images/claims-eda.jpg" /></p>
+<p>Two patterns emerge. There seems to be a base-line of claims experiences. But there are several very large experiences as well. We ask is there some sort of threshold that splits the analysis of claims experience?</p>
+<p>We know from our business analytics experience that a well-known exploratory technique exists to examine the behavior of data, especially extreme values in this claims data. We see that <span class="citation">Tukey (<a href="#ref-Tukey1977" role="doc-biblioref">1977</a>)</span>’s outlier fences detect outliers above a threshold claims level of $529,000. Another technique develops an excess of high threshold series. We generate a series of possible thresholds <span class="math inline">\(\mu\)</span>. Then we sort the claims from lowest to highest. For each threshold and claim <span class="math inline">\(x\)</span> we calculate the excess of threshold metric.</p>
+<p>We use this tool to evaluate the threshold metric <span class="math inline">\(\mu\)</span>.</p>
+<p><span class="math display">\[
+\operatorname{max}(x, y) = \frac{x+y+|x−y|}{2}
+\]</span></p>
+<p>We have some interns from a local Lasallian college. To help them understand the analysis we frequently use simplified examples. Let’s try this tool out with <span class="math inline">\(x=0\)</span> and <span class="math inline">\(y = 5\)</span>. We remember that we are trying to measure claims 5 in excess of a threshold of 0.</p>
+<p><span class="math display">\[
+\begin{align}
+e(\mu) &amp;= \operatorname{max}(0, x -  u ) \\
+     &amp;= \frac{x+y+|x−y|}{2} \\
+     &amp;= \frac{0+5+|0−5|}{2} \\
+     &amp;= \frac{5+5}{2} \\
+     &amp;= 10 / 2 \\
+     &amp;= 5 \\
+     &amp;= (5 - 0)_+ 
+\end{align}
+\]</span></p>
+<p>This case seems to work. This works only because when and <span class="math inline">\(x &gt; y\)</span>, then <span class="math inline">\(x-y &lt; 0\)</span> and <span class="math inline">\(|x-y| = y-x &gt; 0\)</span>. Here we flex our algebraic muscles to verify this relationship.</p>
+<p><span class="math display">\[
+\begin{align}
+e(\mu) &amp;= \frac{0 + (x-\mu) + |0 - (x - \mu)|}{2} \\
+     &amp;= \frac{x-\mu + |- (x - \mu)|}{2} \\
+     \text{ if } x&gt;\mu \\
+e(\mu) &amp;= \frac{x-\mu + x - \mu}{2} \\
+     &amp;= \frac{2x - 2\mu}{2} \\
+     &amp;= x - \mu\\
+     \text{ if } x \leq \mu \\
+e(\mu) &amp;= 0     
+\end{align}
+\]</span></p>
+<p>We can use this analysis to program spreadsheet cells. We use the subscript <span class="math inline">\(+\)</span> to economize on notation. Next we average <span class="math inline">\(e(\mu)\)</span> for each threshold. We remember from somewhere, maybe an elementary statistics course, the for <span class="math inline">\(u\)</span> a constant that <span class="math inline">\(\operatorname{E}\mu = \mu\)</span>.</p>
+<p><span class="math display">\[
+\begin{align}
+\operatorname{E}e(\mu) &amp;= \sum_i^{N_{\mu}} \pi_i (x_i - \mu)_+ \\
+                     &amp;= \pi_1 (x_1 - \mu )_+ \ldots \pi_{N_{\mu}} (x_{N_{\mu}} - \mu )_+ \\
+                     &amp;= \operatorname{E}x - \mu \\
+                     &amp;= \mu_x - \mu
+\end{align}
+\]</span></p>
+<p>We must remember not to confuse the <span class="math inline">\(\mu\)</span> which is the threshold, and the expectation of an outcome (here claims) <span class="math inline">\(x\)</span> which is <span class="math inline">\(\mu_x\)</span>. On the other hand does the variance of <span class="math inline">\(e(\mu)\)</span> have anything at all to do with <span class="math inline">\(\mu\)</span>?</p>
+<p><span class="math display">\[
+\begin{align}
+\text{ if } x &gt; \mu \\
+\text{then} \\
+\operatorname{Var}e(\mu) &amp;= \operatorname{E}[e(\mu) - \operatorname{E}e(\mu)]^2 \\
+     &amp;= \operatorname{E}[(x - \mu)^2 + (\operatorname{E}x - \mu)^2 - 2(x - \mu)(\operatorname{E}x - \mu)] \\
+     &amp;= \operatorname{E}[x^2 - 2\mux + \mu^2 + (\operatorname{E}x)^2 - 2u\operatorname{E}x +u^2 - 2x\operatorname{E}x + 2\mu\operatorname{E}x - \mu^2] \\
+     &amp;= \operatorname{E}x^2 - (\operatorname{E}x)^2 + \mu^2 - 2\mu\operatorname{E}x \\
+     &amp;= \sigma_x^2 + \mu^2 - 2\mu \mu_x
+\end{align}
+\]</span></p>
+<p>We can use these calculations to build probability intervals around <span class="math inline">\(e(\mu)\)</span> should the desire ever percolate to the surface.</p>
+<p>Expectations build around a number <span class="math inline">\(N_u\)</span> of non-zero <span class="math inline">\(e(\mu)\)</span> values. It is possible that there are less than <span class="math inline">\(N\)</span> observations for which a claim <span class="math inline">\(x\)</span> only exceeded a threshold <span class="math inline">\(u\)</span>. It is very possible that given a stream of claims, a very few set of claims which exceeds a high threshold will occur and thus we can state another rule of the excess over threshold story that <span class="math inline">\(N_u \leq N\)</span>.</p>
+<p>Here we calculate the mean excess of claims over a series of potential thresholds <span class="math inline">\(u\)</span>.</p>
+<p><img src="images/claims-mep-calculation.jpg" /></p>
+<p>Wenotice that there are a lot of zeros in this table. That is a direct result from just considering only positive differences <span class="math inline">\(x-u\)</span>. We use this idea to calculate a conditional mean with the AVERAGEIF() function. We generate the thresholds <span class="math inline">\(u\)</span> on an equally spaced grid. What is <span class="math inline">\(N_u\)</span>? In column L after all of the zeros we are left with <span class="math inline">\(N_u=3\)</span>, and in column N <span class="math inline">\(N_u=2\)</span>. We look at Now for the plot of all of this handiwork.</p>
+<p><img src="images/claims-mep-plot.jpg" /></p>
+<p>The plot is a straight line until some turbulence occurs as the threshold approaches the maximum value of claims in the data. This usually indicates that the following distribution will work well to match this data.</p>
+</div>
+<div id="a-distribution-to-remember" class="section level2">
+<h2><span class="header-section-number">10.3</span> A distribution to remember</h2>
+<p>We need an observational model with these qualities:</p>
+<ol style="list-style-type: decimal">
+<li><p>It generates a regularly occuring ranges of outcomes.</p></li>
+<li><p>On occasion the distribution generates very high outcomes.</p></li>
+<li><p>It will be relatively easy to implement.</p></li>
+</ol>
+<p>Well, we always hope for 3) but will get by with 1) and 2). Such a distribution is the <a href="https://en.wikipedia.org/wiki/Generalized_Pareto_distribution">Generalized Pareto Distribution (GPD)</a> built on ideas by the Italian civil engineer, sociologist and economist <a href="https://en.wikipedia.org/wiki/Vilfredo_Pareto">Vilfredo Pareto</a> at the turn of the last century. The very high outcomes he observed were wealth in the hands of an elite. For us, its just a lot of bad work days in a year, no elites are involved. The GPD has been used in quality control for manufacturing, epidemic outbreaks, severe weather, finance collapse, and political violence. We use it for workers compensation claims experience</p>
+<p>Here is the probability distribution function. There are three parameters, location <span class="math inline">\(\mu\)</span> is a threshold of claims <span class="math inline">\(x\)</span>, <span class="math inline">\(\sigma\)</span> is the scale or dispersion of claims, <span class="math inline">\(\xi\)</span> is the shape of claims that allow thick or thin tails in the distribution. That last quality is crucial. It marks a way to measure kurtosis in our observational model.</p>
+<p><span class="math display">\[
+Pr(x \mid \mu, \sigma, \xi) = (1/\sigma)[1 + \xi (x-\mu) / \sigma ]_{+}^{- (1+ \xi )/ \xi}
+\]</span>
+where <span class="math inline">\(\mu&gt;0\)</span> is the location parameter (a known value, the threshold), <span class="math inline">\(\sigma &gt; 0\)</span> is Again we use the short hand notation <span class="math inline">\(h_+ = \max(h,0)\)</span>. If <span class="math inline">\(\xi&lt;0\)</span>, then we are taking a root of a negative number in the square brackets. We must not! At least not here as this will entail complex numbers, a fate we do not want to tempt, again, at least here. If <span class="math inline">\(\xi\)</span> should wander into a negative range, then this condition must hold true, or else, we have a singular model, and we will get a !NUM error in Excel.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
+<p>Here we isolate the <span class="math inline">\(x\)</span> to get an idea of what range (mathematicians sometimes call this a support) <span class="math inline">\(x\)</span> can take on before the model blows up.</p>
+<p><span class="math display">\[
+\begin{align}
+1 - \xi (x-\mu) / \sigma &amp;&lt; 0 \\
+1 &amp;&lt; \xi (x-\mu) / \sigma &amp;&lt; 0 \\
+\frac{\sigma}{\xi} + \mu &amp;&lt; x \\
+x &amp;&gt; \frac{\sigma}{\xi} + \mu
+\end{align}
+\]</span>
+In other words, <span class="math inline">\(x\)</span> definitely needs to be greater than the <span class="math inline">\(\mu\)</span> threshold. In general, the support is <span class="math inline">\(x&gt;\mu\)</span> for <span class="math inline">\(\xi&gt;0\)</span>, and <span class="math inline">\(\mu &lt; x &lt; \mu-\sigma / \xi\)</span> for <span class="math inline">\(\xi&lt;0\)</span>. This will be our observational model. Such a model takes a <span class="math inline">\(\xi,\,\sigma\)</span> combination as a conjecture, for a given level of threshold <span class="math inline">\(\mu\)</span>, a hypothesis as a given, a condition.</p>
+<p>The model computes the probability that a <span class="math inline">\(x\)</span> occurs given this conjecture. Of course, we conjecture many combinations of the shape and scale parameters. Which one do we pick? The most plausible one. It turns out that the most plausible hypothesis is the hypothesis with the highest probability of choosing a particular hypothesis of <span class="math inline">\(\xi,\,\sigma\)</span> given all of the data we have available, here 12 annual observations of claims.</p>
+<p>How do we get to that probability? We simply find the probability that <strong>both</strong> the data occurs, given a hypothesis, <strong>and</strong> the probability that the hypothesis itself occurs. We calculate the probability both of the data in a model and of the probability of the hypothesis as the product of the probabilities. This is justly called the <a href="https://en.wikipedia.org/wiki/Conditional_probability"><strong>Law of Conditional Probability</strong>.</a></p>
+<p><span class="math display">\[
+\operatorname{Pr}(x \wedge (\sigma, \xi)) = \operatorname{Pr}(x \mid \sigma, \xi)\operatorname{Pr}(\sigma)\operatorname{Pr}(\xi)
+\]</span></p>
+<p>The little wedge <span class="math inline">\(\wedge\)</span> means <strong>and</strong> and the <span class="math inline">\(\operatorname{Pr}(\mu) = 1\)</span>, means we know <span class="math inline">\(\mu\)</span> with certainty, after all we are setting it ourselves. But that does mean there will be some scrutiny to assure ourselves of the level of the threshold.</p>
+<p><img src="images/claims-grid-approximation-xi-sigma.jpg" /></p>
+<p>Yes, this a beast of a table. But while there is a lot going on here, we can start from left to right and top to bottom. This calculation machine is our claims-robot’s cerebral cortex in its separate <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002803">grid-approximation</a> worksheet.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> A grid on the left has all of the conjectured <span class="math inline">\(\xi\)</span> shape and <span class="math inline">\(\sigma\)</span> parameter combinations from the grid-setup worksheet. This table is pivotable, a task we perform in the next worksheet.</p>
+<p>We can unpack the <code>IF()</code> statements in cells C6 and D6 by realizing that we must stay at the same <code>xi_h</code> only while we loop through the list of <code>sigma_h</code>s, otherwise move to the next <code>xi_h</code>. Cells C5 and D5 start the parade with the beginning entries of the <code>xi_h</code> and <code>sigma_h</code> lists.</p>
+<p>Cell C6 tests whether the previous D5 is the end of the <code>sigma_h</code> list by using the <code>MAX()</code> function. If true then the <code>INDEX(..., MATCH())</code> retrieves the next <code>xi_h</code>, otherwise stay at the same <code>xi_h</code> in cell C5.</p>
+<p>At the same time, the <code>IF() statement in D6 tests whether or not the</code>sigma_h<code>in D5 is the last</code>sigma_h<code>in the list. If true, then go back to the beginning of the</code>sigma_h<code>, otherwise go to the next</code>sigma_h` in the list.</p>
+<p>We end up With 25 nodes, that is, <span class="math inline">\(5 \times 5 = 25\)</span> hypotheses, in a grid. We can then proceed to use the GPD observational model, one fit for use with location, <span class="math inline">\(\mu\)</span> is the threshold, shape, approximated by <code>xi_h</code>, and scale, <span class="math inline">\(\sigma\)</span>, approximated by <code>sigma_h</code>.</p>
+<p>Our next stop on the magical mystery tour is the mashing together of observed data with the unobserved data of hypotheses, all 25 combinations of set <span class="math inline">\(\mu\)</span> and approximated <span class="math inline">\(\sigma\)</span> and <span class="math inline">\(\xi\)</span>. These hypothetical parameters turn up in the GPD observational model again, here for reference.</p>
+<p><span class="math display">\[
+Pr( x \mid \xi, \, \sigma) = \frac{1}{\sigma} \left[1+\xi\left(\frac{x-\mu}{\sigma}\right) \right]^{-(1+\xi)/\xi}
+\]</span></p>
+<p>This distribution is less beastly than the Gaussian (normal) distribution, after all it does not have <span class="math inline">\(\pi\)</span> in it! So we just drop in one of the claims observations for <span class="math inline">\(x\)</span>, and one of the <span class="math inline">\(\xi,\,\sigma\)</span> combinations from the 25 node grid and compute. There will be <span class="math inline">\(12 \times 25 = 300\)</span> such calculations, much more effectively and efficiently performed in the spreadsheet.</p>
+<p>For example, the probability of observing <span class="math inline">\(x=101.00\)</span> given a hypothesis that <span class="math inline">\(\xi=1.00\)</span> and <span class="math inline">\(\sigma=12.00\)</span> is <span class="math inline">\(0.0710\)</span>, found in the first calculation cell F5 of the table. Then we calculate the probability that the next claim occurs under the same condition, and so one until we get to the end of the 12 claims observations. We now have 12 probabilities that observations occur, all conditional, in this row, on the same hypothesis <span class="math inline">\(\xi\)</span> and <span class="math inline">\(\sigma\)</span>.</p>
+<p>To calculate the probability that we see both observation 1 and observation 2 and, <span class="math inline">\(\ldots\)</span>, observation 12, we multiply all of the probabilities together with the PRODUCT() function. We now find the probability both of the data, <span class="math inline">\(\operatorname{Pr}( x \mid \xi, \, \sigma)\)</span> and of the hypotheses, <span class="math inline">\(\operatorname{Pr}(\xi)\)</span> and <span class="math inline">\(\operatorname{Pr}(\sigma)\)</span>. the hypotheses probabilities are in columns E and F, We assume all hypotheses are equally likely until we happen to update our assumptions. We multiply the three probabilities together and now we have this expression all up and down column T.</p>
+<p>But the next column U tells the story. We take the column T joint probabilities, sum them up to get the grand total probability both of all of the data and all of the hypotheses. We use this grand total probability to normalize each of the column T joint probabilities. How do we do that? In column U we divide each cell in column T by the grand total probability. This ends up computing the one thing we have been looking for all along, the probability of a particular hypothesis given the data. Column U is the contribution of each joint probability to the medley of mashing together data and conjectures about the data.</p>
+</div>
+<div id="what-does-it-all-mean-so-far" class="section level2">
+<h2><span class="header-section-number">10.4</span> What does it all mean, so far?</h2>
+<p>Does our grid tell us anything useful? On its own it is not in a form easy to interpret. We have the raw <span class="math inline">\(\operatorname{Pr}(\mu,\,\sigma \mid wages)\)</span> in column U. We did build a key in column W above. Now is the time to put it to good use. We need to calculate the total probability of any particular <span class="math inline">\(\mu\)</span> or <span class="math inline">\(\sigma\)</span>. Here is the ultimate grid that relates each hypothesized <span class="math inline">\(\mu\)</span> with each hypothesized <span class="math inline">\(\sigma\)</span>. The link between them is the probability both of <span class="math inline">\(\mu\)</span> and <span class="math inline">\(\sigma\)</span>, that is, <span class="math inline">\(\operatorname{Pr}(\mu,\,\sigma \mid wages)\)</span> in column U.</p>
+<p><img src="images/claims-xi-sigma.jpg" /></p>
+<p>Right in the cross-hairs is the maximum joint probability of <span class="math inline">\(\xi\)</span> and <span class="math inline">\(\sigma\)</span>. These indicate the maximum probabilities of hypotheses and the value of those best hypotheses <span class="math inline">\(\xi=2\)</span> and <span class="math inline">\(\sigma=13.5\)</span>.</p>
+<p>The marginal probability of <span class="math inline">\(\operatorname{Pr}( \xi = 2.00)\)</span> is the highest density in the I column. We calculate it realizing that this probability must take into account any of the ways in which <span class="math inline">\(\xi=12.00\)</span> interacts jointly with each of the hypothesized <span class="math inline">\(\sigma\)</span>’s. The key word in the last sentence is the indefinite pronoun <em>any</em>. This pronoun denotes an <em>either-or</em> proposition: either <span class="math inline">\(\sigma=12\)</span> or 12.75 or, …, 15. Either-or situations have probabilities that add up and thus the <code>SUM()</code> in cell I5.</p>
+<p>Similarly the marginal probability of <span class="math inline">\(\operatorname{Pr}(\sigma = 13.5 )\)</span> is the highest density for the hypthesized <span class="math inline">\(\sigma\)</span>s. This probability is also the sum of the either-or probabilities of <span class="math inline">\(\sigma = 10\)</span> interacting jointly with any of the hypothesized <span class="math inline">\(\mu\)</span>s. We often refer to this calculation as integrating out, in this case, the <span class="math inline">\(\mu\)</span>s for each <span class="math inline">\(\sigma\)</span>, and <em>vice-versa</em> for integrating out the <span class="math inline">\(\sigma\)</span>s for each <span class="math inline">\(\mu\)</span>.</p>
+<p>Thus we end our estimation of the hypotheses which are most compatible with the claims data. We now have the ability to simulate the claims experience in a principled way.</p>
+</div>
+<div id="the-joint-continues-to-jump" class="section level2">
+<h2><span class="header-section-number">10.5</span> The joint continues to jump</h2>
+<p>We reprise the forecasting work we already developed for claims experience. The estimation table is a joint probability table. Let’s investigate further. We will calculate the mean, variance (standard deviation), and covariance (correlation). In this way we can generate claims with correlated shape and scale parameters exactly in the manner we did with waiting times using Cholesky Factorization.</p>
+<p>In this table we first calculate the expectations of <span class="math inline">\(xi\)</span> and <span class="math inline">\(\sigma\)</span> for means, standard deviations and covariances. These are weighted averages with probabilities and grid outcomes ported directly from the <span class="math inline">\(\xi \times \sigma\)</span> table. The probabilities for the covariance calculation are the diagonal joint probabilities in that table. Since they do not add up to one we follow our standard practice by normalizing them using their sum.</p>
+<p><img src="images/claims-xi-sigma-parm.jpg" /></p>
+<p>Using this calculation apparatus we can then calculate the means, standard deviations, covariance, and correlation that summarize the joint estimation of claims shape <span class="math inline">\(\xi\)</span> and scale <span class="math inline">\(\sigma\)</span>. Using these parameters we can then simulate correlated versions of <span class="math inline">\(\xi\)</span> and <span class="math inline">\(\sigma\)</span> for each of 6 funding years we will forecast for the self-insurance discussion.</p>
+<p>We now have the parameters and the one run simulation of <span class="math inline">\(\xi\)</span> and <span class="math inline">\(\sigma\)</span> values for each of the forward years we will include in our burgeoning fund analysis. We also set a maximum claim size to keep our model from exploding.</p>
+<p>It turns out we can generate GPD variates with this formula for <span class="math inline">\(\xi \neq 0\)</span>.</p>
+<p><span class="math display">\[
+Y =\mu + \frac {\sigma (U^{-\xi }-1)}{\xi } \sim GPD(\mu ,\sigma ,\xi \neq 0)
+\]</span></p>
+<p>If <span class="math inline">\(U\)</span> is uniformly distributed on (0, 1], we can use RAND() in our spreadsheet. Here is a revised one run simulation with simulated claims. Finally!</p>
+<p><img src="images/claims-xi-sigm-sim-2.jpg" /></p>
+<p>In fact this run looks a little like the experience of claims in the small sample. There are several threshold level claims and a nearly 2x claim to thicken the tails of this kurtotic distribution.</p>
+</div>
+<div id="a-sinking-feeling" class="section level2">
+<h2><span class="header-section-number">10.6</span> A sinking feeling?</h2>
+<p>The Vegan Workers Insurance Fund (VWIF, Fund) would be a monoline insurance fund Federally chartered, operating in New York State, with strategic partners chartered in Bermuda. The fund would specialize in vegan food industry worker compensation risk. As an insurance fund it considers the matching of claims exposures with investments needed to fund claims over a several year period. Premiums charged will depend on the riskiness of the funding, and the variability and size of claims over time. In this way the Fund operates similarly to any sinking fund where cash flow obligations occurring over several time periods must be met with a slate of investment returns.</p>
+<p>As a first step, Fund investment analysts would propose a slate of potential funding opportunities while claims analysts determine potential exposures over time. The slate of potential investments reflect the monthly timing of expected cash flow in along with annual annual returns. At the same time, claims are cash flows determined by analysis of various risk drivers and exposures. Our model takes the more naive approach to jump-start the analysis of claims using the GPD to model exposures.</p>
+<p>The fund would have a 7 year mandate to meet claims. A 7th year is required to manage overlaps in coverage among participants and restart the investment allocations. Here is the expected claims schedule based on data collected from a small sample of vegan establishments and projected for years 2 to 6. The first year is the funding period for this tranche of exposures.</p>
+<p>The main constraint is to have investment surplus from proceeds equal claims requirements. The calculation of investment surplus <span class="math inline">\(S_t\)</span> for each year <span class="math inline">\(t=2,\ldots,7\)</span>. A return <span class="math inline">\(r_{it}\)</span> from investment <span class="math inline">\(i\)</span> at year <span class="math inline">\(t\)</span> accrues according to the schedule of years of cash flow for each investment. These abstractions become a bit clearer in this next panel.</p>
+<p><img src="images/claims-fund-allocation-base.jpg" /></p>
+<p>Our objective is to minimize the front-end investment in year 1. In calculating premia for each policy-holder we can levelize payments according to the capital needed by year. This process is not shown here and would be quite a good exercise. For now we content ourselves with understanding this version of a funding model. In this model we add all of the investments that start with year 1 using the SUMIF() function.</p>
+<p>We choose levels of capital to invest in each of the A, B, C, D funds. These funds have starting and ending years. Each then earns a different time-based return. We flow a $1 dollar (-1) in a starting year across the holding period of the fund to earn at the end of the holding period the invested capital $1 plus a return. The nested IF() statements establish these flows successfully. They only took a few fevered hours to concoct!</p>
+<p>The <strong>constraints</strong> for each year calculate the investment surplus (insurance-speak for dollar returns) by summing up the products of the one plus returns and the amount of capital investment by fund. Investment surplus must equal claims. Claims in turn are the simulated claims from much previous and laborious analysis. To calculate investment surplus we multiply the amount invested with the return in each investment return year from years 2 through 7. This effort requires the use of the SUMPRODUCT() function.</p>
+<p>The right-hand side (the bottom here) is the projected claims experience from the simulation of claims in another worksheet. Because Solver badly interacts (as would any interative algorithm!) with volatile functions like OFFSET() and RAND() we must cut and paste special with values the projection into the claims constraint. Failure to do this will result in Solver errors like non-linear or binary constraints detected, when there aren’t any in the model.<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></p>
+<p>We build several headers and data transpositions for input into the fund-sim worksheet all starting at row 28. Two buttons adorn this model. One executes a single run of the model, the other 100 runs of the model. Here is the Visual Basic for Applications script for one run of Solver.</p>
+<p><img src="images/claims-one-run-vba.jpg" /></p>
+<p>We record the key strokes in this macro by turning on the Record Macro feature in the Developer ribbon. The copy of the selection in the xi-sigma-sim worksheet can be optimized simply by naming the range. But it is instructive to see how Excel seems as if to think about all of the steps needed for a selection of a range. The paste utility works on a selection of the first cell, H20, in the fund-allocation sheet. The script will always need to have some way of identifying in which sheet a range resides. We can now invoke Solver and its settings. We can also add and delete constraints as well. All of this points to the way we often need to build VBA scripts: first and foremost just record key strokes, and second, review and revise the script as needed.</p>
+</div>
+<div id="simuluate-and-stimulate" class="section level2">
+<h2><span class="header-section-number">10.7</span> Simuluate and stimulate</h2>
+<p>We accomplish multiple runs, with storage, of the funding simulation itself through this subroutine. We simulate several runs, 100 here, of the fund-allocation model in a separate spreadsheet. Because we need to automate the manual cut and copy paste special with values claims projections from the claims simulation into the fund allocation constraints, we must resort to VBA.</p>
+<p><img src="images/claims-fund-sim-vba.jpg" /></p>
+<p>Here is a snapshot of the simulator itself in its own worksheet.</p>
+<p><img src="images/claims-fund-simulation.jpg" /></p>
+<p>We generated quite a bit of data here! We named the range B4:T4 <code>interface</code> and the range header B5:T6 as <code>simulation</code>. The Offset() function in VBA will advance the row from 0 to the value of iRun to record each run’s worth of results from the fund allocation model. We will additionally name the ranges of the header and data to perform the analysis for which we have all been not so patiently waiting.</p>
+<p>To see the sausage being made in the fund-simulation worksheet we could place a <span class="math inline">\(&#39;\)</span> single quote in front of the Application.ScreenUpdating = False line in the VBA code to comment this instruction out. We should have a beverage on hand for the viewing, or perhaps popcorn, as this action will take even more precious time away from other activities in the busy analyst’s life.</p>
+<p>Each run can takes up to 20 seconds or 3 runs per minute depending on available CPU availability and thus we only perform 100 runs where, perhaps, 10,000 might be preferable by some analysts. On a Lenovo IdeaPad from the factory, 10,000 runs could take up to 2.5 hours. A GPU multi-core processor would run such routines nearly in the blink of an eye.</p>
+</div>
+<div id="finally-exhaustively-where-are-the-results" class="section level2">
+<h2><span class="header-section-number">10.8</span> Finally, exhaustively, where are the results?</h2>
+<p>With all of that derived data we generate, we owe ourselves results. We name each column of simulated data with the cell at the head of the vectors of length 100 we generated. We then reuse the 21 interval (yet another grid!) frequency analysis from the waiting time analysis.</p>
+<p>First, here is the grid setup for the frequency table, along with a summary of the simulated data. We build a list box from the data validation feature in the Data ribbon to facilitate choices of variable to analyze. We show here the year 1 capital required to meet simulated claims.</p>
+<p><img src="images/claims-eda-sim-grid-summary.jpg" /></p>
+<p>We cannot help but notice the whopping 14+ kurtosis. The volatility of volatility of simulated capital requirement is impressively large, as advertised by the GPD approach to tails.</p>
+<p>Next, the table of frequencies of occurrence of capital values across 21 intervals. From these counts we calculate relative and cumulative relative freuqencies. For comparison purposes we also compute the estimated GPD probability distribution function (from the mass function) and cumulative probability functions.</p>
+<p>Last, and most importantly we have a plot.</p>
+<p><img src="images/claims-eda-sim-plot.jpg" /></p>
+<p>Estimated first year capital levels, again using the SUMIF() function, are not exactly, but only generally following the simulation. We might call this an example of sampling error here, as we only simulated 100 variations of potential future decisions, just as Stanislaw Ulam did in simulating hands of solitaire. We do have the characteristic GPD shape and scale inside gamma distributed exponential rates. What does it all mean? We have a highly variable capital requirement further necessitating risk management for extreme claims experience. An insurance analyst might remark that we need an <a href="https://www.investopedia.com/terms/t/treaty-reinsurance.asp#:~:text=Treaty%20reinsurance%20is%20insurance%20purchased%20by%20an%20insurance,of%20the%20three%20main%20types%20of%20reinsurance%20contracts.">excess of loss reinsurance treaty</a> along with our general insurance coverage. Then there is the preventive maintenance and capital to support safer and healthier worker conditions to consider.</p>
+</div>
+<div id="another-scenario-emerges" class="section level2">
+<h2><span class="header-section-number">10.9</span> Another scenario emerges</h2>
+<p>Some of the members of the Vegan Workers Group wonder, and so do we, if the funding tenors matter. A funding tenor is the length of time between investment and return. Some of the tenors are short-term, such as the A fund. Others, like the D fund are longer term. What if we constrained funding to only short term tenors and use just the A fund? We can then compare the all-in (A through D) scenario with the short-term financing (only one year terms) scenario. Then we might at least have a true decision alternative.</p>
+<p>One tack we might take is to set all but the one year funding vehicles to start and end with year 8. This will allow the model effectively to set these funds to zero. Another way way we could use is to set the decision cells equal to zero in the solver formulation. Here is a snapshot of the first approach.</p>
+<p><img src="images/claims-fund-allocation-short-snap.jpg" /></p>
+<p>The main advantage of this approach is that we can create constraints without reprogramming the solver model. The three-nest IF() statements do all of the work to detail the investment program over the life of claims.</p>
+<p>We then run the model once to have this solution.</p>
+<p><img src="images/claims-fund-allocation-short-solveonce.jpg" /></p>
+<p>At last we can run the short-term funding scenario 100 times with this result.</p>
+<p><img src="images/claims-fund-allocation-short-sim.jpg" /></p>
+<p>We check all 100 runs to see that only the short-term tranches are calculated. They are. We can then recover a summary of the results for first year capital. We should copy and paste the all-in funding runs into a separate worksheet. When doing so we can name the first year capital with a different name, say <code>capital_yr1_all</code>to distinguish it from short-term funding version.</p>
+<p>How do the two scenarios compare? We can develop a comparison based on the summary statistics of the two scenarios. Here is an example.</p>
+<p><img src="images/claims-fund-scenario-comparison.jpg" /></p>
+<p>Following good spreadsheet engineering practice, we use named ranges and the INDIRECT() function for each of the components of the summary. It appears that the two scenarios have very different profiles, including the kurtosis. This measures the thickness of the tail of the first year capital infusion. Here is a plot of the first year capital distribution of 100 Monte Carlo runs, based on the short-term scenario.</p>
+<p><img src="images/claims-fund-short-term-plot.jpg" /></p>
+<p>The distribution poses much higher capital levels, and it is lumpy, a technical term for volatile. Literally, the short-term vehicle only scenario also irons out the tail. It reduces the volatility of the standard deviation of the funding required in year one. But it does so at the expense of increasing the standard deviation of funding and the average funding required.</p>
+<p>Multiple objectives seem to collide here. Only the preferences for risk and return of the Vegan Workers Group can resolve the deadlock. That determination is beyond the capabilities of this model. Perhaps a goal-programming approach might help the group discern which path to follow?</p>
+</div>
+<div id="references-and-endnotes" class="section level2">
+<h2><span class="header-section-number">10.10</span> References and endnotes</h2>
+
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-Tukey1977">
+<p>Tukey, John. 1977. <em>Exploratory Data Analysis</em>. <a href="https://archive.org/details/exploratorydataa0000tuke_7616">https://archive.org/details/exploratorydataa0000tuke_7616</a>.</p>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>What distribution to choose? <span class="citation">Taleb (<a href="#ref-Taleb2019" role="doc-biblioref">2019</a>)</span> has a bit to say about the matter, and very technically, and practically, so.<a href="vegan-workers-insurance-fund-case-and-notes.html#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>Grids, and techniques to approximate functions like our GPD, are popular in many fields, including option pricing in finance, queue measurement in operations, customer sentiment analysis in marketing, reservoir flow in hydrological engineering, and beam stress analysis in civil engineering. We already used grids to optimize Simone Tortiere’s pie price in our first outing with decision models.<a href="vegan-workers-insurance-fund-case-and-notes.html#fnref2" class="footnote-back">↩</a></p></li>
+<li id="fn3"><p>Solver linear programming uses a modified simplex algorithm, along with a genereralized reduced gradient and genetic algorithms, all of which iterate to an approximation solution. The routines expect a stable numerical input, one that does not change with spreadsheet recalculations. Even if we set recalculation to manual, Solver will still react to underlying changes and produce the error.<a href="vegan-workers-insurance-fund-case-and-notes.html#fnref3" class="footnote-back">↩</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="case-forecasting-workers-compensation-claims.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["book-decision.pdf", "book-decision.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

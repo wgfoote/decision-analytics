@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 1 Tortuous Pie-making in the Sky | Decision Modeling with Spreadsheets</title>
+  <meta name="description" content="This is a spreadsheet version of every management science book out there, less all of the detail." />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 1 Tortuous Pie-making in the Sky | Decision Modeling with Spreadsheets" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a spreadsheet version of every management science book out there, less all of the detail." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 1 Tortuous Pie-making in the Sky | Decision Modeling with Spreadsheets" />
+  
+  <meta name="twitter:description" content="This is a spreadsheet version of every management science book out there, less all of the detail." />
+  
+
+<meta name="author" content="William G. Foote" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="part-1-spreadsheet-engineering.html"/>
+<link rel="next" href="chaotic-pie-making-in-the-sky.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Decision Modeling with Spreadsheets</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prerequisites</a></li>
+<li class="chapter" data-level="" data-path="part-1-spreadsheet-engineering.html"><a href="part-1-spreadsheet-engineering.html"><i class="fa fa-check"></i>Part 1 – Spreadsheet Engineering</a></li>
+<li class="chapter" data-level="1" data-path="spreadsheet1.html"><a href="spreadsheet1.html"><i class="fa fa-check"></i><b>1</b> Tortuous Pie-making in the Sky</a><ul>
+<li class="chapter" data-level="1.1" data-path="spreadsheet1.html"><a href="spreadsheet1.html#spreadsheets-really"><i class="fa fa-check"></i><b>1.1</b> Spreadsheets? Really?</a></li>
+<li class="chapter" data-level="1.2" data-path="spreadsheet1.html"><a href="spreadsheet1.html#questions-questions"><i class="fa fa-check"></i><b>1.2</b> Questions, questions</a></li>
+<li class="chapter" data-level="1.3" data-path="spreadsheet1.html"><a href="spreadsheet1.html#count-the-errors-of-our-ways"><i class="fa fa-check"></i><b>1.3</b> Count the errors of our ways</a></li>
+<li class="chapter" data-level="1.4" data-path="spreadsheet1.html"><a href="spreadsheet1.html#prevailing-recommended-practices"><i class="fa fa-check"></i><b>1.4</b> Prevailing recommended practices</a><ul>
+<li class="chapter" data-level="1.4.1" data-path="spreadsheet1.html"><a href="spreadsheet1.html#do-not-ever-do-this"><i class="fa fa-check"></i><b>1.4.1</b> Do not ever do this</a></li>
+<li class="chapter" data-level="1.4.2" data-path="spreadsheet1.html"><a href="spreadsheet1.html#instead-practice-these"><i class="fa fa-check"></i><b>1.4.2</b> Instead practice these</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="spreadsheet1.html"><a href="spreadsheet1.html#pie-in-the-sky"><i class="fa fa-check"></i><b>1.5</b> Pie-in-the-Sky</a></li>
+<li class="chapter" data-level="1.6" data-path="spreadsheet1.html"><a href="spreadsheet1.html#wheres-the-paper-and-pencils"><i class="fa fa-check"></i><b>1.6</b> Where’s the paper and pencils?</a></li>
+<li class="chapter" data-level="1.7" data-path="spreadsheet1.html"><a href="spreadsheet1.html#cost-and-volume"><i class="fa fa-check"></i><b>1.7</b> Cost and volume</a></li>
+<li class="chapter" data-level="1.8" data-path="spreadsheet1.html"><a href="spreadsheet1.html#demand-analysis"><i class="fa fa-check"></i><b>1.8</b> Demand analysis</a></li>
+<li class="chapter" data-level="1.9" data-path="spreadsheet1.html"><a href="spreadsheet1.html#weekly-profit"><i class="fa fa-check"></i><b>1.9</b> Weekly profit</a></li>
+<li class="chapter" data-level="1.10" data-path="spreadsheet1.html"><a href="spreadsheet1.html#profit-sensitivity-to-price"><i class="fa fa-check"></i><b>1.10</b> Profit sensitivity to price</a></li>
+<li class="chapter" data-level="1.11" data-path="spreadsheet1.html"><a href="spreadsheet1.html#lo-and-behold"><i class="fa fa-check"></i><b>1.11</b> Lo and behold</a></li>
+<li class="chapter" data-level="1.12" data-path="spreadsheet1.html"><a href="spreadsheet1.html#references-and-endnotes"><i class="fa fa-check"></i><b>1.12</b> References and endnotes</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html"><i class="fa fa-check"></i><b>2</b> Chaotic Pie-making in the Sky"</a><ul>
+<li class="chapter" data-level="2.1" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#how-many"><i class="fa fa-check"></i><b>2.1</b> How many?</a></li>
+<li class="chapter" data-level="2.2" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#whats-new"><i class="fa fa-check"></i><b>2.2</b> What’s new?</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#the-costs-they-are-a-changing"><i class="fa fa-check"></i><b>2.2.1</b> The costs they are a-changing</a></li>
+<li class="chapter" data-level="2.2.2" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#demand-takes-a-step-back"><i class="fa fa-check"></i><b>2.2.2</b> Demand takes a step back</a></li>
+<li class="chapter" data-level="2.2.3" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#a-new-profit-dawning"><i class="fa fa-check"></i><b>2.2.3</b> A new profit dawning</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#an-algebra-of-pie"><i class="fa fa-check"></i><b>2.3</b> An algebra of pie</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#a-little-lite-algebra"><i class="fa fa-check"></i><b>2.3.1</b> A little lite algebra</a></li>
+<li class="chapter" data-level="2.3.2" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#pvs-last-stand"><i class="fa fa-check"></i><b>2.3.2</b> PV’s last stand</a></li>
+<li class="chapter" data-level="2.3.3" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#the-model-in-the-mist"><i class="fa fa-check"></i><b>2.3.3</b> The model in the mist</a></li>
+<li class="chapter" data-level="2.3.4" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#how-sensitive"><i class="fa fa-check"></i><b>2.3.4</b> How sensitive?</a></li>
+<li class="chapter" data-level="2.3.5" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#one-way-or-the-other"><i class="fa fa-check"></i><b>2.3.5</b> One way or the other</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#lo-and-behold-yet-again"><i class="fa fa-check"></i><b>2.4</b> Lo and behold yet again</a></li>
+<li class="chapter" data-level="2.5" data-path="spreadsheet1.html"><a href="spreadsheet1.html#references-and-endnotes"><i class="fa fa-check"></i><b>2.5</b> References and endnotes</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="case-salmerón-solar-systems-llc.html"><a href="case-salmerón-solar-systems-llc.html"><i class="fa fa-check"></i><b>3</b> Case: Salmerón Solar Systems LLC</a><ul>
+<li class="chapter" data-level="3.1" data-path="case-salmerón-solar-systems-llc.html"><a href="case-salmerón-solar-systems-llc.html#photovoltaic-systems"><i class="fa fa-check"></i><b>3.1</b> Photovoltaic systems</a></li>
+<li class="chapter" data-level="3.2" data-path="case-salmerón-solar-systems-llc.html"><a href="case-salmerón-solar-systems-llc.html#the-particulars"><i class="fa fa-check"></i><b>3.2</b> The particulars</a></li>
+<li class="chapter" data-level="3.3" data-path="case-salmerón-solar-systems-llc.html"><a href="case-salmerón-solar-systems-llc.html#some-definitions-are-in-order"><i class="fa fa-check"></i><b>3.3</b> Some definitions are in order</a></li>
+<li class="chapter" data-level="3.4" data-path="case-salmerón-solar-systems-llc.html"><a href="case-salmerón-solar-systems-llc.html#requirements"><i class="fa fa-check"></i><b>3.4</b> Requirements</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="part-2-optimization.html"><a href="part-2-optimization.html"><i class="fa fa-check"></i>Part 2 – Optimization</a></li>
+<li class="chapter" data-level="4" data-path="bringing-pie-to-earth.html"><a href="bringing-pie-to-earth.html"><i class="fa fa-check"></i><b>4</b> Bringing Pie to Earth</a><ul>
+<li class="chapter" data-level="4.1" data-path="bringing-pie-to-earth.html"><a href="bringing-pie-to-earth.html#it-all-started-here"><i class="fa fa-check"></i><b>4.1</b> It all started here</a></li>
+<li class="chapter" data-level="4.2" data-path="bringing-pie-to-earth.html"><a href="bringing-pie-to-earth.html#from-humble-beginnings"><i class="fa fa-check"></i><b>4.2</b> From humble beginnings</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="bringing-pie-to-earth.html"><a href="bringing-pie-to-earth.html#decisions-decisions"><i class="fa fa-check"></i><b>4.2.1</b> 1. Decisions, decisions</a></li>
+<li class="chapter" data-level="4.2.2" data-path="bringing-pie-to-earth.html"><a href="bringing-pie-to-earth.html#resources-they-are-aconstraining"><i class="fa fa-check"></i><b>4.2.2</b> 2. Resources they are a’constraining</a></li>
+<li class="chapter" data-level="4.2.3" data-path="bringing-pie-to-earth.html"><a href="bringing-pie-to-earth.html#not-without-constraint"><i class="fa fa-check"></i><b>4.2.3</b> 3. Not without constraint</a></li>
+<li class="chapter" data-level="4.2.4" data-path="bringing-pie-to-earth.html"><a href="bringing-pie-to-earth.html#let-us-eat-pie"><i class="fa fa-check"></i><b>4.2.4</b> Let us eat pie</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="bringing-pie-to-earth.html"><a href="bringing-pie-to-earth.html#an-easier-way"><i class="fa fa-check"></i><b>4.3</b> An easier way?</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="expanding-horizons.html"><a href="expanding-horizons.html"><i class="fa fa-check"></i><b>5</b> Expanding horizons</a><ul>
+<li class="chapter" data-level="5.1" data-path="expanding-horizons.html"><a href="expanding-horizons.html#didos-bullhide"><i class="fa fa-check"></i><b>5.1</b> Dido’s bullhide</a></li>
+<li class="chapter" data-level="5.2" data-path="expanding-horizons.html"><a href="expanding-horizons.html#making-dough"><i class="fa fa-check"></i><b>5.2</b> Making dough</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="expanding-horizons.html"><a href="expanding-horizons.html#model-me-an-eoq"><i class="fa fa-check"></i><b>5.2.1</b> Model me an EOQ</a></li>
+<li class="chapter" data-level="5.2.2" data-path="expanding-horizons.html"><a href="expanding-horizons.html#implementing-the-simple-eoq"><i class="fa fa-check"></i><b>5.2.2</b> Implementing the simple EOQ</a></li>
+<li class="chapter" data-level="5.2.3" data-path="expanding-horizons.html"><a href="expanding-horizons.html#life-constrains-our-simple-model"><i class="fa fa-check"></i><b>5.2.3</b> Life constrains our simple model</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="expanding-horizons.html"><a href="expanding-horizons.html#back-to-the-future"><i class="fa fa-check"></i><b>5.3</b> Back to the future</a><ul>
+<li class="chapter" data-level="5.3.1" data-path="expanding-horizons.html"><a href="expanding-horizons.html#bottom-line-up-front"><i class="fa fa-check"></i><b>5.3.1</b> Bottom line up front</a></li>
+<li class="chapter" data-level="5.3.2" data-path="expanding-horizons.html"><a href="expanding-horizons.html#tighter-and-tighter"><i class="fa fa-check"></i><b>5.3.2</b> Tighter, and tighter</a></li>
+<li class="chapter" data-level="5.3.3" data-path="expanding-horizons.html"><a href="expanding-horizons.html#implementing-the-model"><i class="fa fa-check"></i><b>5.3.3</b> Implementing the model</a></li>
+<li class="chapter" data-level="5.3.4" data-path="expanding-horizons.html"><a href="expanding-horizons.html#a-revised-rendering"><i class="fa fa-check"></i><b>5.3.4</b> A revised rendering</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="expanding-horizons.html"><a href="expanding-horizons.html#next-steps"><i class="fa fa-check"></i><b>5.4</b> Next steps?</a></li>
+<li class="chapter" data-level="5.5" data-path="spreadsheet1.html"><a href="spreadsheet1.html#references-and-endnotes"><i class="fa fa-check"></i><b>5.5</b> References and endnotes</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="case-pricing-production-at-make-a-pie.html"><a href="case-pricing-production-at-make-a-pie.html"><i class="fa fa-check"></i><b>6</b> Case: Pricing Production at Make-A-Pie</a><ul>
+<li class="chapter" data-level="6.1" data-path="case-pricing-production-at-make-a-pie.html"><a href="case-pricing-production-at-make-a-pie.html#front-matter"><i class="fa fa-check"></i><b>6.1</b> Front matter</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="part-3-simulation.html"><a href="part-3-simulation.html"><i class="fa fa-check"></i>Part 3 – Simulation</a></li>
+<li class="chapter" data-level="7" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html"><i class="fa fa-check"></i><b>7</b> Waiting for the Simulation</a><ul>
+<li class="chapter" data-level="7.1" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#a-story-of-chance"><i class="fa fa-check"></i><b>7.1</b> A story of chance</a></li>
+<li class="chapter" data-level="7.2" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#a-piece-of-pie-please"><i class="fa fa-check"></i><b>7.2</b> A piece of pie, please</a></li>
+<li class="chapter" data-level="7.3" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#a-brief-interlude-with-cholesky"><i class="fa fa-check"></i><b>7.3</b> A brief interlude with Cholesky</a></li>
+<li class="chapter" data-level="7.4" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#solution"><i class="fa fa-check"></i><b>7.4</b> Solution</a></li>
+<li class="chapter" data-level="7.5" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#now-we-can-simulate"><i class="fa fa-check"></i><b>7.5</b> Now we can simulate</a><ul>
+<li class="chapter" data-level="7.5.1" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#excel-or-bust"><i class="fa fa-check"></i><b>7.5.1</b> Excel or bust!</a></li>
+</ul></li>
+<li class="chapter" data-level="7.6" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#back-to-the-eatery-robot"><i class="fa fa-check"></i><b>7.6</b> Back to the eatery robot</a><ul>
+<li class="chapter" data-level="7.6.1" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#the-main-course"><i class="fa fa-check"></i><b>7.6.1</b> The main course</a></li>
+<li class="chapter" data-level="7.6.2" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#exploring-wait-times"><i class="fa fa-check"></i><b>7.6.2</b> Exploring wait times</a></li>
+</ul></li>
+<li class="chapter" data-level="7.7" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#any-next-steps"><i class="fa fa-check"></i><b>7.7</b> Any next steps?</a></li>
+<li class="chapter" data-level="7.8" data-path="spreadsheet1.html"><a href="spreadsheet1.html#references-and-endnotes"><i class="fa fa-check"></i><b>7.8</b> References and endnotes</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="the-outer-limits.html"><a href="the-outer-limits.html"><i class="fa fa-check"></i><b>8</b> The Outer Limits</a><ul>
+<li class="chapter" data-level="8.1" data-path="the-outer-limits.html"><a href="the-outer-limits.html#tales-of-tails"><i class="fa fa-check"></i><b>8.1</b> Tales of tails</a></li>
+<li class="chapter" data-level="8.2" data-path="the-outer-limits.html"><a href="the-outer-limits.html#it-always-starts-with-data"><i class="fa fa-check"></i><b>8.2</b> It always starts with data</a></li>
+<li class="chapter" data-level="8.3" data-path="the-outer-limits.html"><a href="the-outer-limits.html#a-distribution-to-remember"><i class="fa fa-check"></i><b>8.3</b> A distribution to remember</a></li>
+<li class="chapter" data-level="8.4" data-path="the-outer-limits.html"><a href="the-outer-limits.html#what-does-it-all-mean-so-far"><i class="fa fa-check"></i><b>8.4</b> What does it all mean, so far?</a></li>
+<li class="chapter" data-level="8.5" data-path="the-outer-limits.html"><a href="the-outer-limits.html#the-joints-ajumpin"><i class="fa fa-check"></i><b>8.5</b> The joint’s ajumpin’</a></li>
+<li class="chapter" data-level="8.6" data-path="the-outer-limits.html"><a href="the-outer-limits.html#a-sinking-feeling"><i class="fa fa-check"></i><b>8.6</b> A sinking feeling?</a></li>
+<li class="chapter" data-level="8.7" data-path="the-outer-limits.html"><a href="the-outer-limits.html#simuluate-and-stimulate"><i class="fa fa-check"></i><b>8.7</b> Simuluate and stimulate</a></li>
+<li class="chapter" data-level="8.8" data-path="the-outer-limits.html"><a href="the-outer-limits.html#finally-exhaustively-where-are-the-results"><i class="fa fa-check"></i><b>8.8</b> Finally, exhaustively, where are the results?</a></li>
+<li class="chapter" data-level="8.9" data-path="spreadsheet1.html"><a href="spreadsheet1.html#references-and-endnotes"><i class="fa fa-check"></i><b>8.9</b> References and endnotes</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="case-forecasting-workers-compensation-claims.html"><a href="case-forecasting-workers-compensation-claims.html"><i class="fa fa-check"></i><b>9</b> Case: Forecasting Workers Compensation Claims</a><ul>
+<li class="chapter" data-level="9.1" data-path="case-forecasting-workers-compensation-claims.html"><a href="case-forecasting-workers-compensation-claims.html#some-background"><i class="fa fa-check"></i><b>9.1</b> Some background</a></li>
+<li class="chapter" data-level="9.2" data-path="case-forecasting-workers-compensation-claims.html"><a href="case-forecasting-workers-compensation-claims.html#the-ask"><i class="fa fa-check"></i><b>9.2</b> The ask</a></li>
+<li class="chapter" data-level="9.3" data-path="case-forecasting-workers-compensation-claims.html"><a href="case-forecasting-workers-compensation-claims.html#some-requirements"><i class="fa fa-check"></i><b>9.3</b> Some requirements</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/wgfoote/book-decision-modeling" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Decision Modeling with Spreadsheets</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="spreadsheet1" class="section level1">
+<h1><span class="header-section-number">Chapter 1</span> Tortuous Pie-making in the Sky</h1>
+<div id="spreadsheets-really" class="section level2">
+<h2><span class="header-section-number">1.1</span> Spreadsheets? Really?</h2>
+<p>Yes, emphatically! George Gilder says we should waste transistors (that is chips).<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> Gilder makes the fairly obvious point that we must use transistors (lots of them in an integrated circuit) or go out of business. They are ubiquitous. And arrived everywhere in a very short amount of time to boot. If you do not use them you lose control of your cost structure. Anything you build will be too expensive, too heavy, too big, too slow, too lacking in quality.</p>
+<p>The same idea goes with Michael Schragge builds on Gilder’s ironic hyperbole about transistors and analogizes that we should “waste simulations.”<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> If we do not so-called waste prototyping, rapid development, simulating potential problems, solutions, we will also go out of business. We must simulate until we drop! The alternative is that we will miss the one opportunity to improve or the one error that eliminates us. Of course the point he makes is that it iss not a waste, rather we should never shy away from working the problem, simulating the art of the possible.</p>
+<p>So what is the value added of a prototype, which is simply a working model? It is about information, and information is a surprise, a deviation from a trend. Schragge believes that testing a hypothesis just gets us to the point of saying we seem, in probability that is, to have a trend going on here. In the world of growth, opportunity, error and ignorance, having a trend is barely the beginning of our journey. It is the deviation from the trend that matters.</p>
+<p>Are we still talking about spreadhseets? Schragge quotes Louis Pasteur: “Chance favors the prepared mind.” Here the prepared mind is a product of simulations, the rapidly developed prototypes, Fleming used agar and discovered penicillin – completely unexpected! Dan Bricklin developed the spreadsheet IBMDOS/Apple IIe program Visicalc.<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> As a complete surprise this product was able to be used by millions of people to rapidly simulate other products and services. Steve Jobs credited Visicalc with the success of the Apple IIe and the Macintosh in 1985. IBM credited it with the success of the PC. Now people had a reason to buy the PC.</p>
+<p>Using Visicalc we were able 40 years ago to build practical, plottable, usable option pricing models which transparently allowed us to visualize the calculations directly. Financial analysts built interactive pro forma balance sheet, income statements, and cash flow statements fed from managers’ expectations, scenarios, and expert knowledge of markets. These models literally paid for themselves in days, not years. The main criterion for innovation success has always been the customer’s payback, not the investors. How long did it take for the customer to recoup her investment? That’s the innovation criterion. The spreadsheet is a sophisticated scratchpad some have used to be a production ready system.</p>
+<p>But what is the most important message? A working prototype should be a sandbox where everyone is willing to get in and play. It has at least to be durable enough to get to the first slate of useful comments and suggestions for further improvement. Development continues! Rick Lamers recently open sourced his <a href="https://github.com/ricklamers/gridstudio?ref=hackernoon.com">Grid Studio spreadsheet product with deep integration with Python.</a></p>
+<p>Yes, let’s play.</p>
+</div>
+<div id="questions-questions" class="section level2">
+<h2><span class="header-section-number">1.2</span> Questions, questions</h2>
+<p>Some questions come to mind as we begin.</p>
+<ul>
+<li><p><strong>What will we use the spreadsheet for?</strong> We will rapidly prototype decision support models for business.</p></li>
+<li><p><strong>What’s a business?</strong> We will use a working definition: an organization of resources to reach a common goal. Yes, there is more to it than that, but it’s good enough for now.</p></li>
+<li><p><strong>What’s a decision, you might ask?</strong> Again we will us a working definition for the moment: a commitment by people to deploy resources over time and space in support of a common goal. Decisions work inside of interconnected processes. They are the levers that allow, or refuse, inputs to become outputs. All very abstract, but we are on course to build out our use of a spreadsheet as a prototyping tool.</p></li>
+<li><p><strong>What’s a model?</strong> Any model is a human being’s abstraction from reality. We will not get into the cognitive, epistemological, ontological, or even methodological questions that might arise from this definition. Even saying a word like <strong>sweet</strong> is an abstraction of a perception, given experience with tasting anything, and tantalizingly informed by furtive imaginations. But one point must be made. <strong>A model is not reality.</strong> One more thing, <strong>knowing is not just taking a look.</strong> After all that’s why we build models. But again a decision is the result of an affirmation, a judgment. Gosh, it gets epistemological really fast. We need to visit the Philosophy Department next and soon. Back to our geocentric way of thinking.</p></li>
+</ul>
+</div>
+<div id="count-the-errors-of-our-ways" class="section level2">
+<h2><span class="header-section-number">1.3</span> Count the errors of our ways</h2>
+<p>Spreadsheets are dangerous when in the wrong hands, with stubby fingers, bad memories, lack of structure, ramshackle governance, in short, poorly engineered. Here are some indicative <a href="http://www.eusprig.org/horror-stories.htm"><strong>horror stories</strong> from the European Spreadsheets Risk Interest Group</a>.</p>
+<ul>
+<li><p><a href="https://www.bbc.com/news/uk-54422505">Covid: Test error ‘should never have happened’:</a> 2020-10-05. The health secretary has said a technical glitch that saw nearly 16,000 Covid-19 cases go unreported in England “should never have happened”. The error meant that although those who tested positive were told about their results, their close contacts were not traced. By Monday afternoon, around half of those who tested positive had yet to be asked about their close contacts. The error was the use of an old Excel format. Counts exceeded the number of rows in the spreadsheet. Labour said the missing results were “putting lives at risk”.</p></li>
+<li><p><a href="https://www.poconorecord.com/news/20190729/ag-state-overpaid-stroudsburg-nearly-500k">AG: State overpaid Stroudsburg PA nearly $500K</a>: 29/07/2019. The district used cumulative mileage totals rather than running calculations on a sample average for vehicles, which resulted in the district significantly over reporting total mileage data, causing the subsidy overpayments. In some cases the spreadsheet was double counting total days for some of the activity runs.
+-<a href="https://www.theregister.co.uk">Emailed spreadsheet contained private data in ‘hidden’ columns</a>: 22/2/2017. A company employee mistakenly emailed a spreadsheet full of 36,000 coworkers’ personal details to his spouse in November, 2016, including Social Security numbers and dates of birth, all in hidden columns.</p></li>
+<li><p><a href="http://www.reuters.com/article/us-solarcity-lazard-idUSKCN11635K">SolarCity adviser Lazard made mistake in Tesla deal analysis</a>: 2016-09-01. Lazard Ltd (LAZ.N), the investment bank that advised SolarCity Corp (SCTY.O) on its $2.6 billion sale to Tesla Motors Inc (TSLA.O), made an error in its analysis that discounted the value of the U.S. solar energy company by $400 million, This was the result of a computational error in certain SolarCity spreadsheets setting forth SolarCity’s financial information that Lazard used in its discounted cash flow valuation analyses.</p></li>
+<li><p><a href="http://files.shareholder.com/downloads/ONE/2261602328x0x628656/4cb574a0-0bf5-4728-9582-625e4519b5ab/Task_Force_Report.pdf">Report identifies lack of spreadsheet controls, pressure to approve, at JP Morgan</a>: 18 January 2013-01-13. See pages 131-132 of the JP Morgan Task Force Report “…further errors were discovered in the Basel II.5 model, including, most significantly, an operational error in the calculation of the relative changes in hazard rates and correlation estimates. Specifically, after subtracting the old rate from the new rate, the spreadsheet divided by their sum instead of their average, as the modeler had intended. This error likely had the effect of muting volatility by a factor of two and of lowering the VaR.” As reported in [“A tempest in a spreadsheet”] (<a href="http://ftalphaville.ft.com/2013/01/17/1342082/a-tempest-in-a-spreadsheet/" class="uri">http://ftalphaville.ft.com/2013/01/17/1342082/a-tempest-in-a-spreadsheet/</a>?) Lisa Pollack comments that “On a number of occasions, he asked the trader to whom he reported for additional resources to support his work on the VaR model, but he did not receive any. Also it appears that he (had to?) cut a number of corners, which resulted increased operational risk and artificially low volatility numbers … pressure was put on the reviewers to get on with approving the model.”</p></li>
+</ul>
+<p>Could many of thesse errors have been performed in a programming language like Visual Basic for Applications (underlies Excel spreadsheets), or R, or Python? Sure and they have. What they share in common are violations of basic software engineering design principles and practices, let alone well known and implemented risk management and governance.</p>
+<p>Of course <a href="https://dilbert.com/strip/2009-05-21">Dilbert might calm us all down a bit.</a> Then again, maybe it isn’t the spreadsheet after all, but <a href="https://dilbert.com/strip/1995-08-13">the strange idea about ant farms that someone might come up with in the first place.</a></p>
+</div>
+<div id="prevailing-recommended-practices" class="section level2">
+<h2><span class="header-section-number">1.4</span> Prevailing recommended practices</h2>
+<p>We might refrain from using the term <em>best practices</em> as that means, literally, there are no possibilities of improvement. At best, then, we might see some aspirational <strong>leading practices</strong>. here are some at least recommended practices for our consideration. They are based on this selection.</p>
+<ul>
+<li><p><a href="https://arxiv.org/ftp/arxiv/papers/0909/0909.2452.pdf">Susan Allen’s work at Lloyds Bank</a></p></li>
+<li><p><a href="https://arxiv.org/ftp/arxiv/papers/0803/0803.0165.pdf">Payette’s documenting spreadsheets,</a></p></li>
+<li><p><a href="https://arxiv.org/ftp/arxiv/papers/0803/0803.0165.pdf">Various guidelines compiled by Raffensperger</a></p></li>
+<li><p>An all time favorite still <a href="http://www.eusprig.org/smbp.pdf">Read and Batson’s IBM spreadsheet modeling design practices from way back in 1999.</a></p></li>
+</ul>
+<div id="do-not-ever-do-this" class="section level3">
+<h3><span class="header-section-number">1.4.1</span> Do not ever do this</h3>
+<ol style="list-style-type: decimal">
+<li><p>Hard code data in a formula</p></li>
+<li><p>Take the word <em>spread</em> in spreadsheet literally</p></li>
+<li><p>Put more than one major task or component on a worksheet</p></li>
+<li><p>Guess the length or dimensions of any array, and everything in a spreadsheet is an array;</p></li>
+<li><p>Use more than 3 IF-THEN-ELSE’s nested in a single formula</p></li>
+<li><p>Calculate parameters inside a chart or presentation table</p></li>
+<li><p>Use Excel as the standard system of record database</p></li>
+<li><p>Pretend you don’t know what a named range is.</p></li>
+</ol>
+</div>
+<div id="instead-practice-these" class="section level3">
+<h3><span class="header-section-number">1.4.2</span> Instead practice these</h3>
+<ol style="list-style-type: decimal">
+<li><p>Work flow. Paper and pencil the work flow for a model first. Document the scope, timing, user and system requirements, testing criteria first. Put data in one worksheet, task 1 in another, task 2, in another, and so on, plot set-up, table set-up in other separate worksheets, end-user presentation in another worksheet. Treat the spreadsheet model like a 3rd normal form data base. But for goodness sake avoid using Excel as a system of record data base if you can!</p></li>
+<li><p>Definitions. Use named ranges to refer to any cell or array by name. Refer to cells and arrays where appropriate with INDIRECT(). This is what programming languages do. Each object has a unique name and scope of operations (e.g., integer, floating point, character data, class, slot) with descriptions in comments, Named ranges has some of this capability to document what the cells are and a bit of what they are meant to do. Named ranges are effectively row and column absolute addresses where cell data resides in worksheets. Attributes of cells include value, format, data type.</p></li>
+<li><p>Testing. Be ready to test the model. Paper and pencil calculations should yield the same calculations for bits of the model, often called a <em>unit test</em>. But does the whole model stand up to scrutiny? A testing plan would stretch every assumption even to the breaking point of the model. Such <em>stress testing</em> and <em>system testing</em> are critical to the credibility both of the model and the model-builder in the eyes of the consumer of the model’s results. The resiliency of models to changes in assumptions can be tested by installing form controls to sensitize results to those changes.</p></li>
+<li><p>There are many more good practices, and even more bad ones. We should keep working, testing, improving, and communicating with one another about our various attempts at implementation. Perhaps a step in the right direction is the extensive use of FORMULATEXT() to display formulas in cells. Documentation can lead to immediate improvements.</p></li>
+</ol>
+</div>
+</div>
+<div id="pie-in-the-sky" class="section level2">
+<h2><span class="header-section-number">1.5</span> Pie-in-the-Sky</h2>
+<p>Simone Tortiere makes pies: gluten-free, vegan, full of micro-nutrients. She targets a highly under-served niche market: nutritarians. She has a dilemma. She would like to expand her business. The problem is what price should she charge? Simple economics usually indicates the price that yields the highest profit.</p>
+<p>Here is some data at hand Tortiere finds credible enough to use along with some questions to which she wants answers.</p>
+<ul>
+<li><p><strong>Value capture</strong>. Make-A-Pie Co. generates profit by combining two purchased ingredients (fruit and dough) into pies, processing the pies (cooking, packaging, &amp; delivering), and selling them to local grocery stores. <strong>What are the determinants of profit?</strong></p></li>
+<li><p><strong>Processing</strong>. Make-A-Pie keeps track of weekly processing costs. The table below shows expense for various output levels. <strong>What is the relationship between output volume and expense?</strong></p></li>
+</ul>
+<p><img src="images/01/pie-cost-table.jpg" /></p>
+<ul>
+<li><p><strong>Demand</strong>. Make-A-Pie has also experimented with demand elasticity. At a price above $12, there will be no demand for her pies, but demand increases by about 4,000 pies per week for each dollar price decrease below $12. For example, at a price of $10 Make-A-Pie could expect demand of 8,000 pies. <strong>What is the average relationship between price and revenue?</strong></p></li>
+<li><p><strong>Price</strong>. Savory vegetable filling costs $3.48/pie, and sprouted flour dough costs $0.30/pie. Overhead expenses are $12,000 per week. <strong>At what pie price will Make-A-Pie maximize profit? At what price will Make-A-Pie break even?</strong></p></li>
+<li><p><strong>Sensitivity</strong>. Tortiere believes in her estimates, but she well knows that markets, property tax assesssments, customer sentiment, and supplier costs can change. <strong>How sensitive is weekly profit when any of the drivers of cost and revenue change?</strong></p></li>
+</ul>
+<p>Tortiere muses further. She needs to understand if her business is profitable over the next few years and at what very sticky price should she charge her customers. She has already invested $2.5 million.</p>
+<ul>
+<li><strong>Multi-period value</strong>. Suppose that savory vegetable filling cost rises by 7% per year, and sprouted dough rises (pun included) by 5%. Overhead expenses rise by 2% per year. Prices will also rise by 2% per year. <strong>At what year 1 pie price will Make-A-Pie maximize profit across a 3 year horizon if the business is worth $2,500,000 today?</strong></li>
+</ul>
+<p>Tortiere hires us to help her with her analysis. She asks us what is the first thing we should do?</p>
+</div>
+<div id="wheres-the-paper-and-pencils" class="section level2">
+<h2><span class="header-section-number">1.6</span> Where’s the paper and pencils?</h2>
+<p>First and foremost we map the requested analysis. We use a decompositional technique called an <a href="http://www.cs.ru.nl/~marinav/Teaching/BDMinAI/influencediagrams05.pdf">influence diagram, as developed by Howard and Matheson.</a> The diagram extends the ideas behind a similar structure called a decision tree, both of which are examples of <a href="https://en.wikipedia.org/wiki/Directed_acyclic_graph">directed acyclic graphs</a> and <a href="https://escholarship.org/uc/item/6gv9n38c">causal inference, e.g., Judaea Pearl’s work</a> Software such as <a href="http://www.dagitty.net/">dagitty</a> can greatly aid visualization of causal relationships among decisions (e.g., price), criteria (e.g., profit), and drivers (e.g., unit costs). After all of that consideration here we will simply use boxes and arrows.</p>
+<p><img src="images/01/pie-influence-diagram.jpg" /></p>
+<p>We identify the decision as price in the yellow box and the decision criterion profit in the blue box. Price, unit and fixed costs are somehow exogenous since they do not depend on any variable, but they do determine other variables. Unit and fixed costs will be assumed and thus condition the rest of the variables. Price on the other hand is the one variable for which we solve. Literally we will pick a price and see what happens to profit.</p>
+<p>Tortiere agrees with our approach and analysis. She sees that her efforts to understand how the demanded volume of pies sold depends on her pricing decision. But she wants to get at how volume influences, conditions, cost. We move to the next task, the cost structure.</p>
+</div>
+<div id="cost-and-volume" class="section level2">
+<h2><span class="header-section-number">1.7</span> Cost and volume</h2>
+<p>Make-a-Pie’s experience with expense and volume provides some inside into the way volume, as determined by number of pies sold, will influence, condition, cost. Here is a scatter plot with linear and quadratic lines fit to the data.<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a></p>
+<p><img src="images/01/pie-xost-graph.jpg" /></p>
+<p>Right-clicking one of the blue observations will reveal a dialogue box with a Trendline feature. This produced the lines and the equations. We can check these results by hand, but let’s use the LINEST array function instead in the cost worksheet.<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a></p>
+<p><img src="images/01/pie-cost.jpg" />
+The FALSE setting in LINEST sets the intercept to zero in the Ordinary Least Squares (OLS) estimation. Predicted costs will be used in the profit calculation using volume demanded as an input to the quadratic cost structure. We also use the INDEX-MATCH combination to wrangle coefficients for use in the SUMPRODUCT calculation.<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a></p>
+</div>
+<div id="demand-analysis" class="section level2">
+<h2><span class="header-section-number">1.8</span> Demand analysis</h2>
+<p>Tortiere’s experiments with pricing provide valuable windows into customer preferences. Even a simple change of price can reveal a conjecture about the range of preferences. In this situation we need to anchor the demand analysis around two important points:</p>
+<ul>
+<li><p>the give-away price and volume, and</p></li>
+<li><p>the no-show price where volume is just zero.</p></li>
+</ul>
+<p>The give-away price is zero at least. The volume associated this lowest price becomes the intercept of a down-ward sloping straight-line demand curve in price. The increment downward is estimated using a simple rise-over-run rate of change of volume with respect to price.</p>
+<p><img src="images/01/pie-demand-analysis.jpg" /></p>
+<p>At a price above $12, there will be no demand for her pies, but demand increases by about 4,000 pies per week for each dollar price decrease below $12. For example, at a price of $10 Make-A-Pie could expect a demand of 8,000 pies in a week. The intercept is then <span class="math inline">\(12 \times 4000 = 48000\)</span>. The formula in D9 confirms the negative slope <span class="math inline">\(-4000\)</span>. Thus we have a demand equation which serves as a schedule that will feed both revenue and processing cost.<a href="#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a></p>
+</div>
+<div id="weekly-profit" class="section level2">
+<h2><span class="header-section-number">1.9</span> Weekly profit</h2>
+<p>Weekly profit is only a snapshot of performance. It is defined as total revenues minus total costs with various drivers defined mapped in the influence diagram. The calculations depend on assumptions provided by another worksheet, the finale of the model, the dashboard. Cost and demand volumes derive from estimated algebraic relationships we already peaked at.</p>
+<p><img src="images/01/pie-profit.jpg" /></p>
+<p>Price comes from a sensitivity analysis we have yet to review and is an input from that analysis of the profit maximizing price. Three unit and fixed cost assumptions also wander in from the dashboard. The user moves slide bars to choose those levels.</p>
+</div>
+<div id="profit-sensitivity-to-price" class="section level2">
+<h2><span class="header-section-number">1.10</span> Profit sensitivity to price</h2>
+<p>Perhaps the most important activity in the building of a model, and the reason for a model in the first place, is to understand how model elements are sensitive to one another. Not emotionally of course as our models are robots and golems. BUt really there is no one so-called right answer! It is a range of answers dependent on the instructions we gave to our spreadsheet robots. Yes, the decision maker has to sign the contract, write a cheque, hire (or fire) a designated vendor, employee, partner. But before these decisions are cast in stone, we owe it to ourselves to waste simulations, again to recall George Gilder and Michael Schrage’s ironic hyperbole.</p>
+<p>In this graph we use data tables (Data &gt; What if &gt; Data Table) to take the column of possible prices and run them against the profit model. For each price (yes this is a for loop) the data table calculates a new profit.<a href="#fn8" class="footnote-ref" id="fnref8"><sup>8</sup></a></p>
+<p><img src="images/01/pie-sensitivity-price.jpg" /></p>
+<p>A plot of price and profit is more than a little instructive. Here is a setup worksheet with titles, additional calculations and lookups. Shown only is the sensitivity table setup. Any other plots in this workbook have a setup grid devoted to their charts.</p>
+<p><img src="images/01/pie-plot-setup.jpg" /></p>
+</div>
+<div id="lo-and-behold" class="section level2">
+<h2><span class="header-section-number">1.11</span> Lo and behold</h2>
+<p>This is what we have been waiting for. We must first notice the modular nature of this spreadsheet application. The dashboard worksheet interacts with all but the questions worksheet, at least in this iteration of the application. All Simone Tortiere needs to do, after paying our invoice, is to put the cursor on the slide bars that help her understand how the profit maximizing price changes with changes in the unit and fixed cost assumptions.<a href="#fn9" class="footnote-ref" id="fnref9"><sup>9</sup></a></p>
+<p><img src="images/01/pie-dashboard.jpg" /></p>
+<p>Is there too much in this dashboard? Perhaps the cost and demand equationscould be left to their respective worksheets. We might replace those with the underlying assumptions of both structures. We leave that for another day and week.</p>
+<p>What price is best? All we have to do is live with whatever assummptions we make and read the dashboard.</p>
+</div>
+<div id="references-and-endnotes" class="section level2">
+<h2><span class="header-section-number">1.12</span> References and endnotes</h2>
+
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>See <a href="https://gilderpress.com/2020/03/12/investors-should-ignore-materialistic-superstitions/">Gilder’s comments here</a>. He goes on to a further idea: build billions of 1-chip interconnected systems (our mobile phones that are really computers) and waste chips that way instead of manufacturing billion chip data centers. According to Moore’s law we will eventually get to a near zero-cost chip.<a href="spreadsheet1.html#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>Here is a <a href="https://www.technologyreview.com/2004/07/01/40161/prepared-minds-favor-chance/">taste of Schrage’s points of view</a>. He compiled the <a href="https://www.amazon.com/exec/obidos/ASIN/0875848141/softwgardeinc">“wasting prototyping” paradigm into this book a couple of decades ago</a>.<a href="spreadsheet1.html#fnref2" class="footnote-back">↩</a></p></li>
+<li id="fn3"><p><a href="https://en.wikipedia.org/wiki/Dan_Bricklin">Here is a summary of his work.</a> His innovation with Visicalc was to transform 20 hours of work into 15 minutes, almost of play at the time. Visicalc first ran on the Apple IIe. Dan is working on a web-based WikiCalc these days.<a href="spreadsheet1.html#fnref3" class="footnote-back">↩</a></p></li>
+<li id="fn4"><p>See <span class="citation">WInston (<a href="#ref-Winston2019" role="doc-biblioref">2019</a>)</span>, Chapter 54 Charting Tricks is a one-stop destination for a variety of charts, including the scatter plot here.<a href="spreadsheet1.html#fnref4" class="footnote-back">↩</a></p></li>
+<li id="fn5"><p><span class="citation">WInston (<a href="#ref-Winston2019" role="doc-biblioref">2019</a>)</span> discusses several array functions and formulas in Chapter 91 and LINEST at page 578. LINEST is <a href="http://www.mit.edu/~mbarker/formula1/f1help/04-g-m60.htm">discussed here as well</a> along with references to array functions. To enter an array function: 1. Select a results range. Some functions require the results range to contain a certain number of columns or rows. A an abridged results range will not show all of the function results; a results range that is longer than the function’s capability will display error messages in some cells. Check the documentation on the specific function for information about the required size and shape of the results range. 2. In the results range you selected, type in the equals sign, the array function keyword, and the argument(s) or argument range(s), in parentheses. 3. To enter the function DO NOT PRESS ENTER! Instead press SHIFT and CONTROL together and while they are pressed down then press ENTER. (If you simply press ENTER, the array function will return the #VALUE! error.)<a href="spreadsheet1.html#fnref5" class="footnote-back">↩</a></p></li>
+<li id="fn6"><p>See <span class="citation">WInston (<a href="#ref-Winston2019" role="doc-biblioref">2019</a>)</span> Chapters 4 and 5 for INDEX-MATCH and Chapter 59 for multiple regression.<a href="spreadsheet1.html#fnref6" class="footnote-back">↩</a></p></li>
+<li id="fn7"><p><span class="citation">WInston (<a href="#ref-Winston2019" role="doc-biblioref">2019</a>)</span> Chapters 87 and 89 provide further approaches to demand analysis.<a href="spreadsheet1.html#fnref7" class="footnote-back">↩</a></p></li>
+<li id="fn8"><p><span class="citation">WInston (<a href="#ref-Winston2019" role="doc-biblioref">2019</a>)</span> Chapter 17 deftly covers this vast topic. I do not like to use data tables too extensively and without further some thought. They are dynamic. Whenever you change a cell, the table recalculates. That’s fine for as simple data table as we have here. The problem is when we have a 10000 by 100 table. It simply take a while to update. The easiest way to change the calculation mode is on Excel’s Formula ribbon. In the Calculation grouping, on the right side of the ribbon, is a drop-down button for <strong>Calculation Options</strong>. We choose an option that works best for the current file. There are two other important buttons in the Calculation grouping. <strong>Calculate Now</strong> (equivalent to pressing function key F9) updates the entire workbook. <strong>Calculate Worksheet</strong> updates only the current sheet, which is much faster in a large file.<a href="spreadsheet1.html#fnref8" class="footnote-back">↩</a></p></li>
+<li id="fn9"><p><span class="citation">WInston (<a href="#ref-Winston2019" role="doc-biblioref">2019</a>)</span> Chapter 27 has a discussion on the implementation of user form controls. These are located on the Developer ribbon at the Insert button. <a href="https://support.microsoft.com/en-us/topic/show-the-developer-tab-e1192344-5e56-4d45-931b-e5fd9bea2d45">Here are directions to show this ribbon in your workbook.</a><a href="spreadsheet1.html#fnref9" class="footnote-back">↩</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="part-1-spreadsheet-engineering.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="chaotic-pie-making-in-the-sky.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["book-decision.pdf", "book-decision.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

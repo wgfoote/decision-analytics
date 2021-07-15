@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 4 Bringing Pie to Earth | Decision Modeling with Spreadsheets</title>
+  <meta name="description" content="This is a spreadsheet version of every management science book out there, less all of the detail." />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 4 Bringing Pie to Earth | Decision Modeling with Spreadsheets" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a spreadsheet version of every management science book out there, less all of the detail." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 4 Bringing Pie to Earth | Decision Modeling with Spreadsheets" />
+  
+  <meta name="twitter:description" content="This is a spreadsheet version of every management science book out there, less all of the detail." />
+  
+
+<meta name="author" content="William G. Foote" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="part-2-optimization.html"/>
+<link rel="next" href="expanding-horizons.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Decision Modeling with Spreadsheets</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prerequisites</a></li>
+<li class="chapter" data-level="" data-path="part-1-spreadsheet-engineering.html"><a href="part-1-spreadsheet-engineering.html"><i class="fa fa-check"></i>Part 1 – Spreadsheet Engineering</a></li>
+<li class="chapter" data-level="1" data-path="spreadsheet1.html"><a href="spreadsheet1.html"><i class="fa fa-check"></i><b>1</b> Tortuous Pie-making in the Sky</a><ul>
+<li class="chapter" data-level="1.1" data-path="spreadsheet1.html"><a href="spreadsheet1.html#spreadsheets-really"><i class="fa fa-check"></i><b>1.1</b> Spreadsheets? Really?</a></li>
+<li class="chapter" data-level="1.2" data-path="spreadsheet1.html"><a href="spreadsheet1.html#questions-questions"><i class="fa fa-check"></i><b>1.2</b> Questions, questions</a></li>
+<li class="chapter" data-level="1.3" data-path="spreadsheet1.html"><a href="spreadsheet1.html#count-the-errors-of-our-ways"><i class="fa fa-check"></i><b>1.3</b> Count the errors of our ways</a></li>
+<li class="chapter" data-level="1.4" data-path="spreadsheet1.html"><a href="spreadsheet1.html#prevailing-recommended-practices"><i class="fa fa-check"></i><b>1.4</b> Prevailing recommended practices</a><ul>
+<li class="chapter" data-level="1.4.1" data-path="spreadsheet1.html"><a href="spreadsheet1.html#do-not-ever-do-this"><i class="fa fa-check"></i><b>1.4.1</b> Do not ever do this</a></li>
+<li class="chapter" data-level="1.4.2" data-path="spreadsheet1.html"><a href="spreadsheet1.html#instead-practice-these"><i class="fa fa-check"></i><b>1.4.2</b> Instead practice these</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="spreadsheet1.html"><a href="spreadsheet1.html#pie-in-the-sky"><i class="fa fa-check"></i><b>1.5</b> Pie-in-the-Sky</a></li>
+<li class="chapter" data-level="1.6" data-path="spreadsheet1.html"><a href="spreadsheet1.html#wheres-the-paper-and-pencils"><i class="fa fa-check"></i><b>1.6</b> Where’s the paper and pencils?</a></li>
+<li class="chapter" data-level="1.7" data-path="spreadsheet1.html"><a href="spreadsheet1.html#cost-and-volume"><i class="fa fa-check"></i><b>1.7</b> Cost and volume</a></li>
+<li class="chapter" data-level="1.8" data-path="spreadsheet1.html"><a href="spreadsheet1.html#demand-analysis"><i class="fa fa-check"></i><b>1.8</b> Demand analysis</a></li>
+<li class="chapter" data-level="1.9" data-path="spreadsheet1.html"><a href="spreadsheet1.html#weekly-profit"><i class="fa fa-check"></i><b>1.9</b> Weekly profit</a></li>
+<li class="chapter" data-level="1.10" data-path="spreadsheet1.html"><a href="spreadsheet1.html#profit-sensitivity-to-price"><i class="fa fa-check"></i><b>1.10</b> Profit sensitivity to price</a></li>
+<li class="chapter" data-level="1.11" data-path="spreadsheet1.html"><a href="spreadsheet1.html#lo-and-behold"><i class="fa fa-check"></i><b>1.11</b> Lo and behold</a></li>
+<li class="chapter" data-level="1.12" data-path="spreadsheet1.html"><a href="spreadsheet1.html#references-and-endnotes"><i class="fa fa-check"></i><b>1.12</b> References and endnotes</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html"><i class="fa fa-check"></i><b>2</b> Chaotic Pie-making in the Sky"</a><ul>
+<li class="chapter" data-level="2.1" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#how-many"><i class="fa fa-check"></i><b>2.1</b> How many?</a></li>
+<li class="chapter" data-level="2.2" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#whats-new"><i class="fa fa-check"></i><b>2.2</b> What’s new?</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#the-costs-they-are-a-changing"><i class="fa fa-check"></i><b>2.2.1</b> The costs they are a-changing</a></li>
+<li class="chapter" data-level="2.2.2" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#demand-takes-a-step-back"><i class="fa fa-check"></i><b>2.2.2</b> Demand takes a step back</a></li>
+<li class="chapter" data-level="2.2.3" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#a-new-profit-dawning"><i class="fa fa-check"></i><b>2.2.3</b> A new profit dawning</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#an-algebra-of-pie"><i class="fa fa-check"></i><b>2.3</b> An algebra of pie</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#a-little-lite-algebra"><i class="fa fa-check"></i><b>2.3.1</b> A little lite algebra</a></li>
+<li class="chapter" data-level="2.3.2" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#pvs-last-stand"><i class="fa fa-check"></i><b>2.3.2</b> PV’s last stand</a></li>
+<li class="chapter" data-level="2.3.3" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#the-model-in-the-mist"><i class="fa fa-check"></i><b>2.3.3</b> The model in the mist</a></li>
+<li class="chapter" data-level="2.3.4" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#how-sensitive"><i class="fa fa-check"></i><b>2.3.4</b> How sensitive?</a></li>
+<li class="chapter" data-level="2.3.5" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#one-way-or-the-other"><i class="fa fa-check"></i><b>2.3.5</b> One way or the other</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#lo-and-behold-yet-again"><i class="fa fa-check"></i><b>2.4</b> Lo and behold yet again</a></li>
+<li class="chapter" data-level="2.5" data-path="spreadsheet1.html"><a href="spreadsheet1.html#references-and-endnotes"><i class="fa fa-check"></i><b>2.5</b> References and endnotes</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="case-salmerón-solar-systems-llc.html"><a href="case-salmerón-solar-systems-llc.html"><i class="fa fa-check"></i><b>3</b> Case: Salmerón Solar Systems LLC</a><ul>
+<li class="chapter" data-level="3.1" data-path="case-salmerón-solar-systems-llc.html"><a href="case-salmerón-solar-systems-llc.html#photovoltaic-systems"><i class="fa fa-check"></i><b>3.1</b> Photovoltaic systems</a></li>
+<li class="chapter" data-level="3.2" data-path="case-salmerón-solar-systems-llc.html"><a href="case-salmerón-solar-systems-llc.html#the-particulars"><i class="fa fa-check"></i><b>3.2</b> The particulars</a></li>
+<li class="chapter" data-level="3.3" data-path="case-salmerón-solar-systems-llc.html"><a href="case-salmerón-solar-systems-llc.html#some-definitions-are-in-order"><i class="fa fa-check"></i><b>3.3</b> Some definitions are in order</a></li>
+<li class="chapter" data-level="3.4" data-path="case-salmerón-solar-systems-llc.html"><a href="case-salmerón-solar-systems-llc.html#requirements"><i class="fa fa-check"></i><b>3.4</b> Requirements</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="part-2-optimization.html"><a href="part-2-optimization.html"><i class="fa fa-check"></i>Part 2 – Optimization</a></li>
+<li class="chapter" data-level="4" data-path="bringing-pie-to-earth.html"><a href="bringing-pie-to-earth.html"><i class="fa fa-check"></i><b>4</b> Bringing Pie to Earth</a><ul>
+<li class="chapter" data-level="4.1" data-path="bringing-pie-to-earth.html"><a href="bringing-pie-to-earth.html#it-all-started-here"><i class="fa fa-check"></i><b>4.1</b> It all started here</a></li>
+<li class="chapter" data-level="4.2" data-path="bringing-pie-to-earth.html"><a href="bringing-pie-to-earth.html#from-humble-beginnings"><i class="fa fa-check"></i><b>4.2</b> From humble beginnings</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="bringing-pie-to-earth.html"><a href="bringing-pie-to-earth.html#decisions-decisions"><i class="fa fa-check"></i><b>4.2.1</b> 1. Decisions, decisions</a></li>
+<li class="chapter" data-level="4.2.2" data-path="bringing-pie-to-earth.html"><a href="bringing-pie-to-earth.html#resources-they-are-aconstraining"><i class="fa fa-check"></i><b>4.2.2</b> 2. Resources they are a’constraining</a></li>
+<li class="chapter" data-level="4.2.3" data-path="bringing-pie-to-earth.html"><a href="bringing-pie-to-earth.html#not-without-constraint"><i class="fa fa-check"></i><b>4.2.3</b> 3. Not without constraint</a></li>
+<li class="chapter" data-level="4.2.4" data-path="bringing-pie-to-earth.html"><a href="bringing-pie-to-earth.html#let-us-eat-pie"><i class="fa fa-check"></i><b>4.2.4</b> Let us eat pie</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="bringing-pie-to-earth.html"><a href="bringing-pie-to-earth.html#an-easier-way"><i class="fa fa-check"></i><b>4.3</b> An easier way?</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="expanding-horizons.html"><a href="expanding-horizons.html"><i class="fa fa-check"></i><b>5</b> Expanding horizons</a><ul>
+<li class="chapter" data-level="5.1" data-path="expanding-horizons.html"><a href="expanding-horizons.html#didos-bullhide"><i class="fa fa-check"></i><b>5.1</b> Dido’s bullhide</a></li>
+<li class="chapter" data-level="5.2" data-path="expanding-horizons.html"><a href="expanding-horizons.html#making-dough"><i class="fa fa-check"></i><b>5.2</b> Making dough</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="expanding-horizons.html"><a href="expanding-horizons.html#model-me-an-eoq"><i class="fa fa-check"></i><b>5.2.1</b> Model me an EOQ</a></li>
+<li class="chapter" data-level="5.2.2" data-path="expanding-horizons.html"><a href="expanding-horizons.html#implementing-the-simple-eoq"><i class="fa fa-check"></i><b>5.2.2</b> Implementing the simple EOQ</a></li>
+<li class="chapter" data-level="5.2.3" data-path="expanding-horizons.html"><a href="expanding-horizons.html#life-constrains-our-simple-model"><i class="fa fa-check"></i><b>5.2.3</b> Life constrains our simple model</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="expanding-horizons.html"><a href="expanding-horizons.html#back-to-the-future"><i class="fa fa-check"></i><b>5.3</b> Back to the future</a><ul>
+<li class="chapter" data-level="5.3.1" data-path="expanding-horizons.html"><a href="expanding-horizons.html#bottom-line-up-front"><i class="fa fa-check"></i><b>5.3.1</b> Bottom line up front</a></li>
+<li class="chapter" data-level="5.3.2" data-path="expanding-horizons.html"><a href="expanding-horizons.html#tighter-and-tighter"><i class="fa fa-check"></i><b>5.3.2</b> Tighter, and tighter</a></li>
+<li class="chapter" data-level="5.3.3" data-path="expanding-horizons.html"><a href="expanding-horizons.html#implementing-the-model"><i class="fa fa-check"></i><b>5.3.3</b> Implementing the model</a></li>
+<li class="chapter" data-level="5.3.4" data-path="expanding-horizons.html"><a href="expanding-horizons.html#a-revised-rendering"><i class="fa fa-check"></i><b>5.3.4</b> A revised rendering</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="expanding-horizons.html"><a href="expanding-horizons.html#next-steps"><i class="fa fa-check"></i><b>5.4</b> Next steps?</a></li>
+<li class="chapter" data-level="5.5" data-path="spreadsheet1.html"><a href="spreadsheet1.html#references-and-endnotes"><i class="fa fa-check"></i><b>5.5</b> References and endnotes</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="case-pricing-production-at-make-a-pie.html"><a href="case-pricing-production-at-make-a-pie.html"><i class="fa fa-check"></i><b>6</b> Case: Pricing Production at Make-A-Pie</a><ul>
+<li class="chapter" data-level="6.1" data-path="case-pricing-production-at-make-a-pie.html"><a href="case-pricing-production-at-make-a-pie.html#front-matter"><i class="fa fa-check"></i><b>6.1</b> Front matter</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="part-3-simulation.html"><a href="part-3-simulation.html"><i class="fa fa-check"></i>Part 3 – Simulation</a></li>
+<li class="chapter" data-level="7" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html"><i class="fa fa-check"></i><b>7</b> Waiting for the Simulation</a><ul>
+<li class="chapter" data-level="7.1" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#a-story-of-chance"><i class="fa fa-check"></i><b>7.1</b> A story of chance</a></li>
+<li class="chapter" data-level="7.2" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#a-piece-of-pie-please"><i class="fa fa-check"></i><b>7.2</b> A piece of pie, please</a></li>
+<li class="chapter" data-level="7.3" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#a-brief-interlude-with-cholesky"><i class="fa fa-check"></i><b>7.3</b> A brief interlude with Cholesky</a></li>
+<li class="chapter" data-level="7.4" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#solution"><i class="fa fa-check"></i><b>7.4</b> Solution</a></li>
+<li class="chapter" data-level="7.5" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#now-we-can-simulate"><i class="fa fa-check"></i><b>7.5</b> Now we can simulate</a><ul>
+<li class="chapter" data-level="7.5.1" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#excel-or-bust"><i class="fa fa-check"></i><b>7.5.1</b> Excel or bust!</a></li>
+</ul></li>
+<li class="chapter" data-level="7.6" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#back-to-the-eatery-robot"><i class="fa fa-check"></i><b>7.6</b> Back to the eatery robot</a><ul>
+<li class="chapter" data-level="7.6.1" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#the-main-course"><i class="fa fa-check"></i><b>7.6.1</b> The main course</a></li>
+<li class="chapter" data-level="7.6.2" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#exploring-wait-times"><i class="fa fa-check"></i><b>7.6.2</b> Exploring wait times</a></li>
+</ul></li>
+<li class="chapter" data-level="7.7" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#any-next-steps"><i class="fa fa-check"></i><b>7.7</b> Any next steps?</a></li>
+<li class="chapter" data-level="7.8" data-path="spreadsheet1.html"><a href="spreadsheet1.html#references-and-endnotes"><i class="fa fa-check"></i><b>7.8</b> References and endnotes</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="the-outer-limits.html"><a href="the-outer-limits.html"><i class="fa fa-check"></i><b>8</b> The Outer Limits</a><ul>
+<li class="chapter" data-level="8.1" data-path="the-outer-limits.html"><a href="the-outer-limits.html#tales-of-tails"><i class="fa fa-check"></i><b>8.1</b> Tales of tails</a></li>
+<li class="chapter" data-level="8.2" data-path="the-outer-limits.html"><a href="the-outer-limits.html#it-always-starts-with-data"><i class="fa fa-check"></i><b>8.2</b> It always starts with data</a></li>
+<li class="chapter" data-level="8.3" data-path="the-outer-limits.html"><a href="the-outer-limits.html#a-distribution-to-remember"><i class="fa fa-check"></i><b>8.3</b> A distribution to remember</a></li>
+<li class="chapter" data-level="8.4" data-path="the-outer-limits.html"><a href="the-outer-limits.html#what-does-it-all-mean-so-far"><i class="fa fa-check"></i><b>8.4</b> What does it all mean, so far?</a></li>
+<li class="chapter" data-level="8.5" data-path="the-outer-limits.html"><a href="the-outer-limits.html#the-joints-ajumpin"><i class="fa fa-check"></i><b>8.5</b> The joint’s ajumpin’</a></li>
+<li class="chapter" data-level="8.6" data-path="the-outer-limits.html"><a href="the-outer-limits.html#a-sinking-feeling"><i class="fa fa-check"></i><b>8.6</b> A sinking feeling?</a></li>
+<li class="chapter" data-level="8.7" data-path="the-outer-limits.html"><a href="the-outer-limits.html#simuluate-and-stimulate"><i class="fa fa-check"></i><b>8.7</b> Simuluate and stimulate</a></li>
+<li class="chapter" data-level="8.8" data-path="the-outer-limits.html"><a href="the-outer-limits.html#finally-exhaustively-where-are-the-results"><i class="fa fa-check"></i><b>8.8</b> Finally, exhaustively, where are the results?</a></li>
+<li class="chapter" data-level="8.9" data-path="spreadsheet1.html"><a href="spreadsheet1.html#references-and-endnotes"><i class="fa fa-check"></i><b>8.9</b> References and endnotes</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="case-forecasting-workers-compensation-claims.html"><a href="case-forecasting-workers-compensation-claims.html"><i class="fa fa-check"></i><b>9</b> Case: Forecasting Workers Compensation Claims</a><ul>
+<li class="chapter" data-level="9.1" data-path="case-forecasting-workers-compensation-claims.html"><a href="case-forecasting-workers-compensation-claims.html#some-background"><i class="fa fa-check"></i><b>9.1</b> Some background</a></li>
+<li class="chapter" data-level="9.2" data-path="case-forecasting-workers-compensation-claims.html"><a href="case-forecasting-workers-compensation-claims.html#the-ask"><i class="fa fa-check"></i><b>9.2</b> The ask</a></li>
+<li class="chapter" data-level="9.3" data-path="case-forecasting-workers-compensation-claims.html"><a href="case-forecasting-workers-compensation-claims.html#some-requirements"><i class="fa fa-check"></i><b>9.3</b> Some requirements</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/wgfoote/book-decision-modeling" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Decision Modeling with Spreadsheets</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="bringing-pie-to-earth" class="section level1">
+<h1><span class="header-section-number">Chapter 4</span> Bringing Pie to Earth</h1>
+<script>
+function showText(y) {
+    var x = document.getElementById(y);
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+<div id="it-all-started-here" class="section level2">
+<h2><span class="header-section-number">4.1</span> It all started here</h2>
+<p>The first centuries of Islam saw the confluence of Hindu, Persian, and Mesopotamian science and mathematics. It is the algorithms that concern us here. The Latinized (translated, that is) name of Persian mathematician Muḥammad ibn Mūsā al-Khwārizmī (Persian: محمد بن موسی خوارزمی, romanized: Moḥammad ben Musā Khwārazmi; 780 – 850 CE) is <em>Algorithmi</em>- from the Arabicized al-Khwarizmi and formerly Latinized as Algorithmi. He led the research and teaching programs at Baghdad’s <em>Beit-al-Hikima</em>, the House of Wisdom.</p>
+<p>Central to our purposes, Al-Khwarizmi wrote and compiled a procedure in <em>The Compendious Book on Calculation by Completion and Balancing</em>, 813–833 CE (<span class="citation">Mūsā al-Khwārizmī (<a href="#ref-AlKarizmi830" role="doc-biblioref">1881</a>)</span>) which we still use today to systematically solve linear and quadratic equations. We come across both in our work: net present value and profit both are quadratic in price, or volume. He employed both <em>reduction</em> and <em>balancing</em> (whatever we do to one side of the equation be must do on the other side). The algorithms we use to solve for optimal decisions depend explicitly on the procedures developed and taught, As did al-Khwarizmi, we too will use algebra and the geometrical representation of equations to describe, explain, and interpret our results.</p>
+<p><img src="images/03/pie-2-products-arabic-algebra.jpg" /></p>
+<p>This page from al-Khwarizmi’s work describes his procedure to find the largest square of 8, and of course it is 64. We will use equations, drawings, and graphs to perform much the same tasks for this menagerie of models.</p>
+<ul>
+<li><p>allocation models</p></li>
+<li><p>covering models</p></li>
+<li><p>blending models</p></li>
+<li><p>network models</p></li>
+</ul>
+<p>As we should always, we begin with a simple, but instructive, and even useful model for a decision maker.</p>
+</div>
+<div id="from-humble-beginnings" class="section level2">
+<h2><span class="header-section-number">4.2</span> From humble beginnings</h2>
+<p>Allocation modela choose mixes and compositions typically of competing decisions to optimize an objective (often some sort of cash flow or profit) subject to less-than or equal to constraints on capacity and availability of a resource. Examples include product and sales mix, vendor mix, and team member compositions. Resource constraints often dictate a trade off among alternatives.</p>
+<p>Make-A-Pie (MAP) produces two kinds of pies: savory and fruit. Each product requires some labor in procurement of ingredients, assembly of pies, and baking. MAP sells pies through a local distributor as well as by contract to grocery store chains. These marketing channels estimate maximum potential sales for each product in the coming quarter. The MAP accounting department calculates profit contributions for each product. The decis **ion problem is to determine the product mix which maximize MAP"s profit for the quarter by choosing production quantities for the savory and fruit pies.</p>
+<p>We ask three questions.</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>What are we deciding?</strong> We need to set product mix. These are the volume of pies to be produced. There will be many possible, feasible alternatives from which to choose. For MAP the decisions are just the number of savory pies and number of fruit pies.</p></li>
+<li><p><strong>What is success?</strong> We next define a performance criteria against which we measure the impact of our decision alternatives. In many organizations, the criterion is profit, or net cash flow, or net present value of benefits, costs, and risks to performance. At the least we will need to know the contribution of decisions to profit. To that end we ask the management accountants to render profit per pie. This number when multiplied by the decision number of pies will yield the total profit of the decision alternative. We are not yet done. Our criterion is <strong>maximize profit</strong>.</p></li>
+<li><p><strong>How is success constrained?</strong> First of all, the decision variable themselves may have minimums and maximums. Contracting with grocery chains may require minimum volumes of on-time and in-full delivery of pies to maintain the marketing channel. Second, each process will have only so many hours of operation in a given week. The time frame of a week, of the limitations of work force, materials, and even square footage of floor space to produce all present themselves as candidates to constrain the feasible combinations of fruit and savory pie production volumes. Then there is potential demand which requires a number of fruit and savory pies.</p></li>
+</ol>
+<p>We have additional information from Tortiere and her CFO Marta Fazi. Adhering to good spreadsheet engineering practices we store this first report in a separate worksheet called <code>margin</code>.</p>
+<p><img src="images/03/pie-2-product-margin.jpg" /></p>
+<p>Marta believes that the savory line of pies is very unprofitable from a pure accounting model of value. However, she knows that allocated fixed costs must be incurred given a capacity to produce a range of the volume of pies. These expenses include environmental, health, and safety costs, general maintenance of equipment and work spaces, and even long-term employee benefits. Thus, she produced a marginal revenue, variable cost, and materials report.</p>
+<p>We work with Marta to develop a further understanding of the business. We ask about the production process, its sub-processes, resource requirements per pie per pie line, and the availability of resources. Critical to this understanding is the way the decisions to produce pies winds its way into the underlying production processes and material availability.</p>
+<p><img src="images/03/pie-2-product-availability.jpg" /></p>
+<p>Marta likes the documentation using FORMULATEXT() as she trains, and educates, analysts to think through the work flow. We agree that the minutes it takes to procure, assemble, bake, and package pies is a unit of productivity measure of importance. Labor is key to the operation. The available labor minutes by activity constrains the production of pies. Adhering to good spreadsheet engineering practices we store the report in a separate worksheet called <code>availability</code>. Labor minutes of availability across pie lines is infuenced by the full time equivalent work force, number of shifts (maximum of 3 8 hour shifts), number of days (7 in a week), minutes in a day run through hours.</p>
+<p>We model material availability through inventory. We start with beginning of the week inventory at the end of the previous week. During the week we procure ingredients thus adding to the beginning of week inventory. Then we start to use the ingredients in some proportion that is possibly different for each pie line. At the end of the week we tally up additions and subtractions to arrive at the end of week inventory. We then define material availability as beginning of week inventory plus additions to inventory procured during the week, but in advance of a production run in any shift.</p>
+<div id="decisions-decisions" class="section level3">
+<h3><span class="header-section-number">4.2.1</span> 1. Decisions, decisions</h3>
+<p>We attend to our first question, first. <strong>What are we deciding?</strong> We know we need to set the product mix. These are the volume of pies to be produced. There will be many possible, feasible alternatives from which to choose. For MAP the decisions are just the number of savory pies and number of fruit pies.</p>
+<p>Here is a 2 dimension mapping of the decision space of all volumes of fruit and savory pies.</p>
+<p><img src="images/03/pie-2-product-decisions.jpg" /></p>
+<p>First, we notice that we define decisions only in the positive quadrant of all possible combinations of fruit <span class="math inline">\(X\)</span> and savory <span class="math inline">\(Y\)</span> pies. Both decisions are continuous on the positive real number plane.</p>
+<p><span class="math display">\[
+\begin{align}
+X &amp;\geq 0 \\
+Y &amp;\geq 0
+\end{align}
+\]</span></p>
+<p>Not only this constraint, but we also observe that there are minimum and maximum boundaries for the decisions.</p>
+<p><span class="math display">\[
+\begin{align}
+6000 \leq \, &amp;X \leq 9511 \\	
+300 \,\,\leq \,\,  &amp;Y \leq 9159
+\end{align}
+\]</span></p>
+<p>Both a graph and and algebraic expression help us describe the decision space of possiblities.</p>
+</div>
+<div id="resources-they-are-aconstraining" class="section level3">
+<h3><span class="header-section-number">4.2.2</span> 2. Resources they are a’constraining</h3>
+<p>Perhaps borrowing too liberally from the Bob Dylan verse, we proceed to the second modeling question <strong>What is success?</strong> We now work with Marta and her MAP analysts to define a performance criteria against which we can measure the impact of our decision alternatives. In many organizations, the criterion is profit, or net cash flow, or net present value of benefits, costs, and risks to performance. In general this measure is multi-faceted for example when removing snow in Montreal PQ, there are competing objectives of cost and environmental impact minimization (<span class="citation">Labelle, Langevin, and Campbell (<a href="#ref-Labelle2002" role="doc-biblioref">2002</a>)</span>).</p>
+<p>At the least we will need to know the contribution of decisions to profit. To that end we review Marta’s profit per pie report. These marginal profits when multiplied by the decision number of pies will yield the total profit of the decision alternative. We are not yet done. Our criterion is then to <strong>maximize profit</strong>.</p>
+<p>This graph depicts the family of equal-profits combinations of <span class="math inline">\(X=\)</span> fruit pie volume and <span class="math inline">\(Y=\)</span> savory pie volume, known affectionately as <strong>iso-profit</strong> curves. We can compactly express these curves using this equation.</p>
+<p><span class="math display">\[
+\begin{align}
+aX + bY = c
+\end{align}
+\]</span></p>
+<p>We already know what <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are. Coefficient <span class="math inline">\(a\)</span> is the profit contribution per unit of decision <span class="math inline">\(X\)</span> units (fruit pies!). Coefficient <span class="math inline">\(c\)</span> is the profit contribution per unit of decision <span class="math inline">\(Y\)</span> units (savory pies!). These add up to <span class="math inline">\(c\)</span> total profits.</p>
+<p>For example if we produce <span class="math inline">\(X=10\)</span> fruit pies and <span class="math inline">\(Y=5\)</span> savory prices, <em>and</em> <span class="math inline">\(a=\$2.00\)</span> marginal profit per fruit pie produced and sold and <span class="math inline">\(b=\$3.00\)</span> marginal profit per savory pie produced and sold, then we can compute total profit <span class="math inline">\(c\)</span>.</p>
+<p><span class="math display">\[
+\begin{align}
+aX + bY &amp;= c \\
+(2.00)(10) + (3.00)(5) &amp;= c \\
+20 + 15 &amp;= c \\
+35 = c
+\end{align}
+\]</span></p>
+<p>Yes, it is as simple as this. The hard thing we had to do was come up with the right decisions and the marginal profits. We will use this formulation throughout our modeling work flow. We will also produce plots that will depend on the solution of <span class="math inline">\(Y\)</span>, on the vertical axis, the ordinate, in terms of <span class="math inline">\(X\)</span> on the horizontal axis, the abscissa, of the plot. In homage to al-Khwarizmi, we balance and reduce terms to arrive at the solution.</p>
+<p><span class="math display">\[
+\begin{align}
+aX + bY &amp;= c \\
+aX - aX + bY &amp;= c - aX \\
+0 + bY &amp;= c - aX \\
+bY &amp;= c - aX \\
+\frac{bY}{b} &amp;= \frac{c - aX}{b} \\
+(1)Y &amp;= \frac{1}{b}(c - aX) \\
+(1)Y &amp;= \frac{c}{b} - \left(\frac{a}{b}\right)X \\
+Y &amp;= \frac{c}{b} - \left(\frac{a}{b}\right)X
+\end{align}
+\]</span></p>
+<p>Where we used the algebraic facts that <span class="math inline">\(aX - aX=0\)</span>, <span class="math inline">\(b/b = 1\)</span>, and the distributive property of multiplication over addition. The term <span class="math inline">\(c/b\)</span> is the intercept and the term <span class="math inline">\(-(a/b)\)</span> is the slope of the straight-line (often called linear) equation of decision <span class="math inline">\(Y\)</span> in terms of decision <span class="math inline">\(X\)</span>. In all of its glorious detail.</p>
+<p>After all of that algebra in all of its glorious detail, we deserve to see our handiwork.</p>
+<p><img src="images/03/pie-2-product-iso-profit.jpg" /></p>
+<p>We parameterize the iso-profit curves with three levels of profits, $20,000, $40,000, and $60,000, color coordinating the equations and the dashed iso-profit lines. An increase in profits shifts the iso-profit lines to the right. Not only that, but increased profits require, of course, more sales and production of pies. The slopes of each of the iso-profit curves are the same. This means they are parallel to one another, they cannot ever cross in this slice of the decision universe.</p>
+<p>We can measure the profit tradeoff between savory and fruit pies directly through the slope. While we might have avoided calculus in our analytics journey, or perhaps not encountered it officially at all, we can use it to think through the marginal profit tradeoff. We start with the total change in profit <span class="math inline">\(dc = a\, dX + b\, dY\)</span>, that is the sum of the change in profit due to a change in volume of fruit pies, <span class="math inline">\(a\, dX\)</span>, and the change in profit due to a change in volume of savory pies, <span class="math inline">\(b\, dY\)</span>.</p>
+<p>These are lovely mathematical and linear operators at work. Without the fuss of knowing exactly what all that entails, but because they are linear (and by the way smooth) operators, we can solve for the ratio of <span class="math inline">\(dY/dX\)</span>, the vauntedY profit tradeoff, when, and this is key, the change in profit is stable, that is, 0, <span class="math inline">\(dc=0\)</span>.</p>
+<p><span class="math display">\[
+\begin{align}
+dc &amp;= a\, dX + b\, dY \\
+0 - a\, dX &amp;= a\, dX + b\, dY - a\, dX \\
+- a\, dX &amp;= b\, dY \\
+\frac{dY}{dX} &amp;= -\frac{a}{b}
+\end{align}
+\]</span></p>
+<p>In our case <span class="math inline">\(a = 2.98\)</span> and <span class="math inline">\(b = 2.95\)</span>. The two pie lines are literally neck-to-neck. The tradeoff is evidenced in the negative slope. A (very small) increase in fruit pie volumes <strong>reduces</strong> profit by <span class="math inline">\(2.98 / 2.95 = 1.01\)</span>, just a bit over a dollar. This tradeoff is the same for any level of profit, thus the <span class="math inline">\(dc=0\)</span> assumption. Phew!</p>
+<p>Let’s overlay the minimum and maximum decision contraints on the iso-profit curves to get some perspective and maybe another insight or two.</p>
+<p><img src="images/03/pie-2-products-iso-profit-minmax-decision.jpg" /></p>
+<p>The low profit regime ($20,000) just seems to makes it into the feasible rectangle of minimum and maximum pie requirements. The high profit regime ($60,000) does not at all. The <strong>decision core</strong> will be somewhere within the feasible rectangle. One such profit is a mid profit regime of ($40,000). Is this the optimal profit? Not yet! By shifting the iso-profit lines we must see that there is one (1) optimal, that is, maximizing profit, fruit and savory volumes solution. This plot depicts the situation.</p>
+<p><img src="images/03/pie-2-product-iso-profit-min-max-solution.jpg" /></p>
+<p>That’s right, the maximizing profit decision is to produce and sell the maximum number of fruit and savory pies. This yields a profit of $55,378. We simply moved the high profit regime line to the left to land on the northeast vertex (also known as a corner) of the four-sided polytope (also known here as a variant called a rectangle) that describes the region of feasible decision combinations. Again PHEW!</p>
+</div>
+<div id="not-without-constraint" class="section level3">
+<h3><span class="header-section-number">4.2.3</span> 3. Not without constraint</h3>
+<p>We reach our third modeling question <strong>how is success constrained?</strong> First of all, the decision variable themselves may have minimums and maximums. Contracting with grocery chains may require minimum volumes of on-time and in-full delivery of pies to maintain the marketing channel. We know that this is sufficient to get at a notion of an optimized objective.</p>
+<p>Second, each of the procuring, assembling, baking, and packaging processes will have only so many posible hours of operation in a given week. The strict time frame of a minute, an hour, a day, a week, of the limitations of work force, materials, and even square footage of floor space to produce all present themselves as candidates to constrain the feasible combinations of fruit and savory pie production volumes. Then there is potential demand which requires a number of fruit and savory pies. Even here markets, competition, communication create further constraints.</p>
+<p>Again, we attempt an algebraic description. For the decided upon volume of <span class="math inline">\(X=\)</span> of fruit pies and <span class="math inline">\(Y\)</span> of savory pies, we have four (4) process resource constraints.</p>
+<p><span class="math display">\[
+\begin{align}
+staging:\, &amp;X + Y \leq 20160 \\
+assembling:\, &amp;2 X + 1.5 Y \leq 20160 \\
+baking:\, &amp;9 X + 10 Y \leq 100800 \\
+packaging:\, &amp;X + Y \leq 13440 
+\end{align}
+\]</span></p>
+<p><span class="math display">\[
+\begin{align}
+filling:\, &amp;0.6 X + 0.5 Y \leq 7150 \\
+dough:\, &amp;0.4 X + 0.5 Y \leq 6160 
+\end{align}
+\]</span>
+With the same results we developed for profit curves, we can find intercepts and slopes and plot these relationships. Here are the constraints for the four processes. We leave out the profit relationship for now.</p>
+<p><img src="images/03/pie-2-product-process-all.jpg" /></p>
+<p>We seek only the most constraining of these curves. We immediately see that both staging and packaging outstrip the assembling and baking processes. To the left of the assembling and backing process constraints lies a potential set of feasible decisions. Also we note that the slopes of the staging and packaging process constraints are the same. This adds to their irrelevance and redundancy. It is not that they are unimportant. Not at all, just not helpful in identifying the region within which decisions can be found feasibly. By feasible we then mean the decision space that fits all of the constraints. This criterion is then met only by the most constraining of the processes here.</p>
+<p>And here are two ingredients for the material group of constraints.</p>
+<p><img src="images/03/pie-2-product-material.jpg" />
+They intersect at around <span class="math inline">\(X=\)</span> 5,000 fruit pies and <span class="math inline">\(Y=\)</span> a little under 9,000 savory pies. To the left of the kinked boundary at this point we may, just maybe, an optimal decision.</p>
+<p>We now put the material constraints together with the relevant assembling and baking constraints.</p>
+<p><img src="images/03/pie-2-product-material-no-redundancy-process.jpg" /></p>
+<p>Wow, both of the material constraints are cut away by just the assembling and baking process constraints. Those two are the most constraining of the suite of six constraints. They alone define, along with the demand constraints, the feasible set of decisions.</p>
+<p><img src="images/03/pie-2-product-aassembing-baking-minmax.jpg" /></p>
+<p>That point at which the assembling and baking processes lies well within the minimum and maximum boundaries of the demand requirements. We arrive at the feasible decision space. Just one more step will get us to our goal of maximizing profit with pies!</p>
+</div>
+<div id="let-us-eat-pie" class="section level3">
+<h3><span class="header-section-number">4.2.4</span> Let us eat pie</h3>
+<p>And produce and sell it. Our sponsor Simone Tortiere and colleague Marta Fazi have followed us through this intense analysis. We are now ready to uncover the answers which we seek in this case. Here is the the final overlay of an iso-profit line through the intersection of the assembling and baking constraints.</p>
+<p><img src="images/03/pie-2-product-solution.jpg" /></p>
+<p>The iso-profit line registers a maximizing profit of $55,376 against optimal 7,764 fruit and 3,102 savory pies. How can be know this is the best choice? First, any pie decision greater than this will be infeasible, will not honor the assembling and baking process constraints. Second, any iso-profit to the right of the dashed line will surrely be at a greater profit but then will evoke decisions that are infeasible. Any iso-profit to the left will enlist feasible decisions, but will be less profitable than the profit at the dashed line. We have found an optimizing solution, the hard way!</p>
+</div>
+</div>
+<div id="an-easier-way" class="section level2">
+<h2><span class="header-section-number">4.3</span> An easier way?</h2>
+<p>We can use the algebra of al-Khwarizmi to solve consecutively, much like the process we just followed, by eliminating, balancing, reducing constraints until we get to that one, or two, or three, or more feasible decision points. At those points we can move in the direction of increasing profit, moving the iso-profit curve to match the feasible decision point, all very geometric, in an algebraic sort of way. George <span class="citation">Dantzig (<a href="#ref-Dantzig1949b" role="doc-biblioref">1949</a>)</span> developed such an algorithm, the Simplex algorithm of linear programming.<a href="#fn15" class="footnote-ref" id="fnref15"><sup>15</sup></a></p>
+<p>We use the Solver add-in from Excel to help us solve this problem algebraicly. We check that Excel has enabled the <a href="https://support.microsoft.com/en-us/office/load-the-solver-add-in-in-excel-612926fc-d53b-46b4-872c-e24772f078ca#:~:text=Load%20the%20Solver%20Add-in%20in%20Excel.%201%20In,the%20Analysis%20group%20on%20the%20Data%20tab.%20">Solver add-in using the instructions at this site.</a> There are instructions for Windows, Mac-OS, and other operating systems. We find the Solver add-in in the Analysis group in the Data ribbon (way to the right!). Frontline Systems gives us <a href="https://www.solver.com/tutorials">this tutorial for using the Solver add-in, replete with examples and spreadsheets.</a></p>
+<p>We set up a separate worksheet for our decision optimization. Here is the setup.</p>
+<p><img src="images/03/pie-2-product-solver-sheet.jpg" /></p>
+<p>We color decisions yellow, criteria blue, and constraint usage green. Extensively SUMPRODUCT comes to our aid. We see the technology of pie making through the process and material constraints. The proportions of material filling and dough and the processing of the materials into pies evoke the design of each pie. We express labor and capital supply and demand, customer supply and demand through costs, availability, capacity values and constraints. This worksheet refers to other worksheets like availability and margin for values from reports and analysis.</p>
+<p>We are ready to use Solver.</p>
+<p><img src="images/03/pie-2-product-solver-1.jpg" /></p>
+<p>Let’s look at one of the constraints, actually all four of the processing constraints. Here is how we enter and edit a constraint.</p>
+<p><img src="images/03/pie-2-product-solver-2.jpg" /></p>
+<p>Constraint arrays can be chosen without the need to put each constraint separately. Thus the way we set up the problem with constraints in rows together, decisions in columns together, allow us this succinct way to implement the model. We press OK and go back to the main Solver dialogue. If we think we have loaded all of the data into Solver, we then press Solve.</p>
+<p><img src="images/03/pie-2-product-solver-solve.jpg" /></p>
+<p>This dialogue asks if we want to use the new solution. If yes, this will wipe out the previous solution. We also can write other reports to worksheets. Sensitivity analysis is one such report we will need. Press OK to see the solution deposited into our model.</p>
+<p>All of this is very mechanical. Our design of worksheets definitely has that character. But design is born of principles and practice. These spreadsheets follow the logic of the algebraic model. The model and its inputs in turn follow the scope of Tortiere’s and Fazi’s requests, born of the need to understand the technology, markets, and competition in the markets all around pie making and feeding others.<a href="#fn16" class="footnote-ref" id="fnref16"><sup>16</sup></a></p>
+
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-Dantzig1949b">
+<p>Dantzig, George B. 1949. “Programming of Interdependent Activities: II Mathematical Model.” <em>Econometrica</em> 17 (3/4): 200–211. <a href="http://www.jstor.org/stable/1905523">http://www.jstor.org/stable/1905523</a>.</p>
+</div>
+<div id="ref-Labelle2002">
+<p>Labelle, A., André Langevin, and James Campbell. 2002. “Sector Design for Snow Removal and Disposal in Urban Areas.” <em>Socio-Economic Planning Sciences</em> 36 (February): 183–202. <a href="https://doi.org/10.1016/S0038-0121(01)00024-6">https://doi.org/10.1016/S0038-0121(01)00024-6</a>.</p>
+</div>
+<div id="ref-AlKarizmi830">
+<p>Mūsā al-Khwārizmī, Muḥammad ibn. 1881. <em>The Compendious Book on Calculation by Completion and Balancing, Translated as Algebra of Mohammed Ben Musa by Frederic Rosen</em>. <a href="https://www.wilbourhall.org/pdfs/The_Algebra_of_Mohammed_Ben_Musa2.pdf">https://www.wilbourhall.org/pdfs/The_Algebra_of_Mohammed_Ben_Musa2.pdf</a>.</p>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="15">
+<li id="fn15"><p>Here is the abstract. “Activities (or production processes) are considered as building blocks out of which a technology is constructed. Postulates are developed by which activities may be combined. The main part of the paper is concerned with the discrete type model and the use of a linear maximization function for finding the ‘optimum’ program. The mathematical problem associated with this approach is developed first in general notation and then in terms of a dynamic system of equations expressed in matrix notation. Typical problems from the fields of inter-industry relations, transportation nutrition, warehouse storage, and air transport are given in the last section.”<a href="bringing-pie-to-earth.html#fnref15" class="footnote-back">↩</a></p></li>
+<li id="fn16"><p>We can visit <span class="citation">WInston (<a href="#ref-Winston2019" role="doc-biblioref">2019</a>)</span> for several of the tricks up his sleevers. Chapter 29 is an introduction. He follows this with chapters 30-35 for various examples of linear programming of many business problems. Other chapters in his book reveal further examples.<a href="bringing-pie-to-earth.html#fnref16" class="footnote-back">↩</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="part-2-optimization.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="expanding-horizons.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["book-decision.pdf", "book-decision.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
