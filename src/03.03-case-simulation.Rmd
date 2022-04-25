@@ -1,0 +1,36 @@
+# Case: Forecasting Workers Compensation Claims
+
+## Some background
+
+Make-A-Pie CEO and owner Simone Tortiere helped organize a group of like-minded owners of vegan food providers. Many of the vegan businesses are New York State Insurance Fund workers compenations policy-holders. For example, if a covered worker falls, has extended health issues, the fund will cover expenses for a specific time frame, using specified drug and other therapy treatments, all under the direction of NYSIF medical associates. Premiums will undoubtedly rise with more claims experience. Safety Group plans, while paying dividends to policy-holders with relatively low claims experiences, often groups all food-related workers into one class. This may, or may not, disadvantage the vegan food industry. The owners seek an alternative solution, at least to get a baseline view of the expense and exposure they face altogether.
+
+## The ask
+
+The group decides on this course of action.
+
+- Gather workers compensation claims experience across the group
+
+- Attempt to model future claims to understand the range and shape of the distribution of claims, all based on existing claims experience
+
+- Use the future claims model to simulate a self-insurance portfolio
+
+All of this is a very tall order for experts in vegan food production and service. Tortiere has already talked to us about the issues. She recommends that our analytics service can at least start to structure the group's next conversation in a month with some provisional results.
+
+## Some requirements
+
+The ask only includes the simulation of potential claims experience, not to simulate the self-insurance fund itself. Tortiere's colleagues offer some new data arrives for several years of workers compensation claims experience.
+
+![](images/06/claims-data-new.jpg)
+1. Explore the data using summaries, Tukey's fences, and a time series plot. Observe possible thresholds.
+
+2. Perform a mean excess of threshold plot. Identify possible threshold candidates. Be able to communicate the need for such an analysis to a decision maker.
+
+3. Propose an appropriate distributional model that respects the thick tail nature of this data, including the threshold, scale, and shape of the distribution. Discuss its relevance and parameterization. Make a plot of the proposal.
+
+4. Use a grid to approximate the joint probability of conjectured  parameters and claims data of the proposed distribution.
+
+5. Calculate summary statistics of the conjectured parameters including mean, standard deviation, and correlation using the distribution of conjectured parameters. Use these statistics to generate 12 years of correlated parameter values.
+
+6. Simulate 10,000 runs of 12 years each run of claims data.
+
+7. Analyze the sensitivity of anticipated claims using a plot of claims relative and cumulative relative frequency of occurrence in the simulation, along with a data summary including quantiles, mean, standard deviation, skewness, and kurtosis. Discuss the impact of these graphical and tabular results on projected claims experience.

@@ -1,0 +1,16 @@
+# Part 3 -- Simulation {-}  
+
+Getting our arms around  
+
+- Developing a waiting time archetypal model to answer specific business questions
+
+- Simulating correlated variates
+
+- Applying variates to the waiting time model
+
+- Collecting data relevant to the decision framework inherent to the simulation model
+
+- Exploring simulated data
+
+- Analyzing sensitivity of results with respect to changes in in key decision parameters
+

@@ -1,0 +1,16 @@
+# Part 2 -- Optimization {-}  
+
+Getting our arms around  
+
+- Designing models with influence diagrams, again
+
+- Identifying the key business questions
+
+- Identifying decisions, formulating objectives, and developing constraints
+
+- Collecting data relevant to the decision framework which helps to answer the business questions
+
+- Implementing model as a linear or non-linear program
+
+- Analyzing sensitivity of results with respect to changes in decision and constraints parameters
+

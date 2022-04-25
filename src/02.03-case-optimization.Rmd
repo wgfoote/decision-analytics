@@ -1,0 +1,25 @@
+# Case: Pricing Production at Make-A-Pie
+
+## Front matter
+
+Tortiere and Fazi now want us to do the seemingly impossible? Price pie. Our job is to insert a pricing decision into the multi-period production planning model. We will use the existing demand framework from the previous chapter. We could alternatively set up a similar Salmeron Solar model? Try it for practice of course! We will try to sow up our discussions on production, demand, inventory, in short a good hunk of the Make-A-Pie supply chain. That's is and that's certainly enough! But, you know, the Salmeron multiperiod planning model might be an interesting  final project. Hmmm. We will see. Next week we will hop into another problem that Tortiere faces. We will need to use simulation to help her solve it.
+
+1. Watch this walkthrough video. [You can access this video here](https://drive.google.com/drive/folders/1IiUmsB4u3j39ve8y-wpj6WK6D8uyp1FO?usp=sharing)
+
+2. Build an influence diagram with production , inventory, demand, and now pricing. This could follow the approach for the production process network.
+
+3. Start from the Make-a-Pie cost minimization multi-period production model. Adding more weekly periods to the model.
+
+4. Use a Make-A-Pie demand worksheet as the base for price based demand.
+
+5. Make a new pricing decision row. Now be sure all of the cell calculations flow through the model cleanly, especially for price drive demand. Remember we solve for price.
+
+6. Check Solver's settings to be use we have the right objective cell, decisions including price, just add price cells next to the production sequence with a comma
+
+7. Run GRG Non-linear as cost is now quadratic in prices, just like the NPV and weekly profit analysis of weeks 1 and 2.
+
+8. Remember this is cost minimization. You should get a not too surprising result: the model does the absolute minimum production and finds a price to support that policy.
+
+9. Override the cost minimization assumption by creating a revenue and then a profit cell. Maximize profits. We might see different price and production possibilities? Or not?
+
+10. Always perform sensitivity analysis, especially with respect to the right hand-side constraint values. For GRG-non-linear you will be examining the Lagrange multiplier values interpreted as shadow prices.
