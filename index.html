@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Decision Modeling with Spreadsheets</title>
   <meta name="description" content="This is a spreadsheet version of every management science book out there, less all of the detail." />
-  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Decision Modeling with Spreadsheets" />
   <meta property="og:type" content="book" />
@@ -32,7 +32,9 @@
   
 
 <link rel="next" href="part-1-spreadsheet-engineering.html"/>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -48,12 +50,33 @@
 
 
 
-
 <link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 
 
 
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -73,11 +96,13 @@
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prolegomena</a></li>
 <li class="chapter" data-level="" data-path="part-1-spreadsheet-engineering.html"><a href="part-1-spreadsheet-engineering.html"><i class="fa fa-check"></i>Part 1 – Spreadsheet Engineering</a></li>
-<li class="chapter" data-level="1" data-path="spreadsheet1.html"><a href="spreadsheet1.html"><i class="fa fa-check"></i><b>1</b> Tortuous Pie-making in the Sky</a><ul>
+<li class="chapter" data-level="1" data-path="spreadsheet1.html"><a href="spreadsheet1.html"><i class="fa fa-check"></i><b>1</b> Tortuous Pie-making in the Sky</a>
+<ul>
 <li class="chapter" data-level="1.1" data-path="spreadsheet1.html"><a href="spreadsheet1.html#spreadsheets-really"><i class="fa fa-check"></i><b>1.1</b> Spreadsheets? Really?</a></li>
 <li class="chapter" data-level="1.2" data-path="spreadsheet1.html"><a href="spreadsheet1.html#questions-questions"><i class="fa fa-check"></i><b>1.2</b> Questions, questions</a></li>
 <li class="chapter" data-level="1.3" data-path="spreadsheet1.html"><a href="spreadsheet1.html#count-the-errors-of-our-ways"><i class="fa fa-check"></i><b>1.3</b> Count the errors of our ways</a></li>
-<li class="chapter" data-level="1.4" data-path="spreadsheet1.html"><a href="spreadsheet1.html#prevailing-recommended-practices"><i class="fa fa-check"></i><b>1.4</b> Prevailing recommended practices</a><ul>
+<li class="chapter" data-level="1.4" data-path="spreadsheet1.html"><a href="spreadsheet1.html#prevailing-recommended-practices"><i class="fa fa-check"></i><b>1.4</b> Prevailing recommended practices</a>
+<ul>
 <li class="chapter" data-level="1.4.1" data-path="spreadsheet1.html"><a href="spreadsheet1.html#do-not-ever-do-this"><i class="fa fa-check"></i><b>1.4.1</b> Do not ever do this</a></li>
 <li class="chapter" data-level="1.4.2" data-path="spreadsheet1.html"><a href="spreadsheet1.html#instead-practice-these"><i class="fa fa-check"></i><b>1.4.2</b> Instead practice these</a></li>
 </ul></li>
@@ -90,14 +115,17 @@
 <li class="chapter" data-level="1.11" data-path="spreadsheet1.html"><a href="spreadsheet1.html#lo-and-behold"><i class="fa fa-check"></i><b>1.11</b> Lo and behold</a></li>
 <li class="chapter" data-level="1.12" data-path="spreadsheet1.html"><a href="spreadsheet1.html#references-and-endnotes"><i class="fa fa-check"></i><b>1.12</b> References and endnotes</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html"><i class="fa fa-check"></i><b>2</b> Chaotic Pie-making in the Sky"</a><ul>
+<li class="chapter" data-level="2" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html"><i class="fa fa-check"></i><b>2</b> Chaotic Pie-making in the Sky"</a>
+<ul>
 <li class="chapter" data-level="2.1" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#how-many"><i class="fa fa-check"></i><b>2.1</b> How many?</a></li>
-<li class="chapter" data-level="2.2" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#whats-new"><i class="fa fa-check"></i><b>2.2</b> What’s new?</a><ul>
+<li class="chapter" data-level="2.2" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#whats-new"><i class="fa fa-check"></i><b>2.2</b> What’s new?</a>
+<ul>
 <li class="chapter" data-level="2.2.1" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#the-costs-they-are-a-changing"><i class="fa fa-check"></i><b>2.2.1</b> The costs they are a-changing</a></li>
 <li class="chapter" data-level="2.2.2" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#demand-takes-a-step-back"><i class="fa fa-check"></i><b>2.2.2</b> Demand takes a step back</a></li>
 <li class="chapter" data-level="2.2.3" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#a-new-profit-dawning"><i class="fa fa-check"></i><b>2.2.3</b> A new profit dawning</a></li>
 </ul></li>
-<li class="chapter" data-level="2.3" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#an-algebra-of-pie"><i class="fa fa-check"></i><b>2.3</b> An algebra of pie</a><ul>
+<li class="chapter" data-level="2.3" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#an-algebra-of-pie"><i class="fa fa-check"></i><b>2.3</b> An algebra of pie</a>
+<ul>
 <li class="chapter" data-level="2.3.1" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#a-little-lite-algebra"><i class="fa fa-check"></i><b>2.3.1</b> A little lite algebra</a></li>
 <li class="chapter" data-level="2.3.2" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#pvs-last-stand"><i class="fa fa-check"></i><b>2.3.2</b> PV’s last stand</a></li>
 <li class="chapter" data-level="2.3.3" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#the-model-in-the-mist"><i class="fa fa-check"></i><b>2.3.3</b> The model in the mist</a></li>
@@ -107,16 +135,19 @@
 <li class="chapter" data-level="2.4" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#lo-and-behold-yet-again"><i class="fa fa-check"></i><b>2.4</b> Lo and behold yet again</a></li>
 <li class="chapter" data-level="2.5" data-path="chaotic-pie-making-in-the-sky.html"><a href="chaotic-pie-making-in-the-sky.html#references-and-endnotes-1"><i class="fa fa-check"></i><b>2.5</b> References and endnotes</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="case-salmerón-solar-systems-llc.html"><a href="case-salmerón-solar-systems-llc.html"><i class="fa fa-check"></i><b>3</b> Case: Salmerón Solar Systems LLC</a><ul>
+<li class="chapter" data-level="3" data-path="case-salmerón-solar-systems-llc.html"><a href="case-salmerón-solar-systems-llc.html"><i class="fa fa-check"></i><b>3</b> Case: Salmerón Solar Systems LLC</a>
+<ul>
 <li class="chapter" data-level="3.1" data-path="case-salmerón-solar-systems-llc.html"><a href="case-salmerón-solar-systems-llc.html#photovoltaic-systems"><i class="fa fa-check"></i><b>3.1</b> Photovoltaic systems</a></li>
 <li class="chapter" data-level="3.2" data-path="case-salmerón-solar-systems-llc.html"><a href="case-salmerón-solar-systems-llc.html#the-particulars"><i class="fa fa-check"></i><b>3.2</b> The particulars</a></li>
 <li class="chapter" data-level="3.3" data-path="case-salmerón-solar-systems-llc.html"><a href="case-salmerón-solar-systems-llc.html#some-definitions-are-in-order"><i class="fa fa-check"></i><b>3.3</b> Some definitions are in order</a></li>
 <li class="chapter" data-level="3.4" data-path="case-salmerón-solar-systems-llc.html"><a href="case-salmerón-solar-systems-llc.html#requirements"><i class="fa fa-check"></i><b>3.4</b> Requirements</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="part-2-optimization.html"><a href="part-2-optimization.html"><i class="fa fa-check"></i>Part 2 – Optimization</a></li>
-<li class="chapter" data-level="4" data-path="bringing-pie-to-earth.html"><a href="bringing-pie-to-earth.html"><i class="fa fa-check"></i><b>4</b> Bringing Pie to Earth</a><ul>
+<li class="chapter" data-level="4" data-path="bringing-pie-to-earth.html"><a href="bringing-pie-to-earth.html"><i class="fa fa-check"></i><b>4</b> Bringing Pie to Earth</a>
+<ul>
 <li class="chapter" data-level="4.1" data-path="bringing-pie-to-earth.html"><a href="bringing-pie-to-earth.html#it-all-started-here"><i class="fa fa-check"></i><b>4.1</b> It all started here</a></li>
-<li class="chapter" data-level="4.2" data-path="bringing-pie-to-earth.html"><a href="bringing-pie-to-earth.html#from-humble-beginnings"><i class="fa fa-check"></i><b>4.2</b> From humble beginnings</a><ul>
+<li class="chapter" data-level="4.2" data-path="bringing-pie-to-earth.html"><a href="bringing-pie-to-earth.html#from-humble-beginnings"><i class="fa fa-check"></i><b>4.2</b> From humble beginnings</a>
+<ul>
 <li class="chapter" data-level="4.2.1" data-path="bringing-pie-to-earth.html"><a href="bringing-pie-to-earth.html#decisions-decisions"><i class="fa fa-check"></i><b>4.2.1</b> 1. Decisions, decisions</a></li>
 <li class="chapter" data-level="4.2.2" data-path="bringing-pie-to-earth.html"><a href="bringing-pie-to-earth.html#resources-they-are-aconstraining"><i class="fa fa-check"></i><b>4.2.2</b> 2. Resources they are a’constraining</a></li>
 <li class="chapter" data-level="4.2.3" data-path="bringing-pie-to-earth.html"><a href="bringing-pie-to-earth.html#not-without-constraint"><i class="fa fa-check"></i><b>4.2.3</b> 3. Not without constraint</a></li>
@@ -124,14 +155,17 @@
 </ul></li>
 <li class="chapter" data-level="4.3" data-path="bringing-pie-to-earth.html"><a href="bringing-pie-to-earth.html#an-easier-way"><i class="fa fa-check"></i><b>4.3</b> An easier way?</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="expanding-horizons.html"><a href="expanding-horizons.html"><i class="fa fa-check"></i><b>5</b> Expanding horizons</a><ul>
+<li class="chapter" data-level="5" data-path="expanding-horizons.html"><a href="expanding-horizons.html"><i class="fa fa-check"></i><b>5</b> Expanding horizons</a>
+<ul>
 <li class="chapter" data-level="5.1" data-path="expanding-horizons.html"><a href="expanding-horizons.html#didos-bullhide"><i class="fa fa-check"></i><b>5.1</b> Dido’s bullhide</a></li>
-<li class="chapter" data-level="5.2" data-path="expanding-horizons.html"><a href="expanding-horizons.html#making-dough"><i class="fa fa-check"></i><b>5.2</b> Making dough</a><ul>
+<li class="chapter" data-level="5.2" data-path="expanding-horizons.html"><a href="expanding-horizons.html#making-dough"><i class="fa fa-check"></i><b>5.2</b> Making dough</a>
+<ul>
 <li class="chapter" data-level="5.2.1" data-path="expanding-horizons.html"><a href="expanding-horizons.html#model-me-an-eoq"><i class="fa fa-check"></i><b>5.2.1</b> Model me an EOQ</a></li>
 <li class="chapter" data-level="5.2.2" data-path="expanding-horizons.html"><a href="expanding-horizons.html#implementing-the-simple-eoq"><i class="fa fa-check"></i><b>5.2.2</b> Implementing the simple EOQ</a></li>
 <li class="chapter" data-level="5.2.3" data-path="expanding-horizons.html"><a href="expanding-horizons.html#life-constrains-our-simple-model"><i class="fa fa-check"></i><b>5.2.3</b> Life constrains our simple model</a></li>
 </ul></li>
-<li class="chapter" data-level="5.3" data-path="expanding-horizons.html"><a href="expanding-horizons.html#back-to-the-future"><i class="fa fa-check"></i><b>5.3</b> Back to the future</a><ul>
+<li class="chapter" data-level="5.3" data-path="expanding-horizons.html"><a href="expanding-horizons.html#back-to-the-future"><i class="fa fa-check"></i><b>5.3</b> Back to the future</a>
+<ul>
 <li class="chapter" data-level="5.3.1" data-path="expanding-horizons.html"><a href="expanding-horizons.html#bottom-line-up-front"><i class="fa fa-check"></i><b>5.3.1</b> Bottom line up front</a></li>
 <li class="chapter" data-level="5.3.2" data-path="expanding-horizons.html"><a href="expanding-horizons.html#tighter-and-tighter"><i class="fa fa-check"></i><b>5.3.2</b> Tighter, and tighter</a></li>
 <li class="chapter" data-level="5.3.3" data-path="expanding-horizons.html"><a href="expanding-horizons.html#implementing-the-model"><i class="fa fa-check"></i><b>5.3.3</b> Implementing the model</a></li>
@@ -140,26 +174,31 @@
 <li class="chapter" data-level="5.4" data-path="expanding-horizons.html"><a href="expanding-horizons.html#next-steps"><i class="fa fa-check"></i><b>5.4</b> Next steps?</a></li>
 <li class="chapter" data-level="5.5" data-path="expanding-horizons.html"><a href="expanding-horizons.html#references-and-endnotes-2"><i class="fa fa-check"></i><b>5.5</b> References and endnotes</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="case-pricing-production-at-make-a-pie.html"><a href="case-pricing-production-at-make-a-pie.html"><i class="fa fa-check"></i><b>6</b> Case: Pricing Production at Make-A-Pie</a><ul>
+<li class="chapter" data-level="6" data-path="case-pricing-production-at-make-a-pie.html"><a href="case-pricing-production-at-make-a-pie.html"><i class="fa fa-check"></i><b>6</b> Case: Pricing Production at Make-A-Pie</a>
+<ul>
 <li class="chapter" data-level="6.1" data-path="case-pricing-production-at-make-a-pie.html"><a href="case-pricing-production-at-make-a-pie.html#front-matter"><i class="fa fa-check"></i><b>6.1</b> Front matter</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="part-3-simulation.html"><a href="part-3-simulation.html"><i class="fa fa-check"></i>Part 3 – Simulation</a></li>
-<li class="chapter" data-level="7" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html"><i class="fa fa-check"></i><b>7</b> Waiting for the Simulation</a><ul>
+<li class="chapter" data-level="7" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html"><i class="fa fa-check"></i><b>7</b> Waiting for the Simulation</a>
+<ul>
 <li class="chapter" data-level="7.1" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#a-story-of-chance"><i class="fa fa-check"></i><b>7.1</b> A story of chance</a></li>
 <li class="chapter" data-level="7.2" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#a-piece-of-pie-please"><i class="fa fa-check"></i><b>7.2</b> A piece of pie, please</a></li>
 <li class="chapter" data-level="7.3" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#a-brief-interlude-with-cholesky"><i class="fa fa-check"></i><b>7.3</b> A brief interlude with Cholesky</a></li>
 <li class="chapter" data-level="7.4" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#solution"><i class="fa fa-check"></i><b>7.4</b> Solution</a></li>
-<li class="chapter" data-level="7.5" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#now-we-can-simulate"><i class="fa fa-check"></i><b>7.5</b> Now we can simulate</a><ul>
+<li class="chapter" data-level="7.5" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#now-we-can-simulate"><i class="fa fa-check"></i><b>7.5</b> Now we can simulate</a>
+<ul>
 <li class="chapter" data-level="7.5.1" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#excel-or-bust"><i class="fa fa-check"></i><b>7.5.1</b> Excel or bust!</a></li>
 </ul></li>
-<li class="chapter" data-level="7.6" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#back-to-the-eatery-robot"><i class="fa fa-check"></i><b>7.6</b> Back to the eatery robot</a><ul>
+<li class="chapter" data-level="7.6" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#back-to-the-eatery-robot"><i class="fa fa-check"></i><b>7.6</b> Back to the eatery robot</a>
+<ul>
 <li class="chapter" data-level="7.6.1" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#the-main-course"><i class="fa fa-check"></i><b>7.6.1</b> The main course</a></li>
 <li class="chapter" data-level="7.6.2" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#exploring-wait-times"><i class="fa fa-check"></i><b>7.6.2</b> Exploring wait times</a></li>
 </ul></li>
 <li class="chapter" data-level="7.7" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#any-next-steps"><i class="fa fa-check"></i><b>7.7</b> Any next steps?</a></li>
 <li class="chapter" data-level="7.8" data-path="waiting-for-the-simulation.html"><a href="waiting-for-the-simulation.html#references-and-endnotes-3"><i class="fa fa-check"></i><b>7.8</b> References and endnotes</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="the-outer-limits.html"><a href="the-outer-limits.html"><i class="fa fa-check"></i><b>8</b> The Outer Limits</a><ul>
+<li class="chapter" data-level="8" data-path="the-outer-limits.html"><a href="the-outer-limits.html"><i class="fa fa-check"></i><b>8</b> The Outer Limits</a>
+<ul>
 <li class="chapter" data-level="8.1" data-path="the-outer-limits.html"><a href="the-outer-limits.html#tales-of-tails"><i class="fa fa-check"></i><b>8.1</b> Tales of tails</a></li>
 <li class="chapter" data-level="8.2" data-path="the-outer-limits.html"><a href="the-outer-limits.html#it-always-starts-with-data"><i class="fa fa-check"></i><b>8.2</b> It always starts with data</a></li>
 <li class="chapter" data-level="8.3" data-path="the-outer-limits.html"><a href="the-outer-limits.html#a-distribution-to-remember"><i class="fa fa-check"></i><b>8.3</b> A distribution to remember</a></li>
@@ -170,12 +209,14 @@
 <li class="chapter" data-level="8.8" data-path="the-outer-limits.html"><a href="the-outer-limits.html#finally-exhaustively-where-are-the-results"><i class="fa fa-check"></i><b>8.8</b> Finally, exhaustively, where are the results?</a></li>
 <li class="chapter" data-level="8.9" data-path="the-outer-limits.html"><a href="the-outer-limits.html#references-and-endnotes-4"><i class="fa fa-check"></i><b>8.9</b> References and endnotes</a></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="case-forecasting-workers-compensation-claims.html"><a href="case-forecasting-workers-compensation-claims.html"><i class="fa fa-check"></i><b>9</b> Case: Forecasting Workers Compensation Claims</a><ul>
+<li class="chapter" data-level="9" data-path="case-forecasting-workers-compensation-claims.html"><a href="case-forecasting-workers-compensation-claims.html"><i class="fa fa-check"></i><b>9</b> Case: Forecasting Workers Compensation Claims</a>
+<ul>
 <li class="chapter" data-level="9.1" data-path="case-forecasting-workers-compensation-claims.html"><a href="case-forecasting-workers-compensation-claims.html#some-background"><i class="fa fa-check"></i><b>9.1</b> Some background</a></li>
 <li class="chapter" data-level="9.2" data-path="case-forecasting-workers-compensation-claims.html"><a href="case-forecasting-workers-compensation-claims.html#the-ask"><i class="fa fa-check"></i><b>9.2</b> The ask</a></li>
 <li class="chapter" data-level="9.3" data-path="case-forecasting-workers-compensation-claims.html"><a href="case-forecasting-workers-compensation-claims.html#some-requirements"><i class="fa fa-check"></i><b>9.3</b> Some requirements</a></li>
 </ul></li>
-<li class="chapter" data-level="10" data-path="vegan-workers-insurance-fund-case-and-notes.html"><a href="vegan-workers-insurance-fund-case-and-notes.html"><i class="fa fa-check"></i><b>10</b> Vegan Workers Insurance Fund: case and notes"</a><ul>
+<li class="chapter" data-level="10" data-path="vegan-workers-insurance-fund-case-and-notes.html"><a href="vegan-workers-insurance-fund-case-and-notes.html"><i class="fa fa-check"></i><b>10</b> Vegan Workers Insurance Fund: case and notes</a>
+<ul>
 <li class="chapter" data-level="10.1" data-path="vegan-workers-insurance-fund-case-and-notes.html"><a href="vegan-workers-insurance-fund-case-and-notes.html#tales-of-tails-1"><i class="fa fa-check"></i><b>10.1</b> Tales of tails</a></li>
 <li class="chapter" data-level="10.2" data-path="vegan-workers-insurance-fund-case-and-notes.html"><a href="vegan-workers-insurance-fund-case-and-notes.html#it-always-starts-with-data-1"><i class="fa fa-check"></i><b>10.2</b> It always starts with data</a></li>
 <li class="chapter" data-level="10.3" data-path="vegan-workers-insurance-fund-case-and-notes.html"><a href="vegan-workers-insurance-fund-case-and-notes.html#a-distribution-to-remember-1"><i class="fa fa-check"></i><b>10.3</b> A distribution to remember</a></li>
@@ -211,7 +252,7 @@
 <div id="header">
 <h1 class="title">Decision Modeling with Spreadsheets</h1>
 <p class="author"><em>William G. Foote</em></p>
-<p class="date" style="margin-top: 1.5em;"><em>2021-05-08 to 2021-05-20</em></p>
+<p class="date"><em>2021-05-08 to 2022-04-25</em></p>
 </div>
 <div id="prolegomena" class="section level1 unnumbered">
 <h1>Prolegomena</h1>
@@ -233,7 +274,6 @@
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -273,6 +313,10 @@ gitbook.start({
 "text": null
 },
 "download": ["book-decision.pdf", "book-decision.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }
@@ -280,6 +324,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>
