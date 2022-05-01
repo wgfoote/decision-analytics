@@ -1,0 +1,165 @@
+---
+title: "Multivariate Monte Carlo"
+author: "Bill Foote"
+date: "February 7, 2017"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Problem
+
+Given a $2 \times 2$ standardized variance-covariance matrix, also known as a correlation matrix, $R$, where $\rho$ is the coefficient of correlation, 
+
+$$
+R =
+\begin{bmatrix}
+1 & \rho \\
+\rho & 1
+\end{bmatrix}
+$$
+
+We start with uncorrelated variates $x$. Our job is to transform the uncorrelated variates to produce correlated variates $z$ with the same expected variance-covariance matrix as $R$. This will put informational structure into the otherwise independently occurring $x$.
+
+When we say transform we mean this mathematically.
+
+$$
+z = Lx
+$$
+
+such that
+
+$$
+R = LL^T
+$$
+
+## Solution
+
+We can decompose $R$ into the product of upper and lower triangular symmetrical matrices. This is a standard trick of matrix algebra.
+
+$$
+R = 
+\begin{bmatrix}
+1 & \rho \\
+\rho & 1
+\end{bmatrix}
+=
+\begin{bmatrix}
+\ell_{11} & 0 \\
+\ell_{21} & \ell_{22}
+\end{bmatrix}
+\begin{bmatrix}
+\ell_{11} & \ell_{21} \\
+0 & \ell_{22}
+\end{bmatrix}
+$$
+
+When we multiply the upper and lower triangular matrices we get this interesting matrix.
+
+$$
+R =
+\begin{bmatrix}
+1 & \rho \\
+\rho & 1
+\end{bmatrix}
+=
+\begin{bmatrix}
+\ell_{11}^2 & \ell_{11}\ell_{21} \\
+\ell_{11}\ell_{21} & \ell_{22}^2
+\end{bmatrix}
+$$
+Now it is a matter of matching elements of $R$ and our new matrix. Here we go.
+
+- $\ell_{11}^2 = 1$ implies $\ell_{11}= 1$
+- $\ell_{11}\ell_{21} = \rho$ then implies $\ell_{21} = \rho$
+- $\ell_{11}^2 + \ell_{22}^2 = 1$ then implies that $\ell_{22} = \sqrt{1 - \rho^2}$
+
+That wasn't as back as we might have thought when we started. We then let $L$ be the new matched to $R$ matrix.
+
+$$
+L =
+\begin{bmatrix}
+\ell_{11} & 0 \\
+\ell_{21} & \ell_{22}
+\end{bmatrix}
+= 
+\begin{bmatrix}
+1 & 0 \\
+\rho & \sqrt{1 - \rho^2}
+\end{bmatrix}
+$$
+
+## Now we can simulate
+
+We generate correlated $z = Lx$ building on the uncorrelated $x$. We first generate a random $x_1$ and, independently, a random $x_2$. We can use the `=RAND()` function in Excel to perform this task.
+
+$$
+x =
+\begin{bmatrix}
+x_1 \\
+x_2
+\end{bmatrix}
+$$
+Then we generate a $z_1$ and a $z_2$ using the $x$ vector of random numbers, but transformed by pre-multiplying $x$ with $L$.
+
+$$
+z = 
+\begin{bmatrix}
+z_1 \\
+z_2
+\end{bmatrix}
+=
+\begin{bmatrix}
+1 & 0 \\
+\rho & \sqrt{1 - \rho^2}
+\end{bmatrix}
+\begin{bmatrix}
+x_1 \\
+x_2
+\end{bmatrix}
+$$
+We do remember that By definition, if $x_1$ is not correlated with $x_2$, then $\rho_{12} = 0$. We can check our maths with this calculation.
+
+$$
+xx^T
+=
+\begin{bmatrix}
+x_1 \\
+x_2
+\end{bmatrix}
+\begin{bmatrix}
+x_1 & x_2
+\end{bmatrix}
+=
+\begin{bmatrix}
+x_1^2 & x_1 x_2 \\
+x_1 x_2 & x_2^2
+\end{bmatrix}
+=
+\begin{bmatrix}
+1 & 0 \\
+0 & 1
+\end{bmatrix}
+$$
+The multiplication of a column vector of independently drawn $x$ with its transpose, the row vector of thos same $x$ random numbers will always return the the identity matrix $I$. This shows that variates are perfectly correlated with themselves but not each other.
+
+Back to the main business at hand. We now calculate
+
+$$
+zz^T = (Lx)(Lx)^T = Lxx^TL^T = LIL^T = LL^T
+$$
+
+But, $R = LL^T$ so that $R = zz^T$.
+
+Thus we have sketched out these steps.
+
+- Generate uncorrelated $x$.
+
+- Generate $z = Lx$, where $L$ reflects the desired correlation structure.
+
+- Find that $L$ generates the same correlation structure as the correlations in $z$.
+
+## Implement in Excel?
+
